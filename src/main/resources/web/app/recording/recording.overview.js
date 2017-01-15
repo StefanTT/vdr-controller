@@ -114,9 +114,6 @@ function RecordingOverviewCtrl($scope, $routeParams, $filter, $location, $timeou
 
   $scope.deleteAction = function()
   {
-    deleteSelected();
-    return;
-
     var dialog = DialogService.confirm
     ({
       title : $filter('translate')('recording.overview.confirmDelete.title'),

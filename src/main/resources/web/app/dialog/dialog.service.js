@@ -19,7 +19,6 @@ function DialogService($uibModal, $filter)
       templateUrl : '/app/dialog/confirm.html',
       controller : function($scope)
       {
-        scope = $scope;
         $scope.title = args.title;
         $scope.message = args.message;
         $scope.acceptLabel = args.acceptLabel || $filter('translate')('button.ok');

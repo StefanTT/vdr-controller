@@ -88,7 +88,7 @@ public class MappedResourcesRoute implements Route
       String path = request.pathInfo().replaceAll("\\.\\.", "__");
       Validate.isTrue(path.startsWith(pathPrefix));
       path = path.substring(pathPrefix.length());
-      LOGGER.debug("Serving static resource for {}", path);
+      LOGGER.trace("Serving static resource for {}", path);
 
       String mappedPath = getResourcePath(path);
       if (mappedPath == null)

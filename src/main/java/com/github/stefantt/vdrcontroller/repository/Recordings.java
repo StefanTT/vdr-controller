@@ -154,7 +154,7 @@ public class Recordings
         executeWithRetry((con) ->
         {
             Boolean ret = delete(con, folder);
-            if (ret)
+            if (Boolean.TRUE.equals(ret))
             {
                 VirtualFolder<VdrRecording> parentFolder = folder.getParent();
                 if (parentFolder != null)
