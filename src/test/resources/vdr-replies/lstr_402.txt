@@ -1,0 +1,19 @@
+215-C S19.2E-1-1019-10301 Das Erste HD
+215-E 55650 1479012900 1500 50 19
+215-T Wissen macht Ah!
+215-S 1386 Trillionen Liter
+215-D Shary und Ralph beschäftigen sich heute mit dem Thema "1386 Trillionen Liter".|Produziert in HD
+215-G 50
+215-X 5 0B deu HD-Video
+215-X 2 03 deu stereo
+215-X 4 42 deu Dolby Digital 2.0
+215-X 3 01 deu 
+215-X 2 03 deu ohne Audiodeskription
+215-X 3 20 deu DVB-Untertitel
+215-X 3 03 deu 
+215-V 1479012900
+215-F 25
+215-P 50
+215-L 50
+215-@ <epgsearch><channel>3 - Das Erste HD</channel><searchtimer>Wissen macht Ah!</searchtimer><start>1479012780</start><stop>1479015300</stop><s-id>39</s-id><eventid>55650</eventid></epgsearch>
+215 End of recording information

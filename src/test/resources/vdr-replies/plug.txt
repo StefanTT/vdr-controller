@@ -1,0 +1,8 @@
+214-Available plugins:
+214-conflictcheckonly v0.0.1 - Direkter Zugriff auf epgsearch's Konflikt-Prüfungs-Menü
+214-epgsearch v1.0.1.beta5 - Suche im EPG nach Wiederholungen und anderem
+214-epgsearchonly v0.0.1 - Direkter Zugriff auf epgsearch's Suchenmenu
+214-quickepgsearch v0.0.1 - Schnelle Suche nach Sendungen
+214-streamdev-server v0.6.1-git - VDR Streaming Server
+214-vnsiserver v1.3.1 - VDR-Network-Streaming-Interface (VNSI) Server
+214 End of plugin list

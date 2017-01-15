@@ -1,0 +1,11 @@
+C S19.2E-1-1089-12003 RTL Television
+E 17533 1482730500 6300 4E 6
+T Saphirblau
+D Wiederholung vom Sonntag, 16:35 Uhr...
+X 2 03 deu deutsch
+X 2 05 deu dolby digital
+X 3 03 deu 
+F 25
+P 50
+L 60
+End of recording information

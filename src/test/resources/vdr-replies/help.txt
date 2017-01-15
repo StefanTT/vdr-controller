@@ -1,0 +1,22 @@
+214-This is VDR version 2.2.0
+214-Topics:
+214-    CHAN      CLRE      DELC      DELR      DELT      
+214-    EDIT      GRAB      HELP      HITK      LSTC      
+214-    LSTE      LSTR      LSTT      MESG      MODC      
+214-    MODT      MOVC      MOVR      NEWC      NEWT      
+214-    NEXT      PLAY      PLUG      PUTE      REMO      
+214-    SCAN      STAT      UPDT      UPDR      VOLU      
+214-    QUIT      
+214-Plugin epgsearch v1.0.1.beta5 - Suche im EPG nach Wiederholungen und anderem
+214-    LSTS      NEWS      DELS      EDIS      MODS      
+214-    UPDS      UPDD      SETS      FIND      QRYS      
+214-    QRYF      LSRD      LSTC      NEWC      EDIC      
+214-    DELC      RENC      LSTB      NEWB      DELB      
+214-    EDIB      LSTE      SETP      LSTT      NEWT      
+214-    DELT      EDIT      DEFT      LSCC      MENU      
+214-    UPDT      
+214-Plugin streamdev-server v0.6.1-git - VDR Streaming Server
+214-    LSTC      DISC      
+214-To report bugs in the implementation send email to
+214-    vdr-bugs@tvdr.de
+214 End of HELP info

@@ -1,0 +1,906 @@
+250-1 28.03.16 10:28 0:58* Barbie~Barbie - Mariposa und die Feenprinzessin~2016.03.28-10:30-Mon
+250-2 31.12.15 12:43 1:32* Barbie~Barbie und 'Die drei Musketiere'~2015.12.31-12#3A45-Do
+250-3 19.03.16 11:58 1:27* Barbie~Barbie - Das Agenten-Team~2016.03.19-12#3A00-Sa
+250-4 13.11.15 20:13 1:42* Barbie~Barbie und ihre Schwestern in#3A Das große Hundeabenteuer~2015.11.13-20#3A15-Fr
+250-5 24.01.16 20:13 1:35* Katie Fforde: Warum hab ich ja gesagt?
+250-6 19.11.16 11:58 0:42* Wissen macht Ah! - K-Fragen~2016.11.19-12:00-Sam
+250-7 13.12.16 15:34 0:57* Reiten~Mevisto Amadeus Horse Indoors CSI4*~2016.12.13-15:36-Die
+250-8 11.12.16 15:43 0:00* Reiten~Mevisto Amadeus Horse Indoors CSI4*~Grand Prix Springen aus Salzburg
+250-9 13.12.16 02:48 2:05* Reiten~Mevisto Amadeus Horse Indoors CSI4*~2016.12.13-02:50-Die
+250-10 22.11.16 18:13 0:47* Reiten~NaturNah: Fürstliche Pferde~Ein Film von Sabine Zessin
+250-11 16.01.16 20:13 2:32* Reiten~Gefährten~2016.01.16-20#3A15-Sa
+250-12 13.03.16 20:13 1:47* Reiten~Inga Lindström#3A Familienbande~Liebesgeschichte aus Schweden
+250-13 21.12.15 08:25 0:46* Reiten~Dressurreiten#3A FEI Weltcup 2015/16 in Salzburg (AUT)~5. von 10 Prüfungen der Westeuropaliga / Aufzeichnung vom 6. Dezember
+250-14 26.12.15 12:07 1:52* Reiten~Bibi & Tina - Der Film~2015.12.26-12#3A09-Sa
+250-15 26.12.15 12:08 1:15* Reiten~Bibi & Tina - Der Film~2015.12.26-12#3A10-Sa
+250-16 12.03.16 20:13 1:40* Reiten~Merida - Legende der Highlands~2016.03.12-20#3A15-Sa
+250-17 28.07.16 20:13 1:47* Reiten~Horse of Kings, Thief of Hearts~Dokumentarfilm Niederlande 2015
+250-18 05.05.16 05:28 1:47* Reiten~Hände weg von Mississippi~Aufstand der Pferdefreunde
+250-19 11.07.16 09:38 1:52* Reiten~Hände weg von Mississippi~2016.07.11-09:40-Mon
+250-20 27.12.16 04:57 1:07* Reiten~Amadeus Horse Indoors Showprogramm, Highlights aus Salzburg~2016.12.27-04:59-Die
+250-21 24.12.16 21:55 1:07* Reiten~Amadeus Horse Indoors Showprogramm, Highlights aus Salzburg~2016.12.24-21:57-Sam
+250-22 26.11.16 13:58 1:37* Reiten~Hördur - Zwischen den Welten~2016.11.26-14:00-Sam
+250-23 17.07.16 10:58 2:17* Reiten~Sport im Westen live: CHIO Aachen - Dressur Grand Prix Kür~live aus der Aachener Soers
+250-24 27.02.16 22:48 1:27* Reiten~Davide penitente als Pferdeballett~Bartabas choreographiert Mozart
+250-25 06.01.16 11:51 1:24* Reiten~Davide penitente als Pferdeballett~2016.01.06-11#3A53-Mi
+250-26 31.12.16 09:59 1:12* Reiten~Springreiten: FEI Weltcup 2016/17 in Mechelen (BEL)~Springen der Westeuropaliga / Aufzeichnu
+250-27 04.08.16 19:03 0:42* Reiten~Dimensionen - die Welt der Wissenschaft~2016.08.04-19:05-Don
+250-28 07.01.17 10:43 1:02* Reiten~Doppelt heilt besser (2)~Ein neues Zuhause für Dunbee
+250-29 28.12.16 16:59 2:17* Reiten~Amadeus Horse Indoors CDI5* Dressur, Highlights aus Salzburg~2016.12.28-17:01-Mit
+250-30 25.12.16 20:59 2:17* Reiten~Amadeus Horse Indoors CDI5* Dressur, Highlights aus Salzburg~2016.12.25-21:01-Son
+250-31 27.12.16 00:57 2:17* Reiten~Amadeus Horse Indoors CDI5* Dressur, Highlights aus Salzburg~2016.12.27-00:59-Die
+250-32 27.12.16 12:57 2:17* Reiten~Amadeus Horse Indoors CDI5* Dressur, Highlights aus Salzburg~2016.12.27-12:59-Die
+250-33 21.12.15 00:05 1:54* Reiten~Buck - der wahre Pferdeflüsterer~2015.12.21-00#3A07-Mo
+250-34 12.01.17 20:13 1:02* Reiten~zur Sache Baden-Württemberg!~Das Politikmagazin fürs Land mit Clemens
+250-35 15.12.16 22:58 1:22* Reiten~Dressurreiten: FEI Weltcup 2016/17 in London (GBR)~Prüfung der Westeuropaliga / Aufzeichnun
+250-36 13.07.16 14:28 1:47* Reiten~Sport im Westen live: CHIO Aachen - Springreiten "Preis von Europa"~live aus der Aachener Soers
+250-37 28.09.16 03:47 0:32* Reiten~Dressurreiten~2016.09.28-03:49-Mit
+250-38 01.12.16 15:43 0:42* Reiten~NDR//Aktuell~2016.12.01-15:45-Don
+250-39 06.01.17 15:48 0:35* Reiten~Wendy~Die Westernreit-Show / Das argwöhnische 
+250-40 09.01.17 15:48 1:07* Reiten~Wendy~Der heimliche Blogger / Die lästige Cous
+250-41 05.01.17 15:48 1:07* Reiten~Wendy~Erwischt! / Sina im Rampenlicht
+250-42 10.01.17 15:48 1:00* Reiten~Wendy~Gewinnen ist nicht alles / Die Ausreißer
+250-43 07.01.17 17:53 1:32* Reiten~hundkatzemaus~2017.01.07-17:55-Sam
+250-44 07.09.16 20:13 1:32* Reiten~Von Menschen und Pferden~Spielfilm Island / Deutschland 2013 (Hro
+250-45 11.12.16 04:58 2:17* Reiten~Der Clou~2016.12.11-05:00-Son
+250-46 19.11.16 17:53 1:32* Reiten~hundkatzemaus / Das Haustiermagazin~2016.11.19-17:55-Sam
+250-47 10.12.16 10:43 1:02* Reiten~Doppelt heilt besser (1)~Rettung für Pauli? - Zwei Herzen für Tie
+250-48 30.12.16 03:18 1:47* Reiten~SOKO Wien~Wir sind viele
+250-49 05.01.17 13:38 2:32* Reiten~All die schönen Pferde~2017.01.05-13:40-Don
+250-50 04.01.17 22:00 2:28* Reiten~All die schönen Pferde~2017.01.04-22:02-Mit
+250-51 16.07.16 10:58 2:17* Reiten~Sport im Westen live: CHIO Aachen - Vielseitigkeit Geländeritt~live aus der Aachener Soers
+250-52 02.11.16 20:13 1:18* Reiten~Terra Mater~Trakehner - Des Königs letzte Pferde
+250-53 08.01.17 03:10 2:20* Reiten~Hidalgo - 3.000 Meilen zum Ruhm~2017.01.08-03:12-Son
+250-54 07.01.17 20:13 2:45* Reiten~Hidalgo - 3.000 Meilen zum Ruhm~2017.01.07-20:15-Sam
+250-55 26.04.16 09:59 1:16* Reiten~Dressurreiten: FEI Weltcup 2015/16 in Göteborg (SWE)~Zusammenfassung vom 23. bis 28. März
+250-56 21.12.15 08:54 0:48* Reiten~Dressurreiten#3A FEI Weltcup 2015/16 in London (GBR)~6. von 10 Prüfungen der Westeuropaliga / Aufzeichnung vom 15. Dezember
+250-57 21.12.16 09:43 0:32* Reiten~Der Kutschenprofi von Marbach - Leben mit zwei Pferdestärken~2016.12.21-09:45-Mit
+250-58 01.01.17 12:18 1:37* Reiten~Black Beauty~Spielfilm Deutschland / Großbritannien /
+250-59 06.07.16 20:13 1:47* Reiten~Der XXL-Ostfriese - nur das Beste~Frühlingsgefühle, Brautschau und Sightse
+250-60 16.07.16 15:58 2:02* Reiten~Sport im Westen live: CHIO Aachen - Dressur: Grand Prix Special, Springreiten, Gelände~live aus der Aachener Soers
+250-61 16.07.16 16:13 1:45* Reiten~Sport im Westen live: CHIO Aachen - Dressur: Grand Prix Special, Springreiten, Gelände~live aus der Aachener Soers
+250-62 11.11.15 22:02 0:46* Reiten~Dressurreiten#3A FEI Weltcup 2015/16 in Lyon (FRA)~2. von 10 Prüfungen der Westeuropaliga / Aufzeichnung vom Sonntag
+250-63 07.01.17 19:08 1:22* Reiten~Die Pferdeprofis~2017.01.07-19:10-Sam
+250-64 26.03.16 19:03 1:27* Reiten~Die Pferdeprofis~2016.03.26-19:05-Sam
+250-65 09.04.16 19:08 1:22* Reiten~Die Pferdeprofis~2016.04.09-19:10-Sam
+250-66 02.04.16 19:08 1:22* Reiten~Die Pferdeprofis~2016.04.02-19:10-Sam
+250-67 31.01.16 13:13 1:27* Reiten~Die Pferdeprofis~2016.01.31-13#3A15-So
+250-68 10.01.16 13:13 1:22* Reiten~Die Pferdeprofis~2016.01.10-13#3A15-So
+250-69 23.01.16 19:08 1:22* Reiten~Die Pferdeprofis~2016.01.23-19#3A10-Sa
+250-70 09.01.16 19:08 1:22* Reiten~Die Pferdeprofis~2016.01.09-19#3A10-Sa
+250-71 16.01.16 19:03 1:27* Reiten~Die Pferdeprofis~2016.01.16-19#3A05-Sa
+250-72 30.01.16 19:08 1:22* Reiten~Die Pferdeprofis~2016.01.30-19#3A10-Sa
+250-73 17.04.16 13:13 1:22* Reiten~Die Pferdeprofis~2016.04.17-13:15-Son
+250-74 24.01.16 13:18 1:22* Reiten~Die Pferdeprofis~2016.01.24-13#3A20-So
+250-75 17.01.16 13:13 1:22* Reiten~Die Pferdeprofis~2016.01.17-13#3A15-So
+250-76 20.07.16 20:58 1:02* Reiten~Doppelt heilt besser~Hilferuf aus Spanien - Zwei Herzen für T
+250-77 23.12.15 20:58 1:02* Reiten~Doppelt heilt besser~Tierische Weihnachten mit Kati und Rike
+250-78 05.01.16 12:13 1:02* Reiten~Doppelt heilt besser~Ein neues Zuhause für Dunbee
+250-79 12.11.15 20:13 2:02* Das finstere Tal
+250-80 04.05.16 21:41 0:00* Radio Disney Music Awards 2016
+250-81 26.12.16 20:13 3:26* Die Eiskönigin - Völlig unverfroren
+250-82 27.12.16 21:53 1:17* Die Königin von Wien - Anna Sacher und ihr Hotel
+250-83 03.07.16 23:03 1:57* Madagascar 3: Flucht durch Europa
+250-84 02.02.16 20:13 1:02* Soko Kitzbühel
+250-85 26.12.16 19:13 0:57* Die Windsors - 100 turbulente Jahre (2/3)
+250-86 18.11.15 13:13 1:12* Planet Wissen#3A Kartoffelvielfalt - Kampf um eine tolle Knolle
+250-87 28.12.16 16:44 1:16* ATV Die Reportage
+250-88 16.07.16 12:58 0:42* Quarks & Co: Die Moden der Ernährung
+250-89 27.09.16 20:13 1:43* Pregau - Kein Weg zurück (2)
+250-90 28.09.16 01:12 1:42* Pregau - Kein Weg zurück (2)
+250-91 12.05.16 20:13 1:37* Die Hochzeit meiner Eltern
+250-92 26.12.16 04:43 0:57* Die Windsors - 100 turbulente Jahre (1/3)
+250-93 10.12.16 11:58 0:42* Wissen macht Ah! - Keine Panik~2016.12.10-12:00-Sam
+250-94 08.01.17 19:23 0:37* pur+~Gefahr auf dem Eis
+250-95 07.01.17 06:23 0:23* pur+~Gefahr auf dem Eis
+250-96 14.12.16 19:23 0:23* pur+~Allein bei minus 110 Grad
+250-97 21.12.16 19:23 0:37* pur+~Das schärfste Schwert der Welt
+250-98 01.01.17 19:23 0:37* pur+~Müll essen?
+250-99 19.12.16 19:23 0:37* pur+~Auf frischer Tat ertappt
+250-100 22.12.16 19:23 0:37* pur+~Looping
+250-101 06.12.16 19:23 0:37* pur+~Zurück in die Steinzeit
+250-102 12.12.16 19:23 0:37* pur+~Hilfe, mein Tier ist krank!
+250-103 28.12.16 19:23 0:37* pur+~Lügen!
+250-104 25.12.16 19:23 0:37* pur+~Eric rettet Krokodile
+250-105 15.12.16 19:23 0:37* pur+~Wenn Geräusche lügen
+250-106 08.12.16 19:23 0:37* pur+~Traumjob Pilot
+250-107 11.12.16 19:23 0:37* pur+~Deutschlands schwerster Dialekt
+250-108 29.12.16 19:23 0:37* pur+~Auf Kufen in die Tiefe
+250-109 18.12.16 19:23 0:37* pur+~Die unsichtbare Superkraft
+250-110 26.12.16 19:23 0:37* pur+~Vorhang auf für Eric
+250-111 05.12.16 19:23 0:37* pur+~Unter Löwen
+250-112 25.12.16 11:12 2:11* Rubinrot~Rubinrot
+250-113 25.12.16 16:33 2:27* Rubinrot~Saphirblau
+250-114 13.05.16 21:13 0:00* Der Metzger und der Tote im Haifischbecken
+250-115 19.11.16 20:13 1:28* Asterix in Amerika
+250-116 20.11.16 14:33 1:32* Asterix in Amerika
+250-117 30.09.16 20:13 0:00* Pregau - Kein Weg zurück (3)
+250-118 01.10.16 01:38 0:00* Pregau - Kein Weg zurück (3)
+250-119 27.11.15 15:23 0:00* Wendy~Die Ausreißerin
+250-120 18.11.15 15:23 0:37* Wendy~Erwischt!
+250-121 13.11.15 15:23 0:37* Wendy~Falscher Verdacht
+250-122 24.11.15 15:23 0:37* Wendy~Der heimliche Blogger
+250-123 23.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Neue Geschäftsideen / Rettungsmission
+250-124 28.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Das Schulprojekt / Der verlorene Ring
+250-125 06.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Regenzauber / Delphinjagd
+250-126 07.10.16 14:58 0:57* Mako - Einfach Meerjungfrau~Der Stein im Dreizack / Auserwählt
+250-127 05.10.16 14:58 0:57* Mako - Einfach Meerjungfrau~Ein neuer Auftrag / Unter Verdacht
+250-128 29.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Familienbande / Wer bin ich?
+250-129 04.10.16 14:58 0:57* Mako - Einfach Meerjungfrau~Fataler Zauber / Meerjungfrauen bei der 
+250-130 15.09.16 14:58 0:45* Mako - Einfach Meerjungfrau~Der Dreizack / Das Versteck
+250-131 05.10.16 20:08 1:02* Mako - Einfach Meerjungfrau~Die Puzzle-Box / Neuanfänge
+250-132 21.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Der siebte Zyklus / Überraschung in Pink
+250-133 12.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Aufgeflogen / Grenzlinien
+250-134 16.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Überraschender Besuch / Die doppelte Evi
+250-135 02.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Ausgestoßen / Gehversuche
+250-136 20.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Verhängnisvoller Verrat / Tag der Entsch
+250-137 12.10.16 20:08 0:50* Mako - Einfach Meerjungfrau~Loslassen / Weisheit des Alters
+250-138 04.10.16 20:08 1:02* Mako - Einfach Meerjungfrau~Erfolgsrezept / Die Geister, die ich rie
+250-139 03.10.16 14:58 0:57* Mako - Einfach Meerjungfrau~Die fünf Symbole / Im Bann der Musik
+250-140 10.10.16 20:08 1:02* Mako - Einfach Meerjungfrau~Es ist, wie es ist / Wunschdenken
+250-141 19.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Schwere Entscheidung / Vertrauenssache
+250-142 27.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Die Ausreißerin / Geheimnis in Gefahr
+250-143 09.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Geheimnisvoller Ozean / Knapp entwischt
+250-144 30.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Verirrte Mondseekräfte / Katzenjammer
+250-145 13.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Sirena setzt sich durch / In der Schwebe
+250-146 14.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Der zweite Mondring / Täuschungsmanöver
+250-147 11.10.16 20:08 1:02* Mako - Einfach Meerjungfrau~Verloren und gefunden / Eine Frage des V
+250-148 03.10.16 20:08 1:02* Mako - Einfach Meerjungfrau~Besuch aus Shanghai / Das Seeungeheuer
+250-149 07.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~An der Angel / Der erste Vollmond
+250-150 05.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Begegnung mit Rita / Fremdwährung
+250-151 26.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Begegnung auf Mako / Magie und Chemie
+250-152 22.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Die geheimnisvolle Kammer / Ein Neuer im
+250-153 06.10.16 14:58 0:57* Mako - Einfach Meerjungfrau~Gehen oder bleiben? / Die Wahrheit über 
+250-154 13.10.16 20:08 1:02* Mako - Einfach Meerjungfrau~Die Legende von Jiao Long / Heimkehr
+250-155 08.09.16 14:58 0:57* Mako - Einfach Meerjungfrau~Das Lied der Sirene / Der gestohlene Mon
+250-156 06.10.16 20:08 1:02* Mako - Einfach Meerjungfrau~Wechsel der Gezeiten / Der Weg des Drach
+250-157 11.12.15 19:28 1:42* Der Junge mit den Goldhosen
+250-158 25.09.16 22:11 2:41* Inglourious Basterds
+250-159 07.04.16 17:58 0:15* Shaun das Schaf~Badetag / Summen der Bienen
+250-160 16.12.15 06:13 0:27* Shaun das Schaf~Eiskalte Umleitung / Außerirdische Tricks
+250-161 27.04.16 17:58 0:27* Shaun das Schaf~Das Hüpfschaf / Ein haariges Problem
+250-162 18.12.15 06:13 0:27* Shaun das Schaf~Sondersendung / In der Waschstraße
+250-163 22.12.15 06:13 0:27* Shaun das Schaf~Der gefährliche Lottogewinn / Monster mit acht Beinen
+250-164 29.03.16 09:38 0:22* Shaun das Schaf~Das Hüpfschaf
+250-165 11.05.16 17:58 0:27* Shaun das Schaf~Winter-Olympiade / Ein warmes Plätzchen
+250-166 22.04.16 17:58 0:27* Shaun das Schaf~Die Maulwurfshügel / Pizzaservice
+250-167 02.05.16 17:58 0:27* Shaun das Schaf~Die Landmaus / Ausverkauf
+250-168 13.06.16 17:58 0:27* Shaun das Schaf~Bumerang / gute Besserung
+250-169 12.05.16 17:58 0:27* Shaun das Schaf~Schiff ahoi! / Die Entführung
+250-170 23.05.16 17:58 0:27* Shaun das Schaf~Shaun auf der Flucht / Schlagball
+250-171 09.05.16 17:58 0:27* Shaun das Schaf~Die Schlammschlacht / Das Roll-Schaf
+250-172 02.06.16 17:58 0:27* Shaun das Schaf~Flohzirkus / Wasser marsch!
+250-173 07.05.16 17:58 0:27* Shaun das Schaf~Abgehoben / Schweineärger
+250-174 24.05.16 17:58 0:27* Shaun das Schaf~Ein Bad mit Tücken / Der wilde Stier
+250-175 07.06.16 17:58 0:27* Shaun das Schaf~Besetzt! / Ganz neue Töne
+250-176 24.12.15 06:13 0:00* Shaun das Schaf~Bitzer ist verliebt / Das Stillleben
+250-177 10.05.16 17:58 0:27* Shaun das Schaf~Fuchs im Schafspelz / Bitzer-Billard
+250-178 14.06.16 17:58 0:27* Shaun das Schaf~Babysitter Bitzer / Schwein bleibt Schwe
+250-179 06.05.16 17:58 0:27* Shaun das Schaf~Die Hundehütte / Frisch verliebt
+250-180 14.05.16 17:58 0:27* Shaun das Schaf~Zebra-Enten / Triller-Pfeifer
+250-181 18.05.16 17:58 0:27* Shaun das Schaf~Die Kokosnuss / Die Krähe
+250-182 14.12.15 06:13 0:27* Shaun das Schaf~Ball in der Falle / Das Schattenspiel
+250-183 04.05.16 17:58 0:27* Shaun das Schaf~Bitzers neuer Hut / Körpertausch
+250-184 25.05.16 17:58 0:27* Shaun das Schaf~Graffiti / Das Skateboard
+250-185 02.01.16 08:43 0:42* Shaun das Schaf~Die Lamas des Farmers (The Farmer's Lamas)
+250-186 11.04.16 17:58 0:07* Shaun das Schaf~Spuren im Beton / Die Schatzsucher
+250-187 21.04.16 17:58 0:27* Shaun das Schaf~Die Rasenmäherziege / Die Apfelernte
+250-188 28.12.15 06:13 0:26* Shaun das Schaf~Das kleine Horrorschaf / Schluckauf
+250-189 22.05.16 17:58 0:27* Shaun das Schaf~Verschluckt / Kino Nacht
+250-190 20.04.16 17:58 0:02* Shaun das Schaf~Zirkus um Timmy / Der Stier
+250-191 03.05.16 17:58 0:02* Shaun das Schaf~Partylöwen / Die Brille
+250-192 19.05.16 17:58 0:27* Shaun das Schaf~Da ist noch was / Der Drachenflieger
+250-193 01.01.16 06:13 0:26* Shaun das Schaf~Der große Ausbruch / Abspecken mit Shaun
+250-194 29.04.16 17:58 0:27* Shaun das Schaf~Schlaflose Nacht / Der Golfprofi
+250-195 04.06.16 17:58 0:22* Shaun das Schaf~Disco in der Scheune
+250-196 05.05.16 17:58 0:27* Shaun das Schaf~Doppeltes Unheil / Das Auge der Mieze
+250-197 26.05.16 09:33 0:42* Shaun das Schaf~Die Lamas des Farmers
+250-198 09.06.16 17:58 0:27* Shaun das Schaf~Das falsche Schaf / Die Rockstar-Panne
+250-199 15.04.16 17:58 0:27* Shaun das Schaf~Kleb an mir / Der Außerirdische
+250-200 08.05.16 17:58 0:27* Shaun das Schaf~Bitzer - Das Ungeheuer aus dem Teich / O
+250-201 06.02.16 15:38 0:17* Shaun das Schaf~gute Besserung
+250-202 06.06.16 17:58 0:27* Shaun das Schaf~Hokus, Pokus, Mäh! / Die neue Trillerpfe
+250-203 01.06.16 17:58 0:27* Shaun das Schaf~Der gefährliche Lottogewinn / Monster mi
+250-204 01.04.16 09:38 0:22* Shaun das Schaf~Die Brille
+250-205 29.04.16 06:13 0:00* Shaun das Schaf~Voll auf der Linie / Ausgesperrt
+250-206 15.05.16 17:58 0:05* Shaun das Schaf~Raserei / Die diebische Elster
+250-207 17.04.16 17:58 0:27* Shaun das Schaf~Shaun und die Aliens / Der Roboterhund
+250-208 26.04.16 17:58 0:00* Shaun das Schaf~Spuk in der Scheune / Shaun als Fotograf
+250-209 29.05.16 17:58 0:27* Shaun das Schaf~Hoch hinaus / Die Wunderlampe
+250-210 31.12.15 06:13 0:26* Shaun das Schaf~Timmys Teddy / Der Drachen
+250-211 22.03.16 08:13 0:32* Shaun das Schaf~Ein haariges Problem / Das Auge der Mieze / Ein neuer Freund
+250-212 20.05.16 17:58 0:27* Shaun das Schaf~Der gute Hirte / Bitte lächeln
+250-213 19.04.16 17:58 0:27* Shaun das Schaf~Shaun als Farmer / Gemüsefußball
+250-214 10.06.16 17:58 0:27* Shaun das Schaf~Spielverderber / Oben ohne
+250-215 15.12.15 06:13 0:27* Shaun das Schaf~Der falsche Hund / Puzzlefieber
+250-216 08.06.16 17:58 0:27* Shaun das Schaf~Die trojanische Pizza / Schlafenszeit
+250-217 18.05.16 06:13 0:17* Shaun das Schaf~In der Sackgasse / Das Klavier
+250-218 30.04.16 17:58 0:27* Shaun das Schaf~Supersize Timmy / Ein neuer Freund
+250-219 02.01.16 11:58 1:32* Shaun das Schaf~Kleb an mir / Der Außerirdische / Die Nichte des Farmers / Schnarchalarm / Shaun und die Aliens / Der Roboterhund / Schafwandeln / Camping-Chaos / Shaun als Farmer / Gemüsefußball / Zirkus um Timmy
+250-220 03.06.16 17:58 0:27* Shaun das Schaf~Abenteuer Wildnis / Der hungrige Patient
+250-221 11.06.16 17:58 0:27* Shaun das Schaf~Selfie statt Helfie / Psst!
+250-222 01.01.16 16:13 1:32* Shaun das Schaf~Flohzirkus / Wasser marsch! / Abenteuer Wildnis / Der hungrige Patient / Schlechter Einfluss / Krach auf dem Dach / Geisterstunde / Die kurze Eiszeit / Zahnschmerzen / Abrakadabra / Winter-Olympiade
+250-223 15.06.16 17:58 0:27* Shaun das Schaf~Der Briefträgerschreck / Drachenalarm
+250-224 01.05.16 17:58 0:27* Shaun das Schaf~Tanz in der Nacht / Das Date
+250-225 13.05.16 17:58 0:27* Shaun das Schaf~Fit wie Bitzer / Ein schwerer Brocken
+250-226 21.12.15 06:13 0:27* Shaun das Schaf~Tückischer Tapetenkleister / Häschen hüpft
+250-227 25.04.16 17:58 0:27* Shaun das Schaf~Zahnschmerzen / Abrakadabra
+250-228 05.06.16 17:58 0:27* Shaun das Schaf~Geisterstunde / Die kurze Eiszeit
+250-229 25.12.15 06:13 0:27* Shaun das Schaf~Wer ist die Mami#3F / Der neue Traktor
+250-230 16.05.16 17:58 0:10* Shaun das Schaf~Das Windrad / Fröhliche Weihnachten!
+250-231 30.12.15 06:13 0:26* Shaun das Schaf~Der Ausflug / Waschtag
+250-232 12.06.16 17:58 0:27* Shaun das Schaf~Zu viele Köche / Genau nach Plan
+250-233 09.12.16 20:13 1:42* Die Schneekönigin - Eiskalt entführt
+250-234 20.02.16 20:13 1:53* Die drei Musketiere
+250-235 29.08.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Kleiner Drache Baby Blue
+250-236 20.01.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Die Vollmondnacht
+250-237 08.01.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Der verdorrte Wald
+250-238 23.09.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Das Geheimnis der vier Ringe
+250-239 04.09.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Die geheimnisvolle Laterne
+250-240 11.01.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Die geheimnisvolle Laterne
+250-241 07.12.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Hinter den Kulissen / Die gepfefferten B
+250-242 01.12.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Die Höhle der Wahrheit / Wiedersehen mit
+250-243 06.10.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Der König der Einhörner
+250-244 25.01.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Pantheas letztes Angebot
+250-245 01.10.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Die Brücke am Jadehorn
+250-246 12.12.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Das Geheimnis der vier Ringe / Der würdi
+250-247 18.01.16 17:33 0:00* Mia and me - Abenteuer in Centopia~Die Höhle der Wahrheit
+250-248 07.10.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Die Regenbogenquelle
+250-249 20.12.16 15:23 0:44* Mia and me - Abenteuer in Centopia~Der König der Einhörner / Die Regenbogen
+250-250 05.12.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Invasion der Pane / Pantheas letztes Ang
+250-251 27.08.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Beeren für Phuddle
+250-252 13.12.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Tanz mit den Sternen / Hinter den Spiege
+250-253 19.12.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Die Feuerblume / Die Reise zum Nordhorn
+250-254 03.10.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Die Blume der Erinnerung
+250-255 21.09.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Der Fluch des Grünen Elixiers
+250-256 03.02.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Der Fluch des Grünen Elixiers
+250-257 08.12.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Drachen in Gefahr / Der Geist des Schwar
+250-258 19.09.16 11:13 0:37* Mia and me - Abenteuer in Centopia~Die gepfefferten Blitze
+250-259 18.09.16 18:58 0:20* Mia and me - Abenteuer in Centopia~Die gepfefferten Blitze
+250-260 29.01.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Die gepfefferten Blitze
+250-261 08.02.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Der würdige Sohn
+250-262 24.09.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Der würdige Sohn
+250-263 28.01.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Hinter den Kulissen
+250-264 22.08.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Eine neue Hoffnung
+250-265 06.09.16 11:13 0:37* Mia and me - Abenteuer in Centopia~Die Einhorn-Falle
+250-266 21.01.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Die defekte Wasserkuppel
+250-267 10.10.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Freiheit für den Drachen
+250-268 28.11.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Das Feuer-Einhorn / Der verdorrte Wald
+250-269 28.08.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Ziggos freier Tag
+250-270 08.10.16 18:58 0:15* Mia and me - Abenteuer in Centopia~Ein weiser Entschluss
+250-271 23.11.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Beeren für Phuddle / Ziggos freier Tag
+250-272 14.01.16 17:33 0:37* Mia and me - Abenteuer in Centopia~König für einen Tag
+250-273 15.01.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Phuddles neueste Erfindung
+250-274 21.12.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Ein weiser Entschluss / Das wahre Gesich
+250-275 02.10.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Ein doppeltes Spiel
+250-276 13.01.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Die Blütenfest-Prinzessin
+250-277 21.11.16 15:53 0:37* Mia and me - Abenteuer in Centopia~Der verlorene Trumptus
+250-278 24.08.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Der verlorene Trumptus
+250-279 16.02.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Die fremde Prinzessin
+250-280 30.09.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Die fremde Prinzessin
+250-281 31.08.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Polytheus im Goldrausch
+250-282 09.10.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Das wahre Gesicht
+250-283 04.10.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Die Feuerblume
+250-284 12.02.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Der vierte Ring
+250-285 28.09.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Der vierte Ring
+250-286 23.09.16 11:13 0:37* Mia and me - Abenteuer in Centopia~Die Spur des Vaters
+250-287 04.02.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Die Spur des Vaters
+250-288 30.08.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Der große Blütenbaum
+250-289 14.12.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Der vierte Ring / Das Fest des Bolobo
+250-290 22.11.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Das goldene Einhorn / Onchao und das Par
+250-291 18.11.16 15:53 0:37* Mia and me - Abenteuer in Centopia~Ein seltsames Orakel
+250-292 30.11.16 15:23 0:57* Mia and me - Abenteuer in Centopia~König für einen Tag / Phuddles neueste E
+250-293 26.09.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Der ungebetene Gast
+250-294 10.02.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Der ungebetene Gast
+250-295 26.01.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Die große Entscheidung
+250-296 09.12.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Der Fluch des Grünen Elixiers / Die Spur
+250-297 06.12.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Die große Entscheidung / Der Neuankömmli
+250-298 29.11.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Die Einhorn-Falle / Die Blütenfest-Prinz
+250-299 05.10.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Die Reise zum Nordhorn
+250-300 25.09.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Tanz mit den Sternen
+250-301 09.02.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Tanz mit den Sternen
+250-302 21.08.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Ankunft in Centopia
+250-303 20.09.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Der Geist des Schwarzen Waldes
+250-304 02.02.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Der Geist des Schwarzen Waldes
+250-305 11.02.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Hinter den Spiegeln
+250-306 27.09.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Hinter den Spiegeln
+250-307 22.01.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Invasion der Pane
+250-308 16.09.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Der Neuankömmling
+250-309 15.12.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Die fremde Prinzessin / Die Brücke am Ja
+250-310 16.12.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Ein doppeltes Spiel / Die Blume der Erin
+250-311 19.09.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Drachen in Gefahr
+250-312 01.02.16 17:33 0:37* Mia and me - Abenteuer in Centopia~Drachen in Gefahr
+250-313 19.01.16 17:33 0:00* Mia and me - Abenteuer in Centopia~Wiedersehen mit Baby Blue
+250-314 29.09.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Das Fest des Bolobo
+250-315 01.09.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Phuddles große Stunde
+250-316 26.08.16 18:58 0:28* Mia and me - Abenteuer in Centopia~Onchao und das Paradies
+250-317 11.10.16 18:58 0:37* Mia and me - Abenteuer in Centopia~Der Bann ist gebrochen
+250-318 02.12.16 15:23 0:57* Mia and me - Abenteuer in Centopia~Die Vollmondnacht / Die defekte Wasserku
+250-319 22.10.16 22:01 1:29* Evan Allmächtig
+250-320 01.12.15 13:13 1:12* Planet Wissen#3A Schöner und gesünder hören
+250-321 15.10.16 19:08 1:17* Der Hundeprofi~Folge 4
+250-322 22.10.16 19:08 1:17* Der Hundeprofi~Folge 5
+250-323 24.09.16 19:08 1:17* Der Hundeprofi
+250-324 29.10.16 19:08 1:17* Der Hundeprofi~Folge 6
+250-325 04.07.16 01:33 2:00* 8 Frauen
+250-326 26.12.16 11:17 2:32* Indiana Jones und das Königreich des Kristallschädels
+250-327 07.01.17 06:28 0:42* Tiere bis unters Dach~Tiere bis unters Dach (43)~Die Befreiung
+250-328 07.01.17 05:58 0:42* Tiere bis unters Dach~Tiere bis unters Dach (42)~Böse Brezel
+250-329 01.01.17 00:28 0:32* Dinner for One oder Der 90. Geburtstag
+250-330 23.01.16 20:13 1:42* Der Weg zur Macht
+250-331 24.12.16 13:54 1:37* Ice Age 3 - Die Dinosaurier sind los
+250-332 31.05.16 20:13 0:57* Vorstadtweiber~Vorstadtweiber (13)
+250-333 29.06.16 01:18 1:02* Vorstadtweiber~Vorstadtweiber (16)~Fernsehserie Deutschland/Österreich 2016
+250-334 28.06.16 21:08 0:10* Vorstadtweiber~Vorstadtweiber (16)~Fernsehserie Deutschland/Österreich 2016
+250-335 28.06.16 20:13 0:38* Vorstadtweiber~Vorstadtweiber (16)~Fernsehserie Deutschland/Österreich 2016
+250-336 11.01.16 21:08 0:50* Vorstadtweiber
+250-337 01.02.16 20:13 1:00* Vorstadtweiber
+250-338 27.04.16 00:18 1:03* Vorstadtweiber~(16)
+250-339 07.06.16 20:13 0:57* Vorstadtweiber~Vorstadtweiber (14)
+250-340 14.03.16 20:13 1:08* Vorstadtweiber~(11)
+250-341 05.07.16 20:13 0:25* Vorstadtweiber~Vorstadtweiber (17)
+250-342 21.03.16 20:13 1:09* Vorstadtweiber~(12)
+250-343 25.05.16 00:24 0:00* Vorstadtweiber~(19)
+250-344 23.05.16 20:13 0:00* Vorstadtweiber~(19)
+250-345 09.05.16 20:13 1:08* Vorstadtweiber~(18)
+250-346 30.05.16 20:13 1:08* Vorstadtweiber~(20)
+250-347 18.01.16 20:13 1:00* Vorstadtweiber
+250-348 24.01.16 20:13 1:45* Elysium
+250-349 15.07.16 16:13 0:57* Sport im Westen live: CHIO Aachen - Springreiten "Preis von NRW"
+250-350 15.07.16 14:28 1:42* Sport im Westen live: CHIO Aachen - Springreiten "Preis von NRW"
+250-351 25.12.16 17:13 1:51* Ice Age 4 - Voll verschoben
+250-352 02.02.16 21:03 1:02* Vier Frauen und ein Todesfall
+250-353 19.11.16 19:08 1:17* Der Hundeprofi unterwegs~Folge 3: Der Rassehunde-Check
+250-354 26.11.16 19:08 1:10* Der Hundeprofi unterwegs~Folge 4: Martin im Zoo
+250-355 05.11.16 19:08 1:17* Der Hundeprofi unterwegs~Folge 1: Martin steigt aus
+250-356 12.11.16 19:08 0:00* Der Hundeprofi unterwegs~Folge 2: Das Rollstuhl-Experiment
+250-357 27.12.16 20:13 1:52* Das Sacher. In bester Gesellschaft (1)
+250-358 28.12.16 11:03 1:52* Das Sacher. In bester Gesellschaft (1)
+250-359 10.12.16 05:53 0:42* Wissen macht Ah!~Für die besten Zuschauer
+250-360 12.11.16 05:53 0:00* Wissen macht Ah!~Sind wir heute dran?
+250-361 19.11.16 08:28 0:30* Wissen macht Ah!~Sind wir heute dran?
+250-362 17.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Ah!-hörgerät
+250-363 05.11.16 05:53 0:42* Wissen macht Ah!~Räusper Rülps und Schluck
+250-364 09.01.17 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Da lässt sich ein Muste
+250-365 18.12.16 05:53 0:42* Wissen macht Ah!~Casino Deluxe
+250-366 03.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Tag der internationalen
+250-367 08.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Wissen macht A und O
+250-368 17.09.16 08:28 0:42* Wissen macht Ah!~Hoch und runter
+250-369 06.11.16 05:53 0:42* Wissen macht Ah!~Das kann kein Zufall sein
+250-370 17.09.16 05:53 0:42* Wissen macht Ah!~Immer fehlt was
+250-371 22.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Pups - die Pannenshow
+250-372 29.10.16 11:58 0:42* Wissen macht Ah!~Wissen macht Ah! - 1386 Trillionen Liter~2016.10.29-12:00-Sam
+250-373 24.09.16 05:53 0:42* Wissen macht Ah!~Ein weiterer Höhepunkt in der Geschichte
+250-374 03.09.16 08:28 0:42* Wissen macht Ah!~Willkommen im Lehrerzimmer
+250-375 29.10.16 05:53 0:42* Wissen macht Ah!~Pseudowissen
+250-376 02.01.17 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Air Ah!
+250-377 15.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Fernsehsendung mit 11 B
+250-378 10.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Alte Schätzchen
+250-379 24.09.16 11:58 0:42* Wissen macht Ah!~Auf der Alm da gibt's koa Sinn
+250-380 04.12.16 05:53 0:42* Wissen macht Ah!~Schwans Heimat (2)
+250-381 08.01.17 05:53 0:42* Wissen macht Ah!~Das Fenster zum Hof
+250-382 04.01.17 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Heute Ruhetag
+250-383 15.10.16 05:53 0:42* Wissen macht Ah!~Ein schöner Wachhund
+250-384 21.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Das Fenster zum Hof
+250-385 20.11.16 05:53 0:42* Wissen macht Ah!~Picknick
+250-386 26.11.16 08:28 0:42* Wissen macht Ah!~Ein Kessel Buntes
+250-387 19.11.16 05:53 0:35* Wissen macht Ah!~Ein Kessel Buntes
+250-388 03.09.16 11:58 0:42* Wissen macht Ah!~Wissen macht Ah! - Arten im Garten~2016.09.03-12:00-Sam
+250-389 08.10.16 05:53 0:42* Wissen macht Ah!~Im Po Visa Zonen
+250-390 10.01.17 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Wo sind all die Farben 
+250-391 01.09.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Herzglitzer
+250-392 31.12.16 05:28 0:42* Wissen macht Ah!~Dinner for Ah!
+250-393 22.10.16 11:58 0:42* Wissen macht Ah!~Erdbeben
+250-394 28.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Casino Deluxe
+250-395 05.11.16 11:58 0:42* Wissen macht Ah!~Wissen macht Ah! - Schmutz~2016.11.05-12:00-Sam
+250-396 23.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Sind wir heute dran?
+250-397 22.10.16 05:53 0:42* Wissen macht Ah!~Hier drücken
+250-398 24.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Pizza Meer aus Früchten
+250-399 03.01.17 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Alles Käse
+250-400 05.01.17 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Innereien
+250-401 12.01.17 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Höhlenexpedition
+250-402 13.11.16 05:53 0:00* Wissen macht Ah!~1386 Trillionen Liter
+250-403 15.10.16 11:58 0:42* Wissen macht Ah!~Wissen macht Ah! - Was der Körper hergibt~Moderation: Shary Reeves und Ralph Caspe
+250-404 01.01.17 06:08 0:42* Wissen macht Ah!~Zum Glück
+250-405 06.09.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Schmerzen in Terzen
+250-406 14.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Keine Panik!
+250-407 02.10.16 05:53 0:42* Wissen macht Ah!~Auf die inneren Werte kommt es an
+250-408 01.10.16 05:53 0:42* Wissen macht Ah!~Ca. 1013
+250-409 05.09.16 19:23 0:38* Wissen macht Ah!~Shary und Ralph: Auf die inneren Werte k
+250-410 03.12.16 05:53 0:42* Wissen macht Ah!~Tanz das Ah!
+250-411 09.10.16 05:53 0:42* Wissen macht Ah!~Schmerzen in Terzen
+250-412 03.12.16 11:58 0:42* Wissen macht Ah!~Eins, zwei, drei, Tier, fünf
+250-413 16.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Ab hier noch zwei Stund
+250-414 18.09.16 05:53 0:42* Wissen macht Ah!~Auf der Suche nach Urlaub
+250-415 03.09.16 05:53 0:42* Wissen macht Ah!~Tag der internationalen Hose
+250-416 29.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Eiskalt
+250-417 08.09.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Die K-Frage
+250-418 26.11.16 05:53 0:42* Wissen macht Ah!~Ah! mit O
+250-419 07.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Eins, zwei, drei, Tier,
+250-420 01.12.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Zum Glück
+250-421 30.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: In der Ah!-Arktis
+250-422 07.01.17 05:53 0:42* Wissen macht Ah!~Wünsch Dir was
+250-423 01.10.16 11:58 0:42* Wissen macht Ah!~Wissen macht Ah! - 9531 Minuten~Klugscheißen mit Shary und Ralph
+250-424 02.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Das kann kein Zufall se
+250-425 04.09.16 05:53 0:42* Wissen macht Ah!~Fadenscheinige Verbindungen
+250-426 17.12.16 05:53 0:42* Wissen macht Ah!~erschwunden
+250-427 11.12.16 05:53 0:52* Wissen macht Ah!~Schwans Heimat (3)
+250-428 27.11.16 05:53 0:42* Wissen macht Ah!~Schwans Heimat (1)
+250-429 25.09.16 05:53 0:42* Wissen macht Ah!~Feste drücken, Shary!
+250-430 11.01.17 19:23 0:25* Wissen macht Ah!~Shary und Ralph: Technik Ta-daa!
+250-431 09.11.16 19:23 0:42* Wissen macht Ah!~Shary und Ralph: Wortspiele
+250-432 23.01.16 21:43 0:27* Klänge in der Krise - Der Nationalsozialismus auf dem Weg zur Macht
+250-433 25.09.16 20:13 1:58* Fack ju Göhte
+250-434 04.12.16 11:58 1:27* Die Schneekönigin - Eiskalt verzaubert
+250-435 17.12.16 11:58 0:42* Wissen macht Ah! - Das Fenster zum Hof~2016.12.17-12:00-Sam
+250-436 27.11.16 05:28 0:37* Willi wills wissen~Wer macht den Schrott flott?
+250-437 18.12.16 15:48 0:37* Willi wills wissen~Wie himmlisch klingt die Weihnachtszeit?
+250-438 20.11.16 05:28 0:37* Willi wills wissen~Expedition Island: Die Hitze der Erde!
+250-439 08.01.17 05:28 0:37* Willi wills wissen~Wie wird man Astronaut?
+250-440 18.12.16 05:28 0:37* Willi wills wissen~Wo gibt's Luxus noch und nöcher?
+250-441 04.12.16 05:28 0:37* Willi wills wissen~Vorfahrt für die Feuerwehr!
+250-442 19.11.16 05:28 0:37* Willi wills wissen~Expedition Island: Eine tierisch gute In
+250-443 07.01.17 05:28 0:37* Willi wills wissen~Wer hilft den kranken Tieren?
+250-444 26.11.16 05:28 0:37* Willi wills wissen~Was findet statt im Stadtverkehr?
+250-445 17.12.16 05:28 0:37* Willi wills wissen~Wer wacht am Berg?
+250-446 11.12.16 05:28 0:37* Willi wills wissen~Was wünscht sich das Christkind zu Weihn
+250-447 01.01.17 05:28 0:37* Willi wills wissen~Wie kommt man froh ins neue Jahr?
+250-448 11.12.16 15:48 0:37* Willi wills wissen~So köstlich schmeckt's zur Weihnachtszei
+250-449 31.12.16 19:13 0:55* Die Windsors - 100 turbulente Jahre (3/3)
+250-450 05.01.16 23:18 1:12* Die tierischen 10
+250-451 20.10.16 20:13 1:42* Zwei verlorene Schafe
+250-452 28.12.16 20:13 1:57* Das Sacher. In bester Gesellschaft (2)
+250-453 29.12.16 10:58 1:57* Das Sacher. In bester Gesellschaft (2)
+250-454 04.07.16 20:13 1:57* SommerKino im Ersten: Der Hundertjährige, der aus dem Fenster stieg und verschwand
+250-455 30.10.16 11:28 0:42* Die Sendung mit der Maus~2016.10.30-11:30-Son
+250-456 19.12.16 12:28 0:37* Die Sendung mit der Maus~2016.12.19-12:30-Mon
+250-457 08.01.17 11:28 0:42* Die Sendung mit der Maus~2017.01.08-11:30-Son
+250-458 09.01.17 12:23 0:42* Die Sendung mit der Maus~2017.01.09-12:25-Mon
+250-459 31.10.16 12:23 0:37* Die Sendung mit der Maus~2016.10.31-12:25-Mon
+250-460 30.10.16 09:28 0:42* Die Sendung mit der Maus~Lach- und Sachgeschichten - ARD-Themenwo
+250-461 18.12.16 11:28 0:42* Die Sendung mit der Maus~2016.12.18-11:30-Son
+250-462 07.01.17 06:58 0:42* Die Sendung mit der Maus~Mistel: Büsche auf Bäumen
+250-463 15.04.16 21:08 1:12* Dragons: Legenden
+250-464 25.12.16 00:38 2:12* Eragon - Das Vermächtnis der Drachenreiter
+250-465 05.12.16 10:31 1:51* Eragon - Das Vermächtnis der Drachenreiter
+250-466 05.06.16 14:48 1:52* Eragon - Das Vermächtnis der Drachenreiter
+250-467 25.07.16 09:38 1:32* Hanni & Nanni
+250-468 18.03.16 14:58 1:12* Planet Wissen#3A Vitamine - Wie viele brauchen wir wirklich#3F
+250-469 04.06.16 09:48 0:37* Mia and me~Die Vollmondnacht
+250-470 07.05.16 09:48 0:37* Mia and me~Der verdorrte Wald
+250-471 18.06.16 09:28 0:32* Mia and me~Pantheas letztes Angebot
+250-472 28.05.16 09:48 0:37* Mia and me~Die Höhle der Wahrheit
+250-473 11.06.16 09:28 0:32* Mia and me~Die defekte Wasserkuppel
+250-474 21.05.16 09:48 0:37* Mia and me~König für einen Tag
+250-475 28.05.16 09:28 0:32* Mia and me~Phuddles neueste Erfindung
+250-476 21.05.16 09:28 0:32* Mia and me~Die Blütenfest-Prinzessin
+250-477 18.06.16 09:48 0:37* Mia and me~Die große Entscheidung
+250-478 11.06.16 09:48 0:37* Mia and me~Invasion der Pane
+250-479 07.05.16 09:28 0:32* Mia and me~Das Feuer-Einhorn
+250-480 04.06.16 09:28 0:32* Mia and me~Wiedersehen mit Baby Blue
+250-481 20.12.15 03:26 2:10* Das Vermächtnis der Tempelritter
+250-482 14.05.16 15:58 1:35* Heute fängt mein Leben an
+250-483 30.07.16 13:58 1:37* Hanni & Nanni 2
+250-484 07.01.17 09:28 0:42* Englisch~Englisch für Anfänger - Übung (6/12)~2017.01.07-09:30-Sam
+250-485 11.01.17 07:58 0:42* Englisch~Englisch für Anfänger (30)~The Editor's Office
+250-486 05.01.17 07:58 0:42* Englisch~Englisch für Anfänger (28)~The Professor's Speech
+250-487 09.01.17 07:58 0:42* Englisch~Englisch für Anfänger (29/51)~The Inventor
+250-488 10.01.17 07:58 0:42* Englisch~Englisch für Anfänger - Übung (7/12)~2017.01.10-08:00-Die
+250-489 07.01.17 10:28 0:41* Englisch~Englisch für Anfänger (28/51)~The Professor's Speech
+250-490 07.01.17 08:58 0:42* Englisch~Englisch für Anfänger (26/51)~A Breakdown
+250-491 07.01.17 09:58 0:42* Englisch~Englisch für Anfänger (27/51)~Finding Somewhere to Live
+250-492 27.12.16 19:48 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 51: 'Heidruns Rückkehr - Teil 2'
+250-493 12.10.16 19:43 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 54: 'Astrids Team'
+250-494 10.10.16 14:18 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 45: 'Thor Knochenbrecher'
+250-495 08.01.17 19:28 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 71: 'Die Grimm-Egel'
+250-496 19.11.16 08:53 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 71: 'Die Grimm-Egel'
+250-497 16.10.16 19:43 0:25* Dragons~Dragons - Auf zu neuen Ufern~Folge 58: 'Die Hochzeitsaxt'
+250-498 06.01.17 14:33 0:25* Dragons~Dragons - Auf zu neuen Ufern~Folge 58: 'Die Hochzeitsaxt'
+250-499 30.12.16 19:48 0:25* Dragons~Dragons - Auf zu neuen Ufern~Folge 58: 'Die Hochzeitsaxt'
+250-500 05.11.16 19:43 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 70: 'Der Klügere gibt nach'
+250-501 07.01.17 19:48 0:25* Dragons~Dragons - Auf zu neuen Ufern~Folge 70: 'Der Klügere gibt nach'
+250-502 13.10.16 14:18 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 48: 'Aufspürer-Klasse'
+250-503 11.01.17 14:33 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 64: 'Die Rückkehr des Skrills'
+250-504 17.12.16 15:53 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 64: 'Die Rückkehr des Skrills'
+250-505 04.01.17 19:48 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 64: 'Die Rückkehr des Skrills'
+250-506 20.12.16 19:48 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 47: 'Thorstonton'
+250-507 11.12.16 08:53 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 78: 'Dagurs Wahrheit'
+250-508 11.01.17 19:48 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 78: 'Dagurs Wahrheit'
+250-509 10.01.17 19:48 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 76: 'Die Drachenkämpfe'
+250-510 26.11.16 19:43 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 76: 'Die Drachenkämpfe'
+250-511 29.04.16 14:48 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 55: 'Die Drachenjäger - Teil 1'
+250-512 29.12.16 19:28 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 55: 'Die Drachenjäger - Teil 1'
+250-513 26.10.16 14:23 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 63: 'Der Loki-Tag'
+250-514 04.01.17 19:28 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 63: 'Der Loki-Tag'
+250-515 03.01.17 19:28 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 61: 'Die Verteidigung - Teil 1'
+250-516 20.10.16 19:43 0:25* Dragons~Dragons - Auf zu neuen Ufern~Folge 61: 'Die Verteidigung - Teil 1'
+250-517 09.01.17 14:33 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 61: 'Die Verteidigung - Teil 1'
+250-518 30.12.16 19:28 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 57: 'Die Werwolf-Flügler'
+250-519 15.10.16 19:43 0:30* Dragons~Dragons - Auf zu neuen Ufern~Folge 57: 'Die Werwolf-Flügler'
+250-520 07.01.17 19:28 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 69: 'Ein wahrer Anführer'
+250-521 04.11.16 19:43 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 69: 'Ein wahrer Anführer'
+250-522 14.10.16 14:18 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 49: 'Die Dunklen Klippen'
+250-523 30.12.16 14:33 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 49: 'Die Dunklen Klippen'
+250-524 08.01.17 09:18 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 60: 'Die Schneegeist-Jagd'
+250-525 02.01.17 19:48 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 60: 'Die Schneegeist-Jagd'
+250-526 18.10.16 19:43 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 60: 'Die Schneegeist-Jagd'
+250-527 09.01.17 19:48 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 74: 'Die Drachenauktion'
+250-528 27.11.16 08:53 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 74: 'Die Drachenauktion'
+250-529 06.10.16 14:18 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 41: 'Das Drachenauge - Teil 1'
+250-530 20.11.16 08:53 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 72: 'Heidruns Entscheidung'
+250-531 08.01.17 19:48 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 72: 'Heidruns Entscheidung'
+250-532 11.01.17 19:28 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 77: 'Die Katastrophalen Kiesklopse
+250-533 10.12.16 08:53 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 77: 'Die Katastrophalen Kiesklopse
+250-534 11.10.16 14:18 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 46: 'Gustav ist zurück'
+250-535 04.01.17 14:33 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 53: 'Absoluter Albtraum'
+250-536 28.12.16 19:48 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 53: 'Absoluter Albtraum'
+250-537 18.10.16 14:18 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 53: 'Absoluter Albtraum'
+250-538 08.10.16 19:43 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 50: 'Heidruns Rückkehr - Teil 1'
+250-539 01.10.16 19:43 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 43: 'Gefährliche Gesänge'
+250-540 24.10.16 14:23 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 59: 'Lebenslange Schuld'
+250-541 07.01.17 09:18 0:09* Dragons~Dragons - Auf zu neuen Ufern~Folge 59: 'Lebenslange Schuld'
+250-542 09.01.17 19:28 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 73: 'Der Büffelstachel'
+250-543 18.11.16 19:43 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 73: 'Der Büffelstachel'
+250-544 29.10.16 19:43 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 68: 'Der Höhlenbrecher'
+250-545 06.01.17 19:48 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 68: 'Der Höhlenbrecher'
+250-546 29.12.16 19:48 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 56: 'Die Drachenjäger - Teil 2'
+250-547 14.10.16 19:43 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 56: 'Die Drachenjäger - Teil 2'
+250-548 05.01.17 14:33 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 56: 'Die Drachenjäger - Teil 2'
+250-549 17.10.16 14:23 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 52: 'Schneller Stachel in Not'
+250-550 05.01.17 19:48 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 66: 'Viggo - Teil 2'
+250-551 17.12.16 16:43 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 66: 'Viggo - Teil 2'
+250-552 25.11.16 19:43 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 75: 'Der schreiende Tod-Singer'
+250-553 10.01.17 19:28 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 75: 'Der schreiende Tod-Singer'
+250-554 05.01.17 19:28 0:32* Dragons~Dragons - Auf zu neuen Ufern~Folge 65: 'Viggo - Teil 1'
+250-555 17.12.16 16:13 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 65: 'Viggo - Teil 1'
+250-556 23.10.16 12:58 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 67: 'Der neue Dagur'
+250-557 06.01.17 19:28 0:15* Dragons~Dragons - Auf zu neuen Ufern~Folge 67: 'Der neue Dagur'
+250-558 21.10.16 19:43 0:42* Dragons~Dragons - Auf zu neuen Ufern~Folge 62: 'Die Verteidigung - Teil 2'
+250-559 03.01.17 19:48 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 62: 'Die Verteidigung - Teil 2'
+250-560 10.01.17 14:33 0:37* Dragons~Dragons - Auf zu neuen Ufern~Folge 62: 'Die Verteidigung - Teil 2'
+250-561 19.04.16 14:53 0:25* Dragons~Dragons - Die Wächter von Berk~Folge 37: 'Händler Johanns Lieferung'
+250-562 07.04.16 14:53 0:25* Dragons~Dragons - Die Wächter von Berk~Folge 29: 'Feuerwetter'
+250-563 08.04.16 14:53 0:25* Dragons~Dragons - Die Wächter von Berk~Folge 30: 'Der Skrill - Teil 1'
+250-564 13.04.16 19:43 0:30* Dragons~Dragons - Die Wächter von Berk~Folge 34: 'Eingefroren'
+250-565 14.04.16 19:43 0:42* Dragons~Dragons - Die Wächter von Berk~Folge 35: 'Drachentausch'
+250-566 20.04.16 19:43 0:42* Dragons~Dragons - Die Wächter von Berk~Folge 39: 'Verbannt - Teil 1'
+250-567 17.04.16 19:43 0:42* Dragons~Dragons - Die Wächter von Berk~Folge 36: 'Die Aal-Insel'
+250-568 12.04.16 19:43 0:42* Dragons~Dragons - Die Wächter von Berk~Folge 33: 'Raffnuss, die Drachenzähmerin
+250-569 12.04.16 14:53 0:25* Dragons~Dragons - Die Wächter von Berk~Folge 32: 'Gustavs Feuerprobe'
+250-570 05.04.16 14:53 0:25* Dragons~Dragons - Die Wächter von Berk~Folge 27: 'Der Wettkampf'
+250-571 20.04.16 14:53 0:25* Dragons~Dragons - Die Wächter von Berk~Folge 38: 'Bing! Bamm! Bumm!'
+250-572 04.04.16 14:53 0:37* Dragons~Dragons - Die Wächter von Berk~Folge 26: 'Orendels Feuer'
+250-573 22.10.16 20:13 1:43* Dragons~Drachenzähmen leicht gemacht 2
+250-574 21.10.16 20:13 1:37* Dragons~Dragons - Auf zu neuen Ufern: Kampf um das Drachenauge~2016.10.21-20:15-Fre
+250-575 23.10.16 11:58 1:12* Dragons~Dragons - Auf zu neuen Ufern: Kampf um das Drachenauge~2016.10.23-12:00-Son
+250-576 15.04.16 20:13 1:07* Dragons~Dragons - Auf zu neuen Ufern: Die Verteidigung~2016.04.15-20:15-Fre
+250-577 22.10.16 18:33 0:18* Newton
+250-578 30.11.15 13:13 1:12* Planet Wissen: Gut schlafen - im Takt der inneren Uhr
+250-579 04.11.16 20:13 1:43* Khumba - Das Zebra ohne Streifen
+250-580 27.09.16 01:40 1:40* Pregau - Kein Weg zurück (1)
+250-581 19.09.16 05:13 0:27* Garfield~Garfield (82)~Ihr Anruf ist uns wichtig
+250-582 05.09.16 05:13 0:27* Garfield~Garfield (62)~Der Mega-Jackpot
+250-583 05.10.16 05:08 0:27* Garfield~Garfield (104)~Das Wetter spielt verrückt (2)
+250-584 25.10.16 04:58 0:22* Garfield~Garfield (131)~Das Geheimnis der Goldenen Katze (1/4)
+250-585 26.08.16 05:03 0:22* Garfield~Garfield (49)~Odie der Superheld
+250-586 18.08.16 05:13 0:27* Garfield~Garfield (38)~Katzenmusik
+250-587 11.08.16 05:08 0:22* Garfield~Garfield (27)~Katzenwelten
+250-588 01.08.16 05:08 0:22* Garfield~Garfield (11)~Katzilla
+250-589 02.09.16 05:08 0:27* Garfield~Garfield (60)~Der Katzen-Kontroll-Computer
+250-590 15.08.16 05:03 0:22* Garfield~Garfield (31)~Hund über Bord
+250-591 06.09.16 04:58 0:22* Garfield~Garfield (63)~Die Hexe von nebenan
+250-592 27.10.16 05:08 0:27* Garfield~Garfield (136)~Die neue Besetzung
+250-593 28.03.16 06:08 0:00* Garfield~EL SHOW DE GARFIELD~2016.03.28-06:10-Mon
+250-594 28.03.16 05:58 0:00* Garfield~EL SHOW DE GARFIELD~2016.03.28-06:00-Mon
+250-595 28.03.16 03:58 0:00* Garfield~EL SHOW DE GARFIELD~2016.03.28-04:00-Mon
+250-596 28.03.16 00:43 0:00* Garfield~EL SHOW DE GARFIELD~2016.03.28-00:45-Mon
+250-597 28.03.16 01:53 0:00* Garfield~EL SHOW DE GARFIELD~2016.03.28-01:55-Mon
+250-598 28.03.16 02:03 0:00* Garfield~EL SHOW DE GARFIELD~2016.03.28-02:05-Mon
+250-599 28.03.16 03:43 0:00* Garfield~EL SHOW DE GARFIELD~2016.03.28-03:45-Mon
+250-600 28.03.16 06:53 0:00* Garfield~EL SHOW DE GARFIELD~2016.03.28-06:55-Mon
+250-601 28.03.16 01:08 0:00* Garfield~EL SHOW DE GARFIELD~2016.03.28-01:10-Mon
+250-602 28.03.16 00:53 0:00* Garfield~EL SHOW DE GARFIELD~2016.03.28-00:55-Mon
+250-603 28.03.16 03:33 0:00* Garfield~EL SHOW DE GARFIELD~2016.03.28-03:35-Mon
+250-604 21.09.16 05:08 0:27* Garfield~Garfield (86)~Penny Henny
+250-605 29.08.16 05:13 0:27* Garfield~Garfield (52)~Der T3000
+250-606 26.10.16 04:58 0:22* Garfield~Garfield (133)~Das Geheimnis der goldenen Katze (3/4)
+250-607 17.10.16 05:13 0:27* Garfield~Garfield (120)~Garfields Teddy
+250-608 31.08.16 04:58 0:22* Garfield~Garfield (55)~Die Kunst, nicht süß zu sein
+250-609 21.10.16 04:58 0:22* Garfield~Garfield (127)~Lustige Schneemänner
+250-610 19.02.16 05:08 0:22* Garfield~Garfield (197)~Detektiv Squeak
+250-611 30.08.16 04:58 0:22* Garfield~Garfield (53)~Garfields gute Tat (1/2)
+250-612 10.10.16 05:03 0:22* Garfield~Garfield (109)~Lacher vom Band
+250-613 15.09.16 05:08 0:27* Garfield~Garfield (78)~Ein Restaurantkritiker auf Abwegen
+250-614 16.09.16 04:58 0:22* Garfield~Garfield (79)~Jon im Kaufrausch
+250-615 18.10.16 04:58 0:22* Garfield~Garfield (121)~Zeit für die Fanpost
+250-616 09.09.16 04:58 0:22* Garfield~Garfield (69)~Der Cyber-Postbote
+250-617 27.10.16 04:58 0:22* Garfield~Garfield (135)~Doug Boy und die Frauen
+250-618 26.07.16 05:18 0:27* Garfield~Garfield (4)~Mama Garfield
+250-619 30.08.16 20:13 1:30* Garfield~Garfield - Der Film~2016.08.30-20:15-Die
+250-620 31.08.16 07:58 1:32* Garfield~Garfield - Der Film~2016.08.31-08:00-Mit
+250-621 26.02.16 05:08 0:22* Garfield~Garfield (207)~Rollentausch
+250-622 27.07.16 05:18 0:27* Garfield~Garfield (6)~Odies große Liebe
+250-623 02.09.16 04:58 0:22* Garfield~Garfield (59)~Die Geschichte der Katzen
+250-624 25.02.16 05:18 0:27* Garfield~Garfield (206)~Joe Nummer 2
+250-625 19.09.16 05:03 0:22* Garfield~Garfield (81)~Die liebe Verwandtschaft
+250-626 25.08.16 05:03 0:22* Garfield~Garfield (47)~Superhelden
+250-627 12.09.16 05:13 0:27* Garfield~Garfield (72)~Die weltbeste Lasagne
+250-628 26.07.16 05:08 0:22* Garfield~Garfield (3)~Pizzakrieg
+250-629 24.02.16 05:08 0:22* Garfield~Garfield (203)~Die Geburtstags-Donuts
+250-630 29.07.16 05:18 0:27* Garfield~Garfield (10)~Spione unter sich
+250-631 02.08.16 05:18 0:27* Garfield~Garfield (14)~Jeder braucht einen Freund
+250-632 13.09.16 04:58 0:22* Garfield~Garfield (73)~Liebling, ich habe die Tiere geschrumpft
+250-633 14.10.16 04:58 0:22* Garfield~Garfield (117)~Der Märchenkater (3)
+250-634 14.10.16 05:08 0:27* Garfield~Garfield (118)~Der Märchenkater (4)
+250-635 12.09.16 05:03 0:22* Garfield~Garfield (71)~Überraschender Nachwuchs
+250-636 12.10.16 05:08 0:27* Garfield~Garfield (114)~Superheld braucht Beistand
+250-637 09.11.16 05:48 0:22* Garfield~Garfield (153)~Hochzeits-Fieber
+250-638 07.10.16 04:58 0:22* Garfield~Garfield (107)~Das Kätzchen-Gesetz
+250-639 04.08.16 05:08 0:22* Garfield~Garfield (17)~Landpartie
+250-640 23.02.16 05:08 0:22* Garfield~Garfield (201)~Trautes Heim, Glück allein
+250-641 28.09.16 05:08 0:27* Garfield~Garfield (96)~Dr. Goodiegood
+250-642 31.08.16 05:08 0:27* Garfield~Garfield (56)~Das Geisterhaus
+250-643 04.09.16 13:13 1:37* Garfield~Garfield 2 - Faulheit verpflichtet!~2016.09.04-13:15-Son
+250-644 03.09.16 20:13 1:52* Garfield~Garfield 2 - Faulheit verpflichtet!~2016.09.03-20:15-Sam
+250-645 13.10.16 05:08 0:27* Garfield~Garfield (116)~Der Märchenkater (2)
+250-646 21.09.16 04:58 0:22* Garfield~Garfield (85)~Auch Kraken lieben Donuts
+250-647 23.09.16 04:58 0:22* Garfield~Garfield (89)~Garfield auf Schatzsuche
+250-648 03.11.16 05:08 0:27* Garfield~Garfield (146)~Mein Freund Nermal
+250-649 27.07.16 05:08 0:22* Garfield~Garfield (5)~Allein unter Hunden
+250-650 06.10.16 05:08 0:27* Garfield~Garfield (106)~Ärger mal vier
+250-651 10.11.16 05:58 0:27* Garfield~Garfield (156)~Das Riesen-Frettchen
+250-652 07.11.16 05:53 0:22* Garfield~Garfield (149)~Jon, der Internet-Star
+250-653 04.10.16 05:38 0:27* Garfield~Garfield (102)~Die Spaßbremse
+250-654 22.09.16 04:58 0:22* Garfield~Garfield (87)~Der fiese Flaschengeist
+250-655 08.11.16 05:58 0:27* Garfield~Garfield (152)~Das perfekt proportionierte Kätzchen
+250-656 18.10.16 05:08 0:27* Garfield~Garfield (122)~Ohne Worte
+250-657 22.09.16 05:08 0:27* Garfield~Garfield (88)~Ein Elefant in Not
+250-658 29.09.16 04:58 0:22* Garfield~Garfield (97)~Gutes Wetter, schlechte Stimmung
+250-659 21.10.16 05:08 0:27* Garfield~Garfield (128)~Das Dosen-Fiasko
+250-660 10.10.16 05:13 0:27* Garfield~Garfield (110)~Zögern und Zaudern
+250-661 30.09.16 04:58 0:22* Garfield~Garfield (99)~Der Winterschlaf
+250-662 30.09.16 05:08 0:27* Garfield~Garfield (100)~Der verhätschelte Kater
+250-663 05.08.16 05:08 0:22* Garfield~Garfield (19)~Das Tier und wir
+250-664 15.08.16 05:13 0:27* Garfield~Garfield (32)~Der Fischfresser
+250-665 07.10.16 05:08 0:27* Garfield~Garfield (108)~Die Vertauschten
+250-666 05.10.16 04:58 0:22* Garfield~Garfield (103)~Das Wetter spielt verrückt (1)
+250-667 07.09.16 04:58 0:22* Garfield~Garfield (65)~Der Pastaroid
+250-668 08.08.16 05:08 0:22* Garfield~Garfield (21)~Knochengräber
+250-669 17.08.16 05:13 0:27* Garfield~Garfield (36)~Virtuelle Welten
+250-670 28.09.16 04:58 0:22* Garfield~Garfield (95)~Liebe geht durch den Magen
+250-671 01.09.16 04:58 0:22* Garfield~Garfield (57)~Angriff der Häschen-Pantoffeln
+250-672 17.08.16 05:03 0:22* Garfield~Garfield (35)~Das Familienfoto
+250-673 29.02.16 05:03 0:27* Garfield~Garfield (210)~Die lange Nacht der Monster
+250-674 04.11.16 04:58 0:22* Garfield~Garfield (147)~Die Preisverleihung
+250-675 18.02.16 05:23 0:27* Garfield~Garfield (196)~Maus TV
+250-676 28.07.16 05:08 0:22* Garfield~Garfield (7)~Der bittere Klang der Musik
+250-677 18.02.16 05:13 0:22* Garfield~Garfield (195)~Garfield im Land der Träume
+250-678 12.08.16 05:18 0:27* Garfield~Garfield (30)~Verhängnisvoller Ruhm
+250-679 12.08.16 05:08 0:22* Garfield~Garfield (29)~Andere Welten, andere Sitten
+250-680 31.10.16 05:13 0:27* Garfield~Garfield (140)~Schnell wie der Blitz
+250-681 04.11.16 05:08 0:27* Garfield~Garfield (148)~Der Gedanken-Lenker
+250-682 11.08.16 05:18 0:27* Garfield~Garfield (28)~Der Katzenflüsterer
+250-683 23.09.16 05:08 0:27* Garfield~Garfield (90)~Klonen-Epidemie
+250-684 31.08.16 09:18 1:27* Garfield~Garfield - Fett im Leben~2016.08.31-09:20-Mit
+250-685 30.08.16 21:43 1:47* Garfield~Garfield - Fett im Leben~2016.08.30-21:45-Die
+250-686 16.05.16 15:08 1:32* Garfield~Garfield - Fett im Leben~2016.05.16-15:10-Mon
+250-687 03.11.16 04:58 0:22* Garfield~Garfield (145)~Fitness-Wahn
+250-688 22.02.16 05:13 0:22* Garfield~Garfield (199)~Die Bulldogge des Bösen
+250-689 25.08.16 05:13 0:27* Garfield~Garfield (48)~Die beste Pizza im Universum
+250-690 25.07.16 05:08 0:22* Garfield~Garfield (1)~Krieg der Nudeln
+250-691 15.09.16 04:58 0:22* Garfield~Garfield (77)~Garfields Vogel
+250-692 09.08.16 05:18 0:27* Garfield~Garfield (24)~Unter Hypnose
+250-693 14.09.16 05:08 0:27* Garfield~Garfield (76)~Der Hundekeks
+250-694 07.11.16 06:03 0:27* Garfield~Garfield (150)~Die Rache des Katzenvolks
+250-695 24.08.16 05:03 0:22* Garfield~Garfield (45)~Wer anderen eine Grube gräbt ...
+250-696 25.02.16 05:08 0:22* Garfield~Garfield (205)~Garfield, das Stinktier
+250-697 08.08.16 05:18 0:27* Garfield~Garfield (22)~Der Fluch der Technik
+250-698 26.09.16 05:03 0:22* Garfield~Garfield (91)~Wettlauf gegen die Zeit
+250-699 01.11.16 04:58 0:22* Garfield~Garfield (141)~Wo steckt Odie?
+250-700 08.09.16 05:08 0:27* Garfield~Garfield (68)~Vielfraß trifft Vielfraß
+250-701 24.10.16 05:13 0:27* Garfield~Garfield (130)~Die Hexenbraut
+250-702 02.08.16 05:08 0:22* Garfield~Garfield (13)~Prinz Nermal
+250-703 05.09.16 05:03 0:22* Garfield~Garfield (61)~Ein ganz leichtes Essen
+250-704 23.02.16 05:18 0:27* Garfield~Garfield (202)~Was geschah wirklich mit Tante Ivy#3F
+250-705 11.10.16 04:58 0:22* Garfield~Garfield (111)~Monster Odie
+250-706 22.08.16 05:03 0:22* Garfield~Garfield (41)~Odie haut ab
+250-707 26.02.16 05:18 0:27* Garfield~Garfield (208)~Die Sinn-Krise
+250-708 26.10.16 05:08 0:27* Garfield~Garfield (134)~Das Geheimnis der goldenen Katze (4/4)
+250-709 20.09.16 04:58 0:22* Garfield~Garfield (83)~Man ist, was man isst
+250-710 25.07.16 05:18 0:27* Garfield~Garfield (2)~Von Katzen und Mäusen
+250-711 09.08.16 05:08 0:22* Garfield~Garfield (23)~Zwei Pfund zu viel
+250-712 01.08.16 05:18 0:27* Garfield~Garfield (12)~Im Körper des anderen
+250-713 20.10.16 05:08 0:27* Garfield~Garfield (126)~Der lange verschollene Lyman (4)
+250-714 20.10.16 04:58 0:22* Garfield~Garfield (125)~Der lange verschollene Lyman (3)
+250-715 04.09.16 11:58 1:27* Garfield~Garfield - Fun Fest~2016.09.04-12:00-Son
+250-716 02.09.16 21:43 1:47* Garfield~Garfield - Fun Fest~2016.09.02-21:45-Fre
+250-717 24.10.16 05:03 0:22* Garfield~Garfield (129)~Das Mäuse-Fitnessstudio
+250-718 07.09.16 05:08 0:27* Garfield~Garfield (66)~Die Mäuse-Revolte
+250-719 06.10.16 04:58 0:22* Garfield~Garfield (105)~Verdächtig süß
+250-720 11.10.16 05:08 0:27* Garfield~Garfield (112)~Superheld im Einsatz
+250-721 08.09.16 04:58 0:22* Garfield~Garfield (67)~Haustier billig abzugeben
+250-722 10.11.16 05:48 0:22* Garfield~Garfield (155)~Garfield, der Problemlöser
+250-723 27.09.16 05:08 0:27* Garfield~Garfield (94)~Der Hausbesetzer
+250-724 03.08.16 05:08 0:22* Garfield~Garfield (15)~Die Nacht des Hundemonsters
+250-725 16.09.16 05:08 0:27* Garfield~Garfield (80)~Computer-Terror
+250-726 19.02.16 05:18 0:27* Garfield~Garfield (198)~Das Schweigen der Schäfchen
+250-727 16.08.16 05:13 0:27* Garfield~Garfield (34)~Garfield, der Herrscher über die Zeit
+250-728 02.09.16 20:13 1:42* Garfield~Garfield - Tierische Helden~2016.09.02-20:15-Fre
+250-729 03.09.16 21:53 1:32* Garfield~Garfield - Tierische Helden~2016.09.03-21:55-Sam
+250-730 28.10.16 04:58 0:22* Garfield~Garfield (137)~Unsichtbare Geister
+250-731 17.10.16 05:03 0:22* Garfield~Garfield (119)~Jons Serienidee
+250-732 10.08.16 05:08 0:22* Garfield~Garfield (25)~Der Fluch der Katzenpriesterin
+250-733 04.08.16 05:18 0:27* Garfield~Garfield (18)~Lasagne für den Champion
+250-734 12.10.16 04:58 0:22* Garfield~Garfield (113)~Badetag
+250-735 17.02.16 05:18 0:27* Garfield~Garfield (194)~Bellen verboten!
+250-736 29.09.16 05:08 0:27* Garfield~Garfield (98)~Der Hellseher Squeak
+250-737 13.09.16 05:08 0:27* Garfield~Garfield (74)~Wer ist Garfield?
+250-738 04.10.16 05:28 0:22* Garfield~Garfield (101)~Der Tunnelgräber
+250-739 24.08.16 05:13 0:27* Garfield~Garfield (46)~Garfield auf dem Baum
+250-740 17.02.16 05:08 0:22* Garfield~Garfield (193)~Cousine Petunia
+250-741 05.08.16 05:18 0:27* Garfield~Garfield (20)~Unglücklich im Glück
+250-742 03.08.16 05:18 0:27* Garfield~Garfield (16)~Die Mutter hat einen Vogel
+250-743 28.10.16 05:08 0:27* Garfield~Garfield (138)~Der klügste Hund der Welt
+250-744 09.09.16 05:08 0:27* Garfield~Garfield (70)~Fiese Hypnose
+250-745 28.07.16 05:18 0:27* Garfield~Garfield (8)~Ein Truthahn zum Abendessen
+250-746 31.10.16 05:03 0:22* Garfield~Garfield (139)~Garfield und Odie auf der Flucht
+250-747 29.02.16 04:53 0:22* Garfield~Garfield (209)~Angst vor Katzen
+250-748 29.07.16 05:08 0:22* Garfield~Garfield (9)~Verbrecherjagd
+250-749 18.08.16 05:03 0:22* Garfield~Garfield (37)~Der Schrecken aller Briefträger
+250-750 10.08.16 05:18 0:27* Garfield~Garfield (26)~Glenda und Odessa
+250-751 06.09.16 05:08 0:27* Garfield~Garfield (64)~Die Katzen-Allergie
+250-752 09.11.16 05:58 0:27* Garfield~Garfield (154)~Der neue Autor
+250-753 25.10.16 05:08 0:27* Garfield~Garfield (132)~Das Geheimnis der Goldenen Katze (2/3)
+250-754 20.09.16 05:08 0:27* Garfield~Garfield (84)~Der Lasagne-Spion
+250-755 27.09.16 04:58 0:22* Garfield~Garfield (93)~Spürnase Ödie
+250-756 16.08.16 05:03 0:22* Garfield~Garfield (33)~Odie und der Wolf
+250-757 22.08.16 05:13 0:27* Garfield~Garfield (42)~Die Geschichte der Hunde
+250-758 22.02.16 05:23 0:27* Garfield~Garfield (200)~Mutter Eule
+250-759 15.11.16 12:23 0:37* Garfield~Garfield~Das perfekt proportionierte Kätzchen / H
+250-760 25.08.16 11:53 1:27* Garfield~Garfield~Der Katzen-Kontroll-Computer / Ein ganz 
+250-761 24.11.16 12:23 0:37* Garfield~Garfield~Verhext - Teil 3 / Verhext - Teil 4
+250-762 09.09.16 12:23 0:42* Garfield~Garfield~Ein Restaurantkritiker auf Abwegen / Jon
+250-763 22.04.16 12:23 0:42* Garfield~Garfield~Trautes Heim, Glück allein / Was geschah
+250-764 21.06.16 12:23 0:42* Garfield~Garfield~Die lange Nacht der Monster / Spione unt
+250-765 15.06.16 12:23 0:42* Garfield~Garfield~Die Quasselstrippe / Garfield, das Stink
+250-766 30.11.16 12:23 0:37* Garfield~Garfield~Miese Maschinen - Teil 4 / Miese Maschin
+250-767 06.10.16 12:23 0:37* Garfield~Garfield~Die Vertauschten / Lacher vom Band
+250-768 10.11.16 12:23 0:37* Garfield~Garfield~Die Preisverleihung / Der Gedanken-Lenke
+250-769 30.09.16 12:23 0:37* Garfield~Garfield~Die Spaßbremse / Das Wetter spielt verrü
+250-770 01.07.16 12:23 0:42* Garfield~Garfield~Zwei Pfund zu viel / Unter Hypnose
+250-771 03.09.16 16:23 0:42* Garfield~Garfield~Ein ganz leichtes Essen / Der Mega-Jackp
+250-772 14.04.16 12:23 0:42* Garfield~Garfield~Abenteuer Wildnis - Teil 3 / Abenteuer W
+250-773 11.08.16 11:53 1:27* Garfield~Garfield~Die beste Pizza im Universum / Odie der 
+250-774 06.05.16 12:23 0:42* Garfield~Garfield~Badetag / Superheld braucht Beistand
+250-775 13.10.16 12:23 0:37* Garfield~Garfield~Der Märchenkater - Teil 2 / Der Märchenk
+250-776 16.09.16 12:23 0:37* Garfield~Garfield~Penny Henny / Der fiese Flaschengeist
+250-777 14.09.16 12:23 0:37* Garfield~Garfield~Ihr Anruf ist uns wichtig / Man ist, was
+250-778 05.01.17 11:03 1:07* Garfield~Garfield~Verhext - Teil 1 / Verhext - Teil 2 / Ve
+250-779 01.12.16 12:23 0:37* Garfield~Garfield~Die Glitzer-Schlucht - Teil 1 / Die Glit
+250-780 04.10.16 12:23 0:37* Garfield~Garfield~Das Wetter spielt verrückt - Teil 2 / Ve
+250-781 12.10.16 12:23 0:37* Garfield~Garfield~Superheld braucht Beistand / Der Märchen
+250-782 08.10.16 16:08 0:57* Garfield~Garfield~Garfields Vogel / Ein Restaurantkritiker
+250-783 14.06.16 12:23 0:42* Garfield~Garfield~Was geschah wirklich mit Tante Ivy / Die
+250-784 03.11.16 12:23 0:37* Garfield~Garfield~Mein Freund Nermal / Garfield und Odie a
+250-785 21.10.16 12:23 0:37* Garfield~Garfield~Der lange verschollene Lyman - Teil 4 / 
+250-786 08.12.16 12:28 0:27* Garfield~Garfield~Garfield, der Pirat - Teil 4 / Garfield,
+250-787 31.10.16 16:58 0:47* Garfield~Garfield~Katzilla / Die Hexe von nebenan / Die la
+250-788 14.12.16 12:28 0:37* Garfield~Garfield~Der Lasagne-Baum - Teil 5 / Abenteuer Wi
+250-789 05.07.16 12:23 0:40* Garfield~Garfield~Der Fluch der Katzenpriesterin / Glenda 
+250-790 13.04.16 12:23 0:42* Garfield~Garfield~Abenteuer Wildnis - Teil 1 / Abenteuer W
+250-791 19.11.16 16:08 0:57* Garfield~Garfield~Der Winterschlaf / Der verhätschelte Kat
+250-792 21.07.16 11:53 1:27* Garfield~Garfield~Der bittere Klang der Musik / Ein Trutha
+250-793 26.05.16 12:23 0:42* Garfield~Garfield~Jon der Internet-Star / Die Preisverleih
+250-794 18.10.16 12:23 0:37* Garfield~Garfield~Garfields Teddy / Zeit für die Fanpost
+250-795 30.06.16 12:23 0:42* Garfield~Garfield~Knochenjäger / Der Fluch der Technik
+250-796 06.04.16 16:18 0:37* Garfield~Garfield~Garfield, der Pirat - Teil 3 / Garfield,
+250-797 30.07.16 16:08 0:57* Garfield~Garfield~Der lange verschollene Lyman - Teil 1 / 
+250-798 13.09.16 12:23 0:37* Garfield~Garfield~Computer-Terror / Die liebe Verwandtscha
+250-799 15.10.16 16:13 0:52* Garfield~Garfield~Computer-Terror / Die liebe Verwandtscha
+250-800 18.11.16 12:23 0:37* Garfield~Garfield~Die Königin der Löwen - Teil 2 / Die Kön
+250-801 10.06.16 12:23 0:42* Garfield~Garfield~Mutter Eule / Trautes Heim, Glück allein
+250-802 23.06.16 12:23 0:42* Garfield~Garfield~Prinz Nermal / Jeder braucht einen Freun
+250-803 07.07.16 12:23 0:42* Garfield~Garfield~Andere Welten, andere Sitten / Verhängni
+250-804 06.09.16 12:23 0:42* Garfield~Garfield~Die weltbeste Lasagne / Liebling ich hab
+250-805 22.11.16 12:23 0:37* Garfield~Garfield~Die Königin der Löwen - Teil 4 / Die Kön
+250-806 07.12.16 12:28 0:37* Garfield~Garfield~Garfield, der Pirat - Teil 2 / Garfield,
+250-807 29.04.16 12:23 0:42* Garfield~Garfield~Verdächtig süß / Ärger x vier
+250-808 11.10.16 12:23 0:32* Garfield~Garfield~Superheld im Einsatz / Badetag
+250-809 07.10.16 12:23 0:37* Garfield~Garfield~Zögern und Zaudern / Monster Odie
+250-810 25.10.16 12:23 0:37* Garfield~Garfield~Lustige Schneemänner / Das Mäuse-Fitness
+250-811 22.09.16 12:23 0:37* Garfield~Garfield~Gehüpft wie gesprungen / Spürnase Odie
+250-812 12.05.16 12:23 0:42* Garfield~Garfield~Das Dosen-Fiasko / Lustige Schneemänner
+250-813 23.09.16 12:23 0:37* Garfield~Garfield~Der Hausbesetzer / Liebe geht durch den 
+250-814 29.06.16 12:23 0:42* Garfield~Garfield~Das Tier und wir / Unglücklich im Glück
+250-815 20.09.16 12:23 0:37* Garfield~Garfield~Ein Elefant in Not / Garfield auf Schatz
+250-816 29.11.16 12:23 0:37* Garfield~Garfield~Miese Maschinen - Teil 2 / Miese Maschin
+250-817 25.05.16 12:23 0:42* Garfield~Garfield~Garfield und Odie auf der Flucht / Wo st
+250-818 08.07.16 12:23 0:42* Garfield~Garfield~Hund über Bord / Der Fischfresser
+250-819 19.05.16 12:23 0:42* Garfield~Garfield~Der klügste Hund der Welt / Garfields Ge
+250-820 10.05.16 12:23 0:42* Garfield~Garfield~Jons Serienidee / Garfields Teddy
+250-821 01.06.16 12:23 0:42* Garfield~Garfield~Hochzeits-Fieber / Der neue Autor
+250-822 24.05.16 12:23 0:42* Garfield~Garfield~Fitness-Wahn / Mein Freund Nermal
+250-823 28.07.16 11:53 1:27* Garfield~Garfield~Virtuelle Welten / Der Schrecken aller B
+250-824 25.11.16 12:23 0:37* Garfield~Garfield~Verhext - Teil 5 / Miese Maschinen - Tei
+250-825 05.11.16 16:08 0:57* Garfield~Garfield~Wettlauf gegen die Zeit / Gehüpft wie ge
+250-826 20.04.16 12:23 0:42* Garfield~Garfield~Detektiv Squeak / Das Schweigen der Schä
+250-827 29.09.16 12:23 0:37* Garfield~Garfield~Der verhätschelte Kater / Der Tunnelgräb
+250-828 01.10.16 15:58 1:07* Garfield~Garfield~Liebling ich habe die Tiere geschrumpft 
+250-829 18.05.16 12:23 0:42* Garfield~Garfield~Unsichtbare Geister / Schnell wie der Bl
+250-830 20.10.16 12:23 0:37* Garfield~Garfield~Der lange verschollene Lyman - Teil 2 / 
+250-831 17.11.16 12:23 0:37* Garfield~Garfield~Das Riesen-Frettchen / Die Königin der L
+250-832 17.05.16 12:23 0:42* Garfield~Garfield~Die neue Besetzung / Die Hexenbraut
+250-833 09.12.16 12:28 0:37* Garfield~Garfield~Der Lasagne-Baum - Teil 1 / Der Lasagne-
+250-834 17.12.16 16:03 0:36* Garfield~Garfield~Der Märchenkater - Teil 1 / Der Märchenk
+250-835 15.09.16 12:23 0:37* Garfield~Garfield~Der Lasagne-Spion / Auch Kraken lieben D
+250-836 07.09.16 12:23 0:42* Garfield~Garfield~Wer ist Garfield? / Die Pechsträhne
+250-837 24.06.16 12:23 0:42* Garfield~Garfield~Die Nacht des Hundemonsters / Die Mutter
+250-838 26.10.16 12:23 0:37* Garfield~Garfield~Doug Boy und die Frauen / Die neue Beset
+250-839 05.04.16 16:18 0:35* Garfield~Garfield~Garfield, der Pirat - Teil 1 / Garfield,
+250-840 06.04.16 12:23 0:42* Garfield~Garfield~Garfield, der Pirat - Teil 1 / Garfield,
+250-841 26.11.16 16:08 0:57* Garfield~Garfield~Das Wetter spielt verrückt - Teil 1 / Da
+250-842 06.08.16 15:58 0:26* Garfield~Garfield~Das Wetter spielt verrückt - Teil 1 / Da
+250-843 02.12.16 12:23 0:37* Garfield~Garfield~Die Glitzer-Schlucht - Teil 3 / Die Glit
+250-844 24.09.16 16:08 0:57* Garfield~Garfield~Fiese Hypnose / Überraschender Nachwuchs
+250-845 17.09.16 16:08 0:57* Garfield~Garfield~Die Mäuse-Revolte / Haustier billig abzu
+250-846 01.09.16 11:53 1:27* Garfield~Garfield~Die Mäuse-Revolte / Haustier billig abzu
+250-847 28.10.16 12:23 0:37* Garfield~Garfield~Schnell wie der Blitz / Der klügste Hund
+250-848 05.10.16 12:23 0:37* Garfield~Garfield~Ärger x vier / Das Kätzchen-Gesetz
+250-849 27.10.16 12:23 0:37* Garfield~Garfield~Die Hexenbraut / Unsichtbare Geister
+250-850 08.09.16 12:23 0:42* Garfield~Garfield~Der Hundekeks / Garfields Vogel
+250-851 21.09.16 12:23 0:37* Garfield~Garfield~Klonen-Epidemie / Wettlauf gegen die Zei
+250-852 10.12.16 16:18 0:47* Garfield~Garfield~Monster Odie / Superheld im Einsatz / Ba
+250-853 23.11.16 12:23 0:37* Garfield~Garfield~Verhext - Teil 1 / Verhext - Teil 2
+250-854 08.11.16 12:23 0:37* Garfield~Garfield~Das Geheimnis der goldenen Katze - Teil 
+250-855 09.11.16 12:23 0:37* Garfield~Garfield~Das Geheimnis der goldenen Katze - Teil 
+250-856 22.10.16 16:08 0:57* Garfield~Garfield~Man ist, was man isst / Der Lasagne-Spio
+250-857 06.07.16 12:23 0:42* Garfield~Garfield~Katzenwelten / Der Katzenflüsterer
+250-858 08.06.16 12:23 0:42* Garfield~Garfield~Maus TV / Detektiv Squeak
+250-859 15.04.16 12:23 0:42* Garfield~Garfield~Abenteuer Wildnis - Teil 5 / Blick in di
+250-860 09.06.16 12:23 0:42* Garfield~Garfield~Das Schweigen der Schäfchen / Die Bulldo
+250-861 16.06.16 12:23 0:42* Garfield~Garfield~Jon Nummer 2 / Rollenwechsel
+250-862 27.04.16 12:23 0:42* Garfield~Garfield~Rollenwechsel / Die Sinn-Krise
+250-863 06.12.16 12:28 0:37* Garfield~Garfield~Die Glitzer-Schlucht - Teil 5 / Garfield
+250-864 27.08.16 16:28 0:37* Garfield~Garfield~Die Geschichte der Katzen / Der Katzen-K
+250-865 14.07.16 11:53 1:27* Garfield~Garfield~Krieg der Nudeln / Von Katzen und Mäusen
+250-866 03.06.16 12:23 0:42* Garfield~Garfield~Blick in die Zukunft / Cousine Petunia
+250-867 29.10.16 15:58 1:07* Garfield~Garfield~Der fiese Flaschengeist / Ein Elefant in
+250-868 13.05.16 12:23 0:42* Garfield~Garfield~Das Mäuse-Fitnessstudio / Doug Boy und d
+250-869 22.06.16 12:23 0:42* Garfield~Garfield~Katzilla / Im Körper des Anderen
+250-870 16.11.16 12:23 0:37* Garfield~Garfield~Der neue Autor / Garfield, der Problemlö
+250-871 19.04.16 12:23 0:42* Garfield~Garfield~Garfield im Land der Träume / Maus TV
+250-872 12.04.16 12:23 0:42* Garfield~Garfield~Der Lasagne-Baum - Teil 4 / Der Lasagne-
+250-873 28.06.16 12:23 0:42* Garfield~Garfield~Landpartie / Lasagne für den Champion
+250-874 06.01.17 11:03 1:07* Garfield~Garfield~Die Königin der Löwen - Teil 1 / Die Kön
+250-875 31.05.16 12:23 0:42* Garfield~Garfield~Jon, der Hundefänger / Das perfekt propo
+250-876 28.09.16 12:23 0:37* Garfield~Garfield~Der Hellseher Squeak / Der Winterschlaf
+250-877 07.06.16 12:23 0:42* Garfield~Garfield~Bellen verboten! / Garfield im Land der 
+250-878 07.04.16 16:23 0:32* Garfield~Garfield~Garfield, der Pirat - Teil 5 / Der Lasag
+250-879 04.08.16 11:53 1:27* Garfield~Garfield~Die Geschichte der Hunde / Die Odie-Eich
+250-880 02.11.16 12:23 0:37* Garfield~Garfield~Garfield der Farmer / Fitness-Wahn
+250-881 27.09.16 12:23 0:37* Garfield~Garfield~Dr. Goodiegood / Gutes Wetter, schlechte
+250-882 11.11.16 12:23 0:37* Garfield~Garfield~Die Rache des Katzenvolks / Jon, der Hun
+250-883 04.11.16 12:23 0:37* Garfield~Garfield~Wo steckt Odie? / Jon der Internet-Star
+250-884 24.03.16 16:13 0:37* Garfield~Garfield
+250-885 08.04.16 16:23 0:32* Garfield~Garfield~Der Lasagne-Baum - Teil 2 / Der Lasagne-
+250-886 01.11.16 12:23 0:37* Garfield~Garfield~Garfields Geheimwaffe / Katzen Tausch
+250-887 18.08.16 11:53 1:27* Garfield~Garfield~Garfields gute Tat - Teil 1 / Garfields 
+250-888 17.06.16 12:23 0:42* Garfield~Garfield~Die Sinn-Krise / Angst vor Katzen
+250-889 27.05.16 12:23 0:42* Garfield~Garfield~Der Gedanken-Lenker / Die Rache des Katz
+250-890 11.05.16 12:23 0:42* Garfield~Garfield~Zeit für die Fanpost / Ohne Worte
+250-891 14.10.16 12:23 0:37* Garfield~Garfield~Der Märchenkater - Teil 4 / Jons Serieni
+250-892 03.12.16 16:08 0:57* Garfield~Garfield~Das Kätzchen-Gesetz / Die Vertauschten /
+250-893 21.04.16 12:23 0:42* Garfield~Garfield~Die Bulldogge des Bösen / Mutter Eule
+250-894 26.08.16 05:13 0:27* Garfield~Garfield (50)~Die Wette
+250-895 01.09.16 05:08 0:27* Garfield~Garfield (58)~Der Geflügelplanet
+250-896 29.08.16 05:03 0:22* Garfield~Garfield (51)~Die Eisfrau und der Steinzeitmensch
+250-897 08.11.16 05:48 0:22* Garfield~Garfield (151)~Jon, der Hundefänger
+250-898 24.02.16 05:18 0:27* Garfield~Garfield (204)~Die Quasselstrippe
+250-899 13.10.16 04:58 0:22* Garfield~Garfield (115)~Der Märchenkater (1)
+250-900 14.09.16 04:58 0:22* Garfield~Garfield (75)~Die Pechsträhne
+250-901 01.11.16 05:08 0:27* Garfield~Garfield (142)~Garfields Geheimwaffe
+250-902 26.09.16 05:13 0:27* Garfield~Garfield (92)~Gehüpft wie gesprungen
+250-903 28.01.16 20:13 1:42* Zorn der Titanen
+250-904 28.02.16 01:08 1:45* Seitensprung mit Freunden
+250-905 26.12.16 06:33 1:57* Saphirblau
+250 906 19.03.16 19:08 1:17* Die Pferdeprofis

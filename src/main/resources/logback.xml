@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration
+  xmlns="http://ch.qos.logback/xml/ns/logback"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://ch.qos.logback/xml/ns/logback http://ch.qos.logback/xml/ns/logback/logback.xsd">
+
+ <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+  <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+   <pattern>%d{HH:mm:ss} [%level] %thread - %msg [%file:%line]%n</pattern>
+  </encoder>
+ </appender>
+
+ <logger name="com.github.stefantt" level="debug" />
+
+ <root level="info">
+  <appender-ref ref="STDOUT" />
+ </root>
+</configuration>

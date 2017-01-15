@@ -1,0 +1,31 @@
+<div class="row">
+ <div class="col-sm-1">
+  <nav id="actionButtons" class="vertical-toolbar fixed">
+   <ul class="nav">
+    <li class="nav-item" title="{{'recording.details.edit.toolTip'|translate}}">
+     <a class="nav-link" href="" ng-click="editAction()"><span class="fa fa-edit fa-2x" /></a>
+    </li>
+    <li class="nav-item" title="{{'recording.details.move.toolTip'|translate}}">
+     <a class="nav-link" href="" ng-click="moveAction()"><span class="fa fa-mail-forward fa-2x" /></a>
+    </li>
+    <li class="nav-item" title="{{'recording.details.delete.toolTip'|translate}}">
+     <a class="nav-link" href="" ng-click="deleteAction()"><span class="fa fa-trash fa-2x" /></a>
+    </li>
+   </ul>
+  </nav>
+ </div>
+ <div class="col-sm-11">
+  <div ng-show="rec.name" class="fa fa-film fa-4x details-icon" />
+  <h2>Details of {{rec.name}}</h2>
+
+  <table class="keyvalue-table">
+    <tr><th>Title</th><td>{{rec.name}}</td></tr>
+    <tr><th>Subtitle</th><td>{{rec.shortText}}</td></tr>
+    <tr><th>Description</th><td class="description-text">
+      <p ng-repeat="line in rec.description|split:'|'">{{line}}</p>
+      </td></tr>
+    <tr><th>Channel</th><td>{{rec.channel}}</td></tr>
+    <tr><th>Start time</th><td>{{rec.start|date:'medium'}}</td></tr>
+    <tr><th>Duration</th><td>{{rec.duration}} min</td></tr>
+  </table>
+</div>

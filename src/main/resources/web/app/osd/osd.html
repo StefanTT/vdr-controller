@@ -1,0 +1,89 @@
+<div class="row">
+ <div class="col-sm-11 offset-sm-1">
+  <h1 translate="osd.caption"></h1>
+ </div>
+</div>
+<div class="row">
+ <div class="col-sm-3 offset-sm-1">
+  <table class="osd-remote">
+   <tr>
+    <td class="key" ng-click="key('1')">1</td>
+    <td class="key" ng-click="key('2')">2</td>
+    <td class="key" ng-click="key('3')">3</td>
+   </tr>
+   <tr>
+    <td class="key" ng-click="key('4')">4</td>
+    <td class="key" ng-click="key('5')">5</td>
+    <td class="key" ng-click="key('6')">6</td>
+   </tr>
+   <tr>
+    <td class="key" ng-click="key('7')">7</td>
+    <td class="key" ng-click="key('8')">8</td>
+    <td class="key" ng-click="key('9')">9</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td class="key" ng-click="key('0')">0</td>
+   </tr>
+   <tr>
+    <td></td>
+   </tr>
+   <tr>
+    <td class="key" ng-click="key('menu')" translate="osd.key.menu"></td>
+    <td></td>
+    <td class="key" ng-click="key('back')" translate="osd.key.back"></td>
+   </tr>
+   <tr>
+    <td class="key" ng-click="key('setup')" translate="osd.key.setup"></td>
+   </tr>
+   <tr>
+    <td></td>
+   </tr>
+   <tr>
+    <td></td>
+    <td class="key" ng-click="key('up')"><span class="fa fa-arrow-up"></span></td>
+   </tr>
+   <tr>
+    <td class="key" ng-click="key('left')"><span class="fa fa-arrow-left"></span></td>
+    <td class="key" ng-click="key('ok')" translate="osd.key.ok"></td>
+    <td class="key" ng-click="key('right')"><span class="fa fa-arrow-right"></span></td>
+   </tr>
+   <tr>
+    <td></td>
+    <td class="key" ng-click="key('down')"><span class="fa fa-arrow-down"></span></td>
+   </tr>
+   <tr>
+    <td></td>
+   </tr>
+   <tr>
+    <td colspan="3"><table>
+      <tr>
+       <td class="key key-red" ng-click="key('red')"></td>
+       <td class="key key-green" ng-click="key('green')"></td>
+       <td class="key key-yellow" ng-click="key('yellow')"></td>
+       <td class="key key-blue" ng-click="key('blue')"></td>
+      </tr>
+     </table></td>
+   </tr>
+  </table>
+ </div>
+ <div class="col-sm-8">
+  <div class="osd-screen">
+   <table>
+    <tr ng-repeat="item in items|osdMainScreen"
+        ng-class="'osd-' + item.type.toLowerCase()">
+     <td>{{item.label}}</td>
+     <td ng-show="item.value!=null">{{item.value}}</td>
+    </tr>
+   </table>
+   <table class="color-buttons">
+    <tr>
+    <td class="osd-btn osd-btn_red">{{items|osdFind:'btn_red'|osdLabel}}</td>
+    <td class="osd-btn osd-btn_green">{{items|osdFind:'btn_green'|osdLabel}}</td>
+    <td class="osd-btn osd-btn_yellow">{{items|osdFind:'btn_yellow'|osdLabel}}</td>
+    <td class="osd-btn osd-btn_blue">{{items|osdFind:'btn_blue'|osdLabel}}</td>
+    </tr>
+   </table>
+  </div>
+ </div>
+</div>

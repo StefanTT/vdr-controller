@@ -1,0 +1,10 @@
+C S19.2E-1-1089-12060 VOX
+E 55339 1483812600 3900 4E 1F
+T Die Pferdeprofis
+D Coaching-Doku mit Sandra Schneider und Bernd Hackl Sowohl Sandra als auch Bernd haben es mit einem Pferd zu tun, das seinen ganz eigenen Abwehrmechanismus entwickelt hat, um die gestellte Aufgabe nicht erfüllen zu müssen - sei es über Stangen zu laufen oder einfach nur anzugaloppieren...
+X 2 03 deu 
+X 3 03 deu 
+F 25
+P 80
+L 99
+End of recording information

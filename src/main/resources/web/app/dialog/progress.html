@@ -1,0 +1,16 @@
+<div class="modal-content ng-scope">
+ <div class="modal-header">
+  <h4 class="modal-title">{{title}}</h4>
+ </div>
+ <div class="modal-body">
+  <p>{{progressMessage}}</p>
+  <uib-progressbar class="progress-striped" type="{{progressType}}" animate="false"
+   value="progressValue" max="maxValue">{{progressValue}} / {{maxValue}}</uib-progressbar>
+ </div>
+ <div class="modal-footer">
+  <button ng-show="progressAborted || progressValue >= maxValue"
+          class="btn btn-primary" type="button" ng-click="accept()">{{acceptLabel}}</button>
+  <button ng-show="abort!=null && progressValue < maxValue && !progressAborted"
+          class="btn btn-secondary" type="button" ng-click="abort()">{{abortLabel}}</button>
+ </div>
+</div>

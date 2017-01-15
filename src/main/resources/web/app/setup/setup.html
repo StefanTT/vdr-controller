@@ -1,0 +1,26 @@
+<div class="row">
+ <div class="col-md-1"></div>
+ <div class="col-md-11">
+  <h2 translate="setup.caption"></h2>
+
+  <h4 translate="setup.vdr.caption"></h4>
+
+  <div class="form-group row">
+   <label for="vdr-host" class="col-xs-2 col-form-label" translate="setup.vdr.host"></label>
+   <div class="col-xs-4">
+    <input class="form-control" type="text" ng-model="config.vdrHost" id="vdr-host">
+   </div>
+   <label for="vdr-port" class="col-xs-1 col-form-label" translate="setup.vdr.port"></label>
+   <div class="col-xs-2">
+    <input class="form-control" type="number" ng-model="config.vdrPort" id="vdr-port">
+   </div>
+  </div>
+
+  <p>
+   <button class="btn btn-primary" type="button" ng-click="save()" translate="button.save"></button>
+   <button class="btn btn-secondary" type="button" ng-click="cancel()" translate="button.cancel"></button>
+   <span ng-bind="saveMessage" class="text-info" style="margin-left: 1em"></span>
+  </p>
+
+ </div>
+</div>

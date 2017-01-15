@@ -1,0 +1,13 @@
+<div class="row">
+ <div class="col-sm-1"></div>
+ <div class="col-sm-11">
+  <h2>Timers</h2>
+  <table>
+   <tr ng-repeat="timer in timers">
+    <td>{{timer.id}}</td>
+    <td>{{timer.path}} ~ {{timer.title}}</td>
+   </tr>
+  </table>
+  <div ng-show="!timers">No timers defined</div>
+ </div>
+</div>

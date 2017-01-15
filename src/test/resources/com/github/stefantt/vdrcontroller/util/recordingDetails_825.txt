@@ -1,0 +1,19 @@
+C S19.2E-1-1010-11160 KiKA HD
+E 34450 1480777800 2700 4E 2
+T Garfield
+S Das Kätzchen-Gesetz / Die Vertauschten / Lacher vom Band / Zögern und Zaudern
+D Das Kätzchen-Gesetz|Der korrupte Bürgermeister Grafton steht im Kreuzfeuer der Kritik[...]
+G 50
+X 2 03 deu Stereo
+X 2 03 mul ohne Originalton
+X 2 03 mis ohne Audiodeskription
+X 2 03 deu Dolby Digital 2.0
+X 5 0B deu HDTV
+X 2 05 deu 
+X 3 03 deu 
+V 1480777800
+F 50
+P 50
+L 50
+@ <epgsearch><channel>23 - KiKA HD</channel><searchtimer>Garfield</searchtimer><start>1480777680</start><stop>1480781100</stop><s-id>35</s-id><eventid>34450</eventid></epgsearch>
+End of recording information

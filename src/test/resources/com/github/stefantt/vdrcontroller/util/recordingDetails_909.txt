@@ -1,0 +1,12 @@
+C S19.2E-1-1089-12040 SUPER RTL
+E 44990 1483777200 1200 4E 6
+T Dragons - Auf zu neuen Ufern
+S Folge 59: 'Lebenslange Schuld'
+D Als Hicks Kotz und Würg vor einer Lawine rettet, hat er etwas in Gang gesetzt, was er sich vorher nicht vorstellen konnte. Die Zipper sind ihm auf ewig dankbar. Das bedeutet, sie folgen ihm auf Schritt und Tritt, überschütten ihn mit Liebesbeweisen, also tonnenweise alten Fischen und heftigen Umarmungen. Hicks muss sich dringend etwas einfallen lassen, wie er die Drachen wieder loswird...
+X 2 03 deu 
+X 3 03 deu 
+F 25
+P 50
+L 50
+@ <epgsearch><channel>24 - SUPER RTL</channel><searchtimer>Dragons - Auf zu neuen Ufern</searchtimer><start>1483777080</start><stop>1483779000</stop><s-id>34</s-id><eventid>44990</eventid></epgsearch>
+End of recording information

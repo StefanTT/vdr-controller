@@ -1,0 +1,18 @@
+C S19.2E-1-1019-10301 Das Erste HD
+E 50437 1467588900 6480 50 E
+T 8 Frauen
+S Spielfilm Frankreich 2002 (8 Femmes)
+D Zu Weihnachten treffen sich acht Frauen in einem großbürgerlichen französischen Landhaus. Schwestern und Schwägerinnen, Mütter und Töchter, Hausherrinnen und Personal wollen die Festtage miteinander verbringen, giften sich aber nur gegenseitig an. Und dann wird auch noch der einzige Mann im Haus ermordet aufgefunden. Die Villa ist eingeschneit, der Telefondraht gekappt und die Mörderin noch im Haus. Also ermitteln die Damen auf eigene Faust - doch dabei muss jede von ihnen ein sorgsam gehütetes Geheimnis lüften.|Produziert in HD
+G 10
+X 5 0B deu HD-Video
+X 2 03 deu stereo
+X 4 44 deu Dolby Digital 5.1
+X 3 01 deu 
+X 2 03 deu ohne Audiodeskription
+X 3 20 deu DVB-Untertitel
+X 3 03 deu 
+V 1467588900
+F 50
+P 50
+L 99
+End of recording information

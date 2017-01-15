@@ -1,0 +1,222 @@
+/* 32px -> 23pt, 48px -> 35pt */
+
+html
+{
+ position: relative;
+ min-height: 100%;
+}
+
+body
+{
+  margin-bottom: 2em;
+}
+
+.footer
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2em;
+  line-height: 2em;
+  background-color: #f8f8f8;
+  font-size: small;
+}
+
+.navbar-static-top
+{
+ border-radius: 0;
+}
+
+.page-content
+{
+ margin-top: 7pt;
+}
+
+.global-loading-indicator
+{
+ position: fixed;
+ display: block;
+ float: right;
+ top: 45pt;
+ right: 20pt;
+}
+
+.overviewInfo
+{
+ color: #888;
+ padding-left: 0.5em;
+ font-size: small;
+}
+
+.details-icon
+{
+ float: right;
+ position: relative;
+}
+
+.vertical-toolbar
+{
+ margin-top: 0;
+ margin-left: 0;
+ background-color: #eee;
+}
+
+.vertical-toolbar .nav-item
+{
+ border-top: 1px solid #fff;
+ display: block;
+ padding: 8pt;
+}
+
+.vertical-toolbar .nav-link
+{
+ padding: 0;
+ text-align: center;
+ color: #444;
+}
+
+.vertical-toolbar .nav-link:HOVER
+{
+ color: #fff;
+}
+
+.vertical-toolbar .nav-link.disabled
+{
+ color: #aaa;
+}
+
+.fixed
+{
+ position: fixed;
+}
+
+ul.global-messages
+{
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+table.keyvalue-table th
+{
+ padding-right: 1em;
+ vertical-align: top;
+}
+
+table.keyvalue-table td
+{
+ vertical-align: top;
+}
+
+.text-pre-wrap
+{
+ white-space: pre-wrap;
+}
+
+.osd-item_sel
+{
+ background-color: #ccc;
+}
+
+.osd-btn
+{
+ width: 4em;
+ text-align: center;
+}
+
+.osd-btn_red
+{
+ background-color: #e66;
+}
+
+.osd-btn_green
+{
+ background-color: #6e6;
+}
+
+.osd-btn_yellow
+{
+ background-color: #ee6;
+}
+
+.osd-btn_blue
+{
+ background-color: #66e;
+}
+
+.osd-title td
+{
+ padding-bottom: 0.5em;
+ font-weight: bold;
+}
+
+.osd-message td
+{
+ padding-top: 0.5em;
+ color: #22a;
+}
+
+.osd-remote
+{
+ border: 8pt solid #e0e0e0;
+ background-color: #e0e0e0;
+ border-collapse: true;
+}
+
+.osd-remote td,
+.osd-remote td table td
+{
+ padding: 4pt;
+ text-align: center;
+ height: 1.5em;
+ width: 4em;
+}
+
+.osd-remote td.key
+{
+ background-color: #eee;
+ border: 1px solid #888;
+ cursor: pointer;
+}
+
+.osd-remote td.key-red
+{
+ background-color: #e00;
+}
+
+.osd-remote td.key-green
+{
+ background-color: #0e0;
+}
+
+.osd-remote td.key-yellow
+{
+ background-color: #ee0;
+}
+
+.osd-remote td.key-blue
+{
+ background-color: #00e;
+}
+
+.osd-remote td.key:HOVER
+{
+ background-color: #f8f8f8;
+}
+
+.osd-screen
+{
+ border: 4px solid #eee;
+ min-height: 25em;
+ padding: 8pt;
+}
+
+.osd-screen .color-buttons
+{
+ margin-top: 1em;
+}
+
+.description-text p
+{
+ margin-bottom: 0.4em;
+}
