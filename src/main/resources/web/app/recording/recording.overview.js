@@ -2,12 +2,11 @@
 
 angular.module('app.recording').controller('RecordingOverviewCtrl', RecordingOverviewCtrl);
 
-function RecordingOverviewCtrl($scope, $routeParams, $filter, $location, $timeout, $uibModal, $q,
+function RecordingOverviewCtrl($scope, $route, $routeParams, $filter, $location, $timeout, $uibModal, $q,
     DialogService, RecordingService)
 {
   $scope.selected = [];
   $scope.numSelected = 0;
-  var $ctrl = this;
 
   function loadMore(parentNode, cb)
   {
@@ -15,10 +14,7 @@ function RecordingOverviewCtrl($scope, $routeParams, $filter, $location, $timeou
     if (path === '#')
       path = '';
 
-    var list = RecordingService.queryFolder(
-    {
-      path : path
-    });
+    var list = RecordingService.queryFolder({ path : path });
     list.$promise.then(function()
     {
       var nodes = [];
@@ -65,7 +61,8 @@ function RecordingOverviewCtrl($scope, $routeParams, $filter, $location, $timeou
   {
     'core' :
     {
-      'data' : loadMore
+      'data' : loadMore,
+      'check_callback' : checkModifyTree
     },
     'plugins' : [ 'checkbox', 'dnd', 'sort' ],
     'themes' :
@@ -74,10 +71,16 @@ function RecordingOverviewCtrl($scope, $routeParams, $filter, $location, $timeou
     },
     'checkbox' :
     {
-      tie_selection : false,
-      whole_node : false
+      'tie_selection' : false,
+      'whole_node' : false
+    },
+    'dnd' :
+    {
+      'copy' : false,
+      'check_callback' : true
     }
   });
+
 
   tree.on('select_node.jstree', function(e, args)
   {
@@ -91,10 +94,8 @@ function RecordingOverviewCtrl($scope, $routeParams, $filter, $location, $timeou
       $('#recordingsTree').jstree('toggle_node', node);
   });
 
-  function onCheckboxChanged(e, args)
+  function countSelected()
   {
-    $scope.selected = tree.jstree('get_checked', true);
-
     $scope.numSelected = 0;
     angular.forEach($scope.selected, function(node)
     {
@@ -104,6 +105,12 @@ function RecordingOverviewCtrl($scope, $routeParams, $filter, $location, $timeou
       else if (data)
         $scope.numSelected++;
     });
+  }
+
+  function onCheckboxChanged(e, args)
+  {
+    $scope.selected = tree.jstree('get_checked', true);
+    countSelected();
 
     if ($scope.numSelected > 0)
       $('#actionButtons a.nav-link').removeClass('disabled');
@@ -112,79 +119,82 @@ function RecordingOverviewCtrl($scope, $routeParams, $filter, $location, $timeou
   tree.on('check_node.jstree', onCheckboxChanged);
   tree.on('uncheck_node.jstree', onCheckboxChanged);
 
-  $scope.deleteAction = function()
+
+  function checkModifyTree(operation, node, node_parent, node_position, more)
+  {
+    if (operation != 'move_node') return true;
+    if (!node_parent) return false;
+    if (node_parent.id == '#') return true;
+
+    var node = tree.jstree('get_node', node_parent.id);
+    return node && node.data.type == 'folder';
+  }
+
+  function canDropInto(parents, nodes)
+  {
+    for (var j = 0; j < nodes.length; j++)
+    {
+      var node = nodes[j];
+      for (var i = 0; i < parents.length; i++)
+      {
+        if (parents[i] == node)
+          return false;
+      }
+    }
+    return true;
+  }
+
+  $(document).on('dnd_start.vakata', function(e, args)
+  {
+    var nodes = args.data.nodes;
+    for (var i = 0; i < $scope.numSelected; i++)
+    {
+      var sel = $scope.selected[i].id;
+      if (sel != nodes[0])
+        nodes.push(sel);
+    }
+  });
+
+  $(document).on('dnd_stop.vakata', function(e, args)
+  {
+    var target = $(args.event.target).closest('.jstree-node');
+    if (target.length <= 0) return;
+
+    var targetNode = tree.jstree('get_node', target.get(0).id);
+    if (!targetNode || targetNode.data.type != 'folder') return;
+
+    if (!canDropInto(targetNode.parents, args.data.nodes))
+      return; // cannot drop into a child folder
+
+    $scope.selected = [];
+    for (var j = 0; j < args.data.nodes.length; j++)
+    {
+      var nodeId = args.data.nodes[j];
+      var node = tree.jstree('get_node', nodeId);
+      console.log(nodeId + " dropped into " + targetNode.id);
+      $scope.selected.push(node);
+    }
+    countSelected();
+
+    $timeout(function(){ moveConfirm(targetNode.data); });
+  });
+
+
+  function moveConfirm(target)
   {
     var dialog = DialogService.confirm
     ({
-      title : $filter('translate')('recording.overview.confirmDelete.title'),
-      message : $filter('translate')('recording.overview.confirmDelete.message',
-                                     { count : $scope.numSelected }),
+      title : $filter('translate')('recording.overview.confirmMove.title'),
+      message : $filter('translate')('recording.overview.confirmMove.message',
+          { count : $scope.numSelected, target : target.name }),
       acceptLabel : $filter('translate')('button.continue'),
-      accept : function()
-      {
-        dialog.close();
-        deleteSelected();
-      }
     });
-  }
-
-  function deleteSelected()
-  {
-    console.log("deleting...");
-    $scope.progressValue = 0;
-    $scope.progressType = 'info';
-    $scope.aborted = false;
-
-    var idx = 0;
-    var num = $scope.selected.length;
-
-    var dialog = DialogService.progress({
-        title : $filter('translate')('recording.overview.deleting.title'),
-        scope : $scope,
-        maxValue : $scope.numSelected,
-        abort : function(){ alert("aborting"); }
-    });
-
-    function deleteNext()
-    {
-      var node = $scope.selected[idx];
-      var rec = node.data;
-
-      $scope.progressMessage = $filter('translate')('recording.dialog.delete.text', { name : rec.name });
-      console.log('Deleting ' + (idx + 1) + '/' + num + ': ' + angular.toJson(rec));
-
-      var ref = rec == null ? node.id : rec.id;
-      RecordingService.delete({ id : ref })
-        .$promise.then(function()
-        {
-          tree.jstree('delete_node', node);
-
-          $scope.progressValue = $scope.progressValue + (rec.childs || 1);
-          idx = idx + 1;
-
-          if (idx < num)
-          {
-            deleteNext();
-          }
-          else
-          {
-            tree.jstree('uncheck_all');
-            $scope.progressType = 'success';
-            $timeout(function(){ dialog.close(); }, 500);
-          }
-        },
-        function(resp)
+    dialog.result.then(moveSelected,
+        function()
         {
           tree.jstree('uncheck_all');
-          $scope.progressAborted = true;
-          $scope.progressType = 'danger';
-          $scope.progressMessage = $scope.progressMessage + ' '
-                                   + $filter('translate')('recording.dialog.delete.failed')
-                                   + ': ' + resp.data;
+          $route.reload();
         });
-    }
-
-    deleteNext();
   }
 
   $scope.moveAction = function()
@@ -201,16 +211,61 @@ function RecordingOverviewCtrl($scope, $routeParams, $filter, $location, $timeou
         $scope.cancel = $filter('translate')('button.cancel');
         $scope.message = $filter('translate')('recording.overview.confirmDelete.message',
             { count:numSelected });
-        $scope.actionOk = function()
-        {
-          dialog.close();
-          console.log("moving...");
-        }
-        $scope.actionCancel = function()
-        {
-          dialog.close();
-        }
-      },
+      }
     });
+    dialog.result.then(moveSelected);
+  }
+
+  function moveSelected(target)
+  {
+    console.log("Moving...");
+  }
+
+
+  $scope.deleteAction = function()
+  {
+    DialogService.confirm
+    ({
+      title : $filter('translate')('recording.overview.confirmDelete.title'),
+      message : $filter('translate')('recording.overview.confirmDelete.message', { count : $scope.numSelected }),
+      acceptLabel : $filter('translate')('button.continue'),
+    }).closed.then(deleteSelected);
+  }
+
+  function deleteSelected()
+  {
+    var idx = -1;
+    var num = $scope.selected.length;
+    var node = null;
+
+    DialogService.progress({
+        title : $filter('translate')('recording.dialog.delete.title'),
+        scope : $scope,
+        maxValue : $scope.numSelected,
+        step : deleteNext,
+        autoClose : true,
+        finished : function(){ if (node) tree.jstree('delete_node', node); }
+    }).closed.then(function(){ tree.jstree('uncheck_all'); });
+
+    function deleteNext(dialog)
+    {
+      if (node)
+      {
+        tree.jstree('uncheck_node', node);
+        tree.jstree('delete_node', node);
+      }
+
+      idx = idx + 1;
+
+      node = $scope.selected[idx];
+      var rec = node.data;
+      console.log('Deleting ' + (idx + 1) + '/' + num + ': ' + angular.toJson(rec));
+
+      dialog.value = dialog.value + (rec.childs || 1);
+      dialog.message = $filter('translate')('recording.dialog.delete.text', { name : rec.name });
+
+      var ref = rec == null ? node.id : rec.id;
+      return RecordingService.delete({ id : ref }).$promise;
+    }
   }
 }
