@@ -109,7 +109,15 @@ function RecordingOverviewCtrl($scope, $route, $routeParams, $filter, $location,
 
   function onCheckboxChanged(e, args)
   {
-    $scope.selected = tree.jstree('get_checked', true);
+    $scope.selected = [];
+    angular.forEach(tree.jstree('get_checked', true), function(node)
+    {
+      var data = node.data;
+      if (data.type != 'folder' || node.children.length == 0)
+        $scope.selected.push(node);
+    });
+
+    $scope.selected.sort((a, b) => (a.data.number || 0) - (b.data.number || 0));
     countSelected();
 
     if ($scope.numSelected > 0)
@@ -176,20 +184,20 @@ function RecordingOverviewCtrl($scope, $route, $routeParams, $filter, $location,
     }
     countSelected();
 
-    $timeout(function(){ moveConfirm(targetNode.data); });
+    $timeout(() => { moveConfirm(targetNode.data); });
   });
 
 
   function moveConfirm(target)
   {
-    var dialog = DialogService.confirm
+    DialogService.confirm
     ({
       title : $filter('translate')('recording.overview.confirmMove.title'),
       message : $filter('translate')('recording.overview.confirmMove.message',
           { count : $scope.numSelected, target : target.name }),
       acceptLabel : $filter('translate')('button.continue'),
-    });
-    dialog.result.then(moveSelected,
+    })
+    .result.then(moveSelected,
         function()
         {
           tree.jstree('uncheck_all');
@@ -201,7 +209,7 @@ function RecordingOverviewCtrl($scope, $route, $routeParams, $filter, $location,
   {
     var numSelected = $scope.selected.length;
 
-    var dialog = $uibModal.open({
+    $uibModal.open({
       animation: true, size: 'md', ariaLabelledBy: 'modal-title',
       ariaDescribedBy: 'modal-body', templateUrl: '/app/dialog/selectFolder.html',
       controller: function($scope)
@@ -209,11 +217,10 @@ function RecordingOverviewCtrl($scope, $route, $routeParams, $filter, $location,
         $scope.title = $filter('translate')('recording.overview.confirmDelete.title');
         $scope.ok = $filter('translate')('button.ok');
         $scope.cancel = $filter('translate')('button.cancel');
-        $scope.message = $filter('translate')('recording.overview.confirmDelete.message',
-            { count:numSelected });
+        $scope.message = $filter('translate')('recording.overview.confirmDelete.message', { count:numSelected });
       }
-    });
-    dialog.result.then(moveSelected);
+    })
+    .result.then(moveSelected);
   }
 
   function moveSelected(target)
@@ -229,14 +236,23 @@ function RecordingOverviewCtrl($scope, $route, $routeParams, $filter, $location,
       title : $filter('translate')('recording.overview.confirmDelete.title'),
       message : $filter('translate')('recording.overview.confirmDelete.message', { count : $scope.numSelected }),
       acceptLabel : $filter('translate')('button.continue'),
-    }).closed.then(deleteSelected);
+    })
+    .result.then(deleteSelected);
   }
 
   function deleteSelected()
   {
-    var idx = -1;
-    var num = $scope.selected.length;
+    var idx = $scope.selected.length;
     var node = null;
+
+    function uncheckDeleteNode()
+    {
+      if (node)
+      {
+        tree.jstree('uncheck_node', node);
+        tree.jstree('delete_node', node);
+      }
+    }
 
     DialogService.progress({
         title : $filter('translate')('recording.dialog.delete.title'),
@@ -244,24 +260,19 @@ function RecordingOverviewCtrl($scope, $route, $routeParams, $filter, $location,
         maxValue : $scope.numSelected,
         step : deleteNext,
         autoClose : true,
-        finished : function(){ if (node) tree.jstree('delete_node', node); }
-    }).closed.then(function(){ tree.jstree('uncheck_all'); });
+        finished : uncheckDeleteNode,
+    })
+    .result.then(() => { tree.jstree('uncheck_all'); });
 
     function deleteNext(dialog)
     {
-      if (node)
-      {
-        tree.jstree('uncheck_node', node);
-        tree.jstree('delete_node', node);
-      }
+      uncheckDeleteNode();
 
-      idx = idx + 1;
-
-      node = $scope.selected[idx];
+      node = $scope.selected[--idx];
       var rec = node.data;
-      console.log('Deleting ' + (idx + 1) + '/' + num + ': ' + angular.toJson(rec));
+      console.log('Deleting ' + (idx + 1) + ': ' + angular.toJson(rec));
 
-      dialog.value = dialog.value + (rec.childs || 1);
+      dialog.increment = (rec.childs || 1);
       dialog.message = $filter('translate')('recording.dialog.delete.text', { name : rec.name });
 
       var ref = rec == null ? node.id : rec.id;

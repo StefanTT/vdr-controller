@@ -2,6 +2,7 @@ package com.github.stefantt.vdrcontroller.util;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 import java.util.regex.Pattern;
@@ -141,7 +142,7 @@ public final class VdrUtils
      * @param timers The list of timers to convert
      * @return The converted list of brief timers
      */
-    public static List<BriefTimer> toBriefTimers(List<Timer> timers)
+    public static List<BriefTimer> toBriefTimers(Collection<Timer> timers)
     {
         List<BriefTimer> result = new ArrayList<>(timers.size());
 
@@ -157,7 +158,7 @@ public final class VdrUtils
      * @param recordings The list of recordings to convert
      * @return The converted list of brief recordings
      */
-    public static List<BriefRecording> toBriefRecordings(List<VdrRecording> recordings)
+    public static List<BriefRecording> toBriefRecordings(Collection<VdrRecording> recordings)
     {
         List<BriefRecording> result = new ArrayList<>(recordings.size());
 

@@ -1,28 +1,27 @@
 package com.github.stefantt.vdrcontroller.service;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.io.File;
+import java.util.Collection;
 import java.util.UUID;
 
 import org.apache.commons.lang3.StringUtils;
 import org.eclipse.jetty.http.HttpStatus;
 import org.hampelratte.svdrp.Response;
-import org.hampelratte.svdrp.commands.LSTT;
 import org.hampelratte.svdrp.commands.PLUG;
-import org.hampelratte.svdrp.parsers.TimerParser;
 import org.hampelratte.svdrp.responses.R214;
-import org.hampelratte.svdrp.responses.R550;
 import org.hampelratte.svdrp.responses.highlevel.Timer;
 
+import com.github.stefantt.vdrcontroller.entity.Configuration;
 import com.github.stefantt.vdrcontroller.entity.VdrRecording;
 import com.github.stefantt.vdrcontroller.entity.VirtualFolder;
+import com.github.stefantt.vdrcontroller.repository.ProgramGuides;
 import com.github.stefantt.vdrcontroller.repository.Recordings;
+import com.github.stefantt.vdrcontroller.repository.Timers;
 import com.github.stefantt.vdrcontroller.util.FolderUtils;
 import com.github.stefantt.vdrcontroller.vdr.VdrCapabilities;
 import com.github.stefantt.vdrcontroller.vdr.VdrConnection;
 import com.github.stefantt.vdrcontroller.vdr.VdrOsdProxy;
 import com.github.stefantt.vdrcontroller.vdr.VdrRuntimeException;
-import com.github.stefantt.vdrcontroller.vdr.VdrStatus;
 import com.github.stefantt.vdrcontroller.vdr.parser.PluginListParser;
 
 /**
@@ -35,6 +34,8 @@ public class VdrService
     private final VdrConnection vdr;
     private final VdrOsdProxy osdProxy;
     private final Recordings recordings;
+    private final ProgramGuides programGuides;
+    private final Timers timers;
 
     private VdrCapabilities capabilities;
 
@@ -60,6 +61,8 @@ public class VdrService
 
         this.osdProxy = new VdrOsdProxy(vdr);
         this.recordings = new Recordings(vdr);
+        this.programGuides = new ProgramGuides(vdr);
+        this.timers = new Timers(vdr);
     }
 
     /**
@@ -68,6 +71,7 @@ public class VdrService
     public void clearCaches()
     {
         recordings.clearCache();
+        programGuides.clearCache();
     }
 
     /**
@@ -79,19 +83,31 @@ public class VdrService
     }
 
     /**
-     * @return The list of timers.
+     * @return All timers.
      */
-    public List<Timer> getTimers()
+    public Collection<Timer> getTimers()
     {
-        Response res = vdr.query(new LSTT());
+        return timers.getAll();
+    }
 
-        if (res instanceof R550)
-            return new LinkedList<Timer>();
+    /**
+     * Enable a timer.
+     *
+     * @param id The ID of the timer
+     */
+    public void enableTimer(int id)
+    {
+        timers.enable(id);
+    }
 
-        if (res.getCode() != VdrStatus.OK)
-            throw new VdrRuntimeException(HttpStatus.BAD_REQUEST_400, res.getMessage());
-
-        return TimerParser.parse(res.getMessage());
+    /**
+     * Disable a timer.
+     *
+     * @param id The ID of the timer
+     */
+    public void disableTimer(int id)
+    {
+        timers.disable(id);
     }
 
     /**
@@ -166,6 +182,19 @@ public class VdrService
         capabilities = new VdrCapabilities(PluginListParser.parse(res.getMessage()));
 
         return capabilities;
+    }
+
+    /**
+     * Configure the service from the configuration.
+     *
+     * @param config The configuration to use
+     */
+    public void setConfiguration(Configuration config)
+    {
+        setConnection(config.getVdrHost(), config.getVdrPort());
+
+        String epgDataFile = config.getEpgDataFile();
+        programGuides.setEpgDataFile(StringUtils.isEmpty(epgDataFile) ? null : new File(epgDataFile));
     }
 
     /**

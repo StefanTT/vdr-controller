@@ -15,6 +15,7 @@ import com.github.stefantt.vdrcontroller.entity.VdrRecording;
 public class BriefRecording implements Named
 {
    private final UUID id;
+   private final int number;
    private final String name;
    private final long start;
    private final int duration;
@@ -28,6 +29,7 @@ public class BriefRecording implements Named
    public BriefRecording(VdrRecording rec)
    {
       this.id = rec.getId();
+      this.number = rec.getNumber();
       this.name = rec.getName();
       this.start = rec.getStartTime().getTimeInMillis();
       this.duration = rec.getDuration();
@@ -37,6 +39,11 @@ public class BriefRecording implements Named
    public UUID getId()
    {
       return id;
+   }
+
+   public int getNumber()
+   {
+      return number;
    }
 
    @Override

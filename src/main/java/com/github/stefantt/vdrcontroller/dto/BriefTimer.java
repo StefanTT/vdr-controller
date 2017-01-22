@@ -9,41 +9,62 @@ import org.hampelratte.svdrp.responses.highlevel.Timer;
  */
 public class BriefTimer
 {
-   private int id;
-   private int channel;
-   private String title;
-   private String path;
+    private final int id;
+    private final int channel;
+    private final String title;
+    private final String path;
+    private final long startTime;
+    private final int duration;
+    private final boolean enabled;
 
-   /**
-    * Create a brief timer from a timer.
-    *
-    * @param timer The timer to use
-    */
-   public BriefTimer(Timer timer)
-   {
-      this.id = timer.getID();
-      this.channel = timer.getChannelNumber();
-      this.title = timer.getTitle();
-      this.path = timer.getPath();
-   }
+    /**
+     * Create a brief timer from a timer.
+     *
+     * @param timer The timer to use
+     */
+    public BriefTimer(Timer timer)
+    {
+        this.id = timer.getID();
+        this.channel = timer.getChannelNumber();
+        this.title = timer.getTitle();
+        this.path = timer.getPath();
+        this.startTime = timer.getStartTime().getTimeInMillis();
+        this.duration = (int)((timer.getEndTime().getTimeInMillis() - this.startTime) / 60000);
+        this.enabled = timer.isActive();
+    }
 
-   public int getId()
-   {
-      return id;
-   }
+    public boolean isEnabled()
+    {
+        return enabled;
+    }
 
-   public int getChannel()
-   {
-      return channel;
-   }
+    public int getId()
+    {
+        return id;
+    }
 
-   public String getTitle()
-   {
-      return title;
-   }
+    public int getChannel()
+    {
+        return channel;
+    }
 
-   public String getPath()
-   {
-      return path;
-   }
+    public String getTitle()
+    {
+        return title;
+    }
+
+    public String getPath()
+    {
+        return path;
+    }
+
+    public long getStartTime()
+    {
+        return startTime;
+    }
+
+    public int getDuration()
+    {
+        return duration;
+    }
 }

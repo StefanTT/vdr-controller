@@ -1,11 +1,28 @@
 <div class="row">
  <div class="col-sm-1"></div>
  <div class="col-sm-11">
+  <div class="timer-overview-options">
+   <div>
+    <label for="showDisabled" translate="timer.overview.showDisabled"></label>
+    <input id="showDisabled" type="checkbox" ng-model="showDisabled" />
+   </div>
+  </div>
   <h2>Timers</h2>
-  <table>
-   <tr ng-repeat="timer in timers">
-    <td>{{timer.id}}</td>
-    <td>{{timer.path}} ~ {{timer.title}}</td>
+  <table class="table">
+   <tr ng-repeat-start="t in timers|orderBy:'startTime'" ng-if="isNewDay(t)">
+    <th colspan="3">Day {{day}}</th>
+   <tr/>
+   <tr ng-repeat-end ng-if="!t.newDay && (t.enabled || showDisabled)"
+       ng-class="{'timer-enabled':t.enabled, 'timer-disabled':!t.enabled}">
+    <td class="enabled-indicator">
+     <a ng-show="t.enabled" title="{{'timer.overview.timerEnabledTip'|translate}}"
+        class="fa fa-check-square-o" href="" ng-click="disableTimer(t)"></a>
+     <a ng-hide="t.enabled" title="{{'timer.overview.timerDisabledTip'|translate}}"
+        class="fa fa-square-o" href="" ng-click="enableTimer(t)"></a>
+    </td>
+    <td>{{t.startTime|date:'short'}}</td>
+    <td>{{t.path}} ~ {{t.title}} <span class="overviewInfo"
+        translate="duration.min" translate-values="{t:t.duration}"></span></td>
    </tr>
   </table>
   <div ng-show="!timers">No timers defined</div>

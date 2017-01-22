@@ -5,10 +5,19 @@ angular.module('app.recording')
 
 function RecordingService($resource, $http)
 {
-  var resource = $resource('/rest/vdr/recording/:id');
-  var folderResource = $resource('/rest/vdr/recordings/:path');
-
-  resource.queryFolder = folderResource.query;
-
-  return resource;
+  return $resource('/rest/vdr/recording/:id', {},
+  {
+      queryFolder : {
+          url : '/rest/vdr/recordings/:path',
+          isArray : true
+      },
+      move : {
+          method : 'POST',
+          url : '/rest/vdr/recording/:id/move/:target'
+      },
+      moveFolder : {
+          method : 'POST',
+          url : '/rest/vdr/recordins/:path/move/:target'
+      }
+  });
 }

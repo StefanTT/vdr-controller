@@ -43,7 +43,8 @@ public class Main
       VdrService vdrService = new VdrService(config.getVdrHost(), config.getVdrPort());
 
       RouteBuilder routeBuilder = new RouteBuilder(vdrService, ConfigurationService.getInstance());
-      routeBuilder.build();
+      routeBuilder.setupFilters();
+      routeBuilder.setupRoutes();
 
       setupErrorHandlers();
    }

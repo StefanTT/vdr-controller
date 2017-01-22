@@ -1,11 +1,17 @@
 package com.github.stefantt.vdrcontroller.route;
 
-import static spark.Spark.*;
-
 import static java.net.URLDecoder.decode;
+import static spark.Spark.after;
+import static spark.Spark.before;
+import static spark.Spark.delete;
+import static spark.Spark.get;
+import static spark.Spark.halt;
+import static spark.Spark.post;
+
 import java.util.UUID;
 import java.util.regex.Pattern;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.eclipse.jetty.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -48,11 +54,52 @@ public class RouteBuilder
     }
 
     /**
+     * Setup filters.
+     */
+    public void setupFilters()
+    {
+        before((request, response) ->
+        {
+            //LOGGER.debug("Requested {}", request.pathInfo());
+            request.session(true);
+
+            String csrfToken = request.session().attribute("security.csrfToken");
+            if (csrfToken == null)
+                request.session().attribute("security.csrfToken", RandomStringUtils.randomAlphanumeric(32));
+
+            if (request.pathInfo().startsWith("/rest/"))
+            {
+                String requestToken = request.headers("X-XSRF-TOKEN");
+                if (csrfToken == null)
+                {
+                    halt(HttpStatus.PRECONDITION_FAILED_412, "New session, please reload page");
+                }
+                else if (!csrfToken.equals(requestToken))
+                {
+                    LOGGER.warn("CSRF attack detected from {} on {}",
+                        request.raw().getRemoteHost(), request.pathInfo());
+
+                    halt(HttpStatus.MISDIRECTED_REQUEST_421, "Security problems, please reload page");
+                }
+            }
+        });
+
+        after((request, response) ->
+        {
+            response.cookie("/", "XSRF-TOKEN",
+                request.session().attribute("security.csrfToken"), -1, false, false);
+        });
+    }
+
+    /**
      * Setup the routes.
      */
-    public void build()
+    public void setupRoutes()
     {
+        get("/", new SinglePageRoute("index.html"));
+
         get("/lib/*", new MappedResourcesRoute("/lib", "static-resources.properties"));
+        get("/lib-i18n/*", new LocalizedResourceRoute("/lib-i18n", "static-resources.properties"));
         get("/i18n/*", new I18nResourceRoute("."));
 
         post("/rest/clearCaches", (request, response) ->
@@ -74,7 +121,7 @@ public class RouteBuilder
             configService.setConfig(config);
             configService.save();
 
-            vdrService.setConnection(config.getVdrHost(), config.getVdrPort());
+            vdrService.setConfiguration(config);
 
             response.status(HttpStatus.ACCEPTED_202);
             return "Ok";
@@ -133,13 +180,13 @@ public class RouteBuilder
             return gson.toJson(new DetailedRecoding(rec));
         });
 
-        delete("/rest/vdr/recording/:path", (request, response) ->
+        delete("/rest/vdr/recording/:arg", (request, response) ->
         {
-            String path = request.params(":path");
+            String arg = request.params(":arg");
 
-            if (UUID_PATTERN.matcher(path).matches())
-                vdrService.deleteRecording(UUID.fromString(path));
-            else vdrService.deleteRecordings(decode(path, "UTF-8"));
+            if (UUID_PATTERN.matcher(arg).matches())
+                vdrService.deleteRecording(UUID.fromString(arg));
+            else vdrService.deleteRecordings(decode(arg, "UTF-8"));
 
             response.type(ContentType.JSON);
             return "";
@@ -149,6 +196,20 @@ public class RouteBuilder
         {
             response.type(ContentType.JSON);
             return gson.toJson(VdrUtils.toBriefTimers(vdrService.getTimers()));
+        });
+
+        post("/rest/vdr/timer/:id/enable", (request, response) ->
+        {
+            vdrService.enableTimer(Integer.parseInt(request.params(":id")));
+            response.status(HttpStatus.ACCEPTED_202);
+            return "Ok";
+        });
+
+        post("/rest/vdr/timer/:id/disable", (request, response) ->
+        {
+            vdrService.disableTimer(Integer.parseInt(request.params(":id")));
+            response.status(HttpStatus.ACCEPTED_202);
+            return "Ok";
         });
     }
 }

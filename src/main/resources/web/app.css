@@ -25,6 +25,24 @@ body
 .navbar-static-top
 {
  border-radius: 0;
+ background-color: #444;
+}
+
+.navbar-static-top li
+{
+ border-left: 1px solid transparent;
+ border-right: 1px solid transparent;
+}
+
+.navbar-static-top a
+{
+ outline: none;
+}
+
+.navbar-static-top li.active
+{
+ border-left: 1px solid #222;
+ border-right: 1px solid #888;
 }
 
 .page-content
@@ -52,6 +70,61 @@ body
 {
  float: right;
  position: relative;
+}
+
+.timer-overview-options
+{
+ float: right;
+ position: relative;
+ padding-right: 1em;
+}
+
+.timer-overview-options div
+{
+ position: static;
+ right: 16pt;
+ padding-top: 1.5em;
+ white-space: nowrap;
+ text-align: right;
+}
+
+.timer-overview-options label
+{
+ font-weight: normal;
+}
+
+tr.timer-enabled .enabled-indicator a,
+tr.timer-disabled .enabled-indicator a
+{
+ padding: 6pt;
+}
+
+tr.timer-enabled .enabled-indicator a
+{
+ color: #484;
+}
+
+tr.timer-enabled .enabled-indicator a:HOVER
+{
+ text-decoration: none;
+ color: #7d7;
+}
+
+tr.timer-disabled .enabled-indicator a
+{
+ color: #666;
+}
+
+tr.timer-disabled .enabled-indicator a:HOVER
+{
+ text-decoration: none;
+ color: #600;
+}
+
+tr.timer-disabled td
+{
+ color: #999;
+ text-decoration: line-through;
 }
 
 .vertical-toolbar
@@ -83,6 +156,22 @@ body
 .vertical-toolbar .nav-link.disabled
 {
  color: #aaa;
+}
+
+.vertical-toolbar .nav-link .secondary
+{
+ position:absolute;
+ left:-8px;
+ top:-8px;
+ color: #999;
+}
+
+.vertical-toolbar .nav-link.disabled .secondary
+{
+ position:absolute;
+ left:-8px;
+ top:-8px;
+ color: #fff;
 }
 
 .fixed

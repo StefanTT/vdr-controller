@@ -1,6 +1,8 @@
 package com.github.stefantt.vdrcontroller.entity;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -105,6 +107,32 @@ public class VirtualFolder<T extends Named> implements Named, VirtualFolderEntry
     public Set<T> getFiles()
     {
         return files;
+    }
+
+    /**
+     * Get all files that are in this folder or one of the child folders.
+     *
+     * @return The list of files
+     */
+    public List<T> getAllFiles()
+    {
+        List<T> result = new ArrayList<>(128);
+        getAllFiles(result);
+        return result;
+    }
+
+    /**
+     * Get all files that are in this folder or one of the child folders.
+     * The found files are added to the given list.
+     *
+     * @param result The list that will contain all files
+     */
+    private void getAllFiles(List<T> result)
+    {
+        for (VirtualFolder<T> folder : folders)
+            folder.getAllFiles(result);
+
+        result.addAll(files);
     }
 
     public VirtualFolder<T> getParent()

@@ -65,18 +65,6 @@ function DialogServiceConfirmCtrl($scope, $filter)
     $scope.message = args.message;
     $scope.acceptLabel = args.acceptLabel || $filter('translate')('button.ok');
     $scope.rejectLabel = args.rejectLabel || $filter('translate')('button.cancel');
-
-    $scope.accept = function()
-    {
-        console.log('Confirmation dialog accepted');
-        $scope.$close('accept');
-    }
-
-    $scope.reject = function()
-    {
-        console.log('Confirmation dialog rejected');
-        $scope.$dismiss('reject');
-    }
 }
 
 
@@ -87,10 +75,12 @@ function DialogServiceProgressCtrl($scope, $filter, $timeout)
     $scope.title = args.title;
     $scope.value = args.value || 0;
     $scope.maxValue = args.maxValue;
+    $scope.increment = 0;
     $scope.abortLabel = args.abortLabel || $filter('translate')('button.abort');
     $scope.acceptLabel = args.acceptLabel || $filter('translate')('button.close');
     $scope.step = args.step;
     $scope.active = true;
+    $scope.aborted = false;
     $scope.type = 'info';
 
     $scope.accept = function()
@@ -103,13 +93,19 @@ function DialogServiceProgressCtrl($scope, $filter, $timeout)
 
     $scope.abort = function()
     {
+        $scope.type = 'warning';
         $scope.active = false;
+        $scope.aborted = true;
+        $scope.errorMessage = $filter('translate')('dialog.progress.abort');
     }
 
     function nextStep()
     {
+        $scope.value = $scope.value + $scope.increment;
+
         if ($scope.active && $scope.value < $scope.maxValue)
         {
+            $scope.increment = 1;
             $scope.step($scope)
                 .then(function()
                 {
@@ -121,6 +117,11 @@ function DialogServiceProgressCtrl($scope, $filter, $timeout)
                     $scope.type = 'danger';
                     $scope.errorMessage = $filter('translate')('dialog.progress.failed', { error: resp.data });
                 });
+        }
+        else if ($scope.aborted)
+        {
+            if (args.autoClose)
+                $timeout(function(){ $scope.$close(); }, 500);
         }
         else
         {

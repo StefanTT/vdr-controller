@@ -61,9 +61,10 @@ public class MappedResourcesRoute implements Route
     * the given URL path.
     *
     * @param urlPath The URL path to find
+    * @param request The request object providing information about the HTTP request
     * @return The resource path, null if not found
     */
-   private String getResourcePath(String urlPath)
+   protected String getResourcePath(String urlPath, Request request)
    {
       @SuppressWarnings("unchecked")
       Enumeration<String> e = (Enumeration<String>) mappings.propertyNames();
@@ -90,7 +91,7 @@ public class MappedResourcesRoute implements Route
       path = path.substring(pathPrefix.length());
       LOGGER.trace("Serving static resource for {}", path);
 
-      String mappedPath = getResourcePath(path);
+      String mappedPath = getResourcePath(path, request);
       if (mappedPath == null)
       {
          response.status(HttpStatus.NOT_FOUND_404);

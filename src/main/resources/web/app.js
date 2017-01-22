@@ -1,65 +1,67 @@
 'use strict';
 
 angular.module('app',
-    [ 'ngRoute',
-      'pascalprecht.translate', 'ui.bootstrap',
-      'app.common', 'app.dialog', 'app.home', 'app.layout', 'app.osd', 'app.recording', 'app.setup',
-      'app.timer', 'app.video'
-    ])
-  .config(appConfig)
-  .run(appRun)
-  ;
+    [ 'ngRoute', 'ngCookies', 'pascalprecht.translate', 'ui.bootstrap', 'app.common', 'app.dialog', 'app.home',
+      'app.layout', 'app.osd', 'app.recording', 'app.setup', 'app.timer', 'app.video' ])
+    .config(appConfig)
+    .run(appRun);
 
-
-appConfig.$inject = ['$routeProvider','$locationProvider','$translateProvider','$httpProvider'];
+appConfig.$inject = [ '$routeProvider', '$locationProvider', '$translateProvider', '$httpProvider' ];
 function appConfig($routeProvider, $locationProvider, $translateProvider, $httpProvider)
 {
-  $locationProvider.hashPrefix('');
+    $locationProvider.hashPrefix('');
 
-  $.jstree.defaults.core.check_callback = true;
-  $.jstree.defaults.core.themes.responsive = false;
-  //$.jstree.defaults.plugins = [ 'checkbox', 'dnd', 'sort' ];
+    $.jstree.defaults.core.check_callback = true;
+    $.jstree.defaults.core.themes.responsive = false;
 
-  $translateProvider.useStaticFilesLoader({ prefix: '/i18n/lang-', suffix: '.properties' });
-  $translateProvider.uniformLanguageTag('bcp47');
-  $translateProvider.determinePreferredLanguage();
+    $translateProvider.useStaticFilesLoader(
+    {
+        prefix : '/i18n/lang-',
+        suffix : '.properties'
+    });
+    $translateProvider.uniformLanguageTag('bcp47');
+    $translateProvider.determinePreferredLanguage();
 
-  $httpProvider.interceptors.push(appHttpInterceptor);
+    $httpProvider.interceptors.push(appHttpInterceptor);
 
-  $routeProvider.when('/', {
-    templateUrl : '/app/home/home.html',
-    controller : 'HomeCtrl'
-  }).when('/osd', {
-    templateUrl : '/app/osd/osd.html',
-    controller : 'OsdCtrl'
-  }).when('/recording/:id', {
-    templateUrl : '/app/recording/recording.details.html',
-    controller : 'RecordingDetailsCtrl'
-  }).when('/recording', {
-      templateUrl : '/app/recording/recording.overview.html',
-      controller : 'RecordingOverviewCtrl'
-  }).when('/setup', {
-      templateUrl : '/app/setup/setup.html',
-      controller : 'SetupCtrl'
-  }).when('/timer', {
-    templateUrl : '/app/timer/timer.overview.html',
-    controller : 'TimerOverviewCtrl'
-  }).otherwise({
-    redirectTo: '/'
-  });
-
+    $routeProvider.when('/',
+    {
+        templateUrl : '/app/home/home.html',
+        controller : 'HomeCtrl'
+    }).when('/osd',
+    {
+        templateUrl : '/app/osd/osd.html',
+        controller : 'OsdCtrl'
+    }).when('/recording/:id',
+    {
+        templateUrl : '/app/recording/recording.details.html',
+        controller : 'RecordingDetailsCtrl'
+    }).when('/recording',
+    {
+        templateUrl : '/app/recording/recording.overview.html',
+        controller : 'RecordingOverviewCtrl'
+    }).when('/setup',
+    {
+        templateUrl : '/app/setup/setup.html',
+        controller : 'SetupCtrl'
+    }).when('/timer',
+    {
+        templateUrl : '/app/timer/timer.overview.html',
+        controller : 'TimerOverviewCtrl'
+    }).otherwise(
+    {
+        redirectTo : '/'
+    });
 }
 
-
-appRun.$inject = ['SetupService'];
+appRun.$inject = [ 'SetupService' ];
 function appRun(SetupService)
 {
-  SetupService.clearCaches();
+    SetupService.clearCaches();
 }
 
-
-appHttpInterceptor.$inject = ['$rootScope','$q','$filter','$timeout','$location'];
-function appHttpInterceptor($scope, $q, $filter, $timeout, $location)
+appHttpInterceptor.$inject = [ '$rootScope', '$q', '$filter', '$timeout', '$location', '$window' ];
+function appHttpInterceptor($scope, $q, $filter, $timeout, $location, $window)
 {
     var interceptor = {};
 
@@ -86,12 +88,36 @@ function appHttpInterceptor($scope, $q, $filter, $timeout, $location)
         if (status == -1)
         {
             var text = $filter('translate')('err.applicationOffline');
-            $scope.$broadcast('showErrorMessage', {status: status, text: text});
+            $scope.$broadcast('showErrorMessage',
+            {
+                status : status,
+                text : text
+            });
         }
         else if (statusClass == 4 || statusClass == 5)
         {
-            var text = response.data || statusText || ('HTTP ' + status);
-            $scope.$broadcast('showErrorMessage', {status: status, text: text});
+            if (status == 412)
+            {
+                alert($filter('translate')('info.reload.appRestarted'));
+                $window.location.reload();
+            }
+            else if (status == 421)
+            {
+                alert($filter('translate')('info.reload.security'));
+                $window.location.reload();
+            }
+            else
+            {
+                var text = response.data || statusText || ('HTTP ' + status);
+                if (text.startsWith('<html>'))
+                    text = text.replace(/<\/*html>/g, '').replace(/<\/*body>/g, '').replace(/<\/*h[0-9]>/g, '');
+
+                $scope.$broadcast('showErrorMessage',
+                {
+                    status : status,
+                    text : text
+                });
+            }
         }
 
         return $q.reject(response);

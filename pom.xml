@@ -144,9 +144,9 @@
       </resource>
       <resource>
         <filtering>true</filtering>
-        <directory>${basedir}/src/main/resources</directory>
+        <directory>${basedir}/src/main/resources/web</directory>
         <includes>
-          <include>web/index.html</include>
+          <include>index.html</include>
         </includes>
       </resource>
       <resource>

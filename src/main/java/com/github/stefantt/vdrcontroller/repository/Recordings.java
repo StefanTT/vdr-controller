@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.UUID;
 
 import org.eclipse.jetty.http.HttpStatus;
@@ -40,8 +39,8 @@ import com.github.stefantt.vdrcontroller.vdr.commands.LSTRpath;
  */
 public class Recordings
 {
-    private static final String ROOT_FOLDER_NAME = "/";
     private static final Logger LOGGER = LoggerFactory.getLogger(Recordings.class);
+    private static final String ROOT_FOLDER_NAME = "/";
 
     // The maximum age of the list of recordings before they are re-read from VDR
     private static final int RECORDINGS_MAX_AGE_MSEC = 60000;
@@ -79,7 +78,7 @@ public class Recordings
      */
     public UUID getId(int number)
     {
-        update();
+        ensureUpdated();
 
         for (VdrRecording rec : recordings.values())
         {
@@ -101,8 +100,7 @@ public class Recordings
         if (rec != null && rec.isDetailed())
             return rec;
 
-        return executeWithRetry((con) ->
-        {
+        return executeWithRetry((con) -> {
             VdrRecording recording = recordings.get(id);
             if (recording == null)
                 throw new VdrRuntimeException(HttpStatus.NOT_FOUND_404, "Recording not found");
@@ -134,11 +132,11 @@ public class Recordings
             catch (ParseException e)
             {
                 throw new VdrRuntimeException(HttpStatus.INTERNAL_SERVER_ERROR_500,
-                        "failed to parse detailed recording", e);
+                    "failed to parse detailed recording", e);
             }
 
             VdrRecording result = new VdrRecording(detailedRec);
-            result.setTitle(recording.getTitle());
+            result.updateFromListEntry(recording);
 
             return result;
         });
@@ -151,52 +149,23 @@ public class Recordings
      */
     public void delete(VirtualFolder<VdrRecording> folder)
     {
-        executeWithRetry((con) ->
+        executeWithRetry(Math.max(reloadTries, folder.getNumRecordings() * 3), (con) ->
         {
-            Boolean ret = delete(con, folder);
-            if (Boolean.TRUE.equals(ret))
+            List<VdrRecording> recordings = folder.getAllFiles();
+            sortByNumber(recordings);
+
+            for (VdrRecording rec : recordings)
             {
-                VirtualFolder<VdrRecording> parentFolder = folder.getParent();
-                if (parentFolder != null)
-                    parentFolder.remove(folder);
+                if (!Boolean.TRUE.equals(delete(con, rec)))
+                    return null;
             }
-            return ret;
+
+            VirtualFolder<VdrRecording> parentFolder = folder.getParent();
+            if (parentFolder != null)
+                parentFolder.remove(folder);
+
+            return Boolean.TRUE;
         });
-    }
-
-    /**
-     * Delete a folder and all the recordings it contains, using the given vdr connection.
-     *
-     * @param con The SVDRP connection
-     * @param folder The folder to delete
-     * @return True if successful, null if the list of recordings needs a reload
-     * @throws IOException if the VDR communication fails
-     */
-    private Boolean delete(Connection con, VirtualFolder<VdrRecording> folder) throws IOException
-    {
-        LOGGER.debug("Deleting recordings folder {}", folder.getName());
-
-        Set<VdrRecording> files = folder.getFiles();
-        while (!files.isEmpty())
-        {
-            VdrRecording recording = files.iterator().next();
-            if (delete(con, recording) == null)
-                return null;
-
-            folder.remove(recording);
-        }
-
-        Set<VirtualFolder<VdrRecording>> folders = folder.getFolders();
-        while (!folders.isEmpty())
-        {
-            VirtualFolder<VdrRecording> fld = folders.iterator().next();
-            if (delete(con, fld) == null)
-                return null;
-
-            folder.remove(fld);
-        }
-
-        return Boolean.TRUE;
     }
 
     /**
@@ -206,8 +175,7 @@ public class Recordings
      */
     public void delete(UUID id)
     {
-        executeWithRetry((con) ->
-        {
+        executeWithRetry((con) -> {
             VdrRecording recording = recordings.get(id);
             if (recording == null)
                 throw new VdrRuntimeException(HttpStatus.NOT_FOUND_404, "Recording not found");
@@ -237,7 +205,7 @@ public class Recordings
 
         if (!VdrUtils.isSimilar(recording.getRec(), path))
         {
-            LOGGER.debug("Recording list entry: {}", recording.getRec());
+            LOGGER.info("Recording list entry: {}", recording.getRec());
             LOGGER.debug("Recording path: {}", path);
             return null;
         }
@@ -246,7 +214,7 @@ public class Recordings
         if (!(res instanceof R250))
         {
             throw new VdrRuntimeException(HttpStatus.INTERNAL_SERVER_ERROR_500,
-                    "Could not delete recording: " + res.getMessage());
+                "Could not delete recording: " + res.getMessage());
         }
 
         return Boolean.TRUE;
@@ -259,7 +227,7 @@ public class Recordings
      */
     public VirtualFolder<VdrRecording> getRootFolder()
     {
-        update();
+        ensureUpdated();
         return rootFolder;
     }
 
@@ -272,8 +240,7 @@ public class Recordings
     {
         lastUpdated = System.currentTimeMillis();
         this.recordings.clear();
-        recs.forEach((rec) ->
-        {
+        recs.forEach((rec) -> {
             recordings.put(rec.getId(), rec);
         });
     }
@@ -287,9 +254,21 @@ public class Recordings
      */
     private <T> T executeWithRetry(VdrSessionTask<T> task)
     {
-        return vdr.execute((con) ->
-        {
-            for (int tries = reloadTries; tries >= 0; --tries)
+        return executeWithRetry(reloadTries, task);
+    }
+
+    /**
+     * Execute the task. If it returns null then update the recordings and re-execute the task until
+     * either the task returns a not null value or the maximum number of retries is reached.
+     *
+     * @param retries The maximum number of retries for executing the task
+     * @param task The task to execute
+     * @return The return value of the task
+     */
+    private <T> T executeWithRetry(int retries, VdrSessionTask<T> task)
+    {
+        return vdr.execute((con) -> {
+            for (int tries = retries; tries >= 0; --tries)
             {
                 if (needUpdate())
                     update(con);
@@ -328,7 +307,7 @@ public class Recordings
     /**
      * Ensure that the recordings are up to date.
      */
-    protected synchronized void update()
+    protected synchronized void ensureUpdated()
     {
         if (needUpdate())
             vdr.execute((con) -> update(con));
@@ -345,7 +324,7 @@ public class Recordings
         }
         else if (res.getCode() != VdrStatus.OK)
         {
-            throw new VdrRuntimeException(HttpStatus.BAD_REQUEST_400, res.getMessage());
+            throw new VdrRuntimeException(HttpStatus.BAD_GATEWAY_502, res.getMessage());
         }
         else
         {
@@ -377,7 +356,7 @@ public class Recordings
         for (VdrRecording rec : recordings.values())
         {
             VirtualFolder<VdrRecording> folder = FolderUtils.getOrCreateFolder(newRootFolder,
-                    FolderUtils.folderPath(rec.getTitle()), true);
+                FolderUtils.folderPath(rec.getTitle()), true);
 
             folder.add(rec);
         }
@@ -409,6 +388,16 @@ public class Recordings
         }
 
         return null;
+    }
+
+    /**
+     * Sort the given list of recordings descending by recording number.
+     *
+     * @param list The list of recordings to sort
+     */
+    private void sortByNumber(List<VdrRecording> list)
+    {
+        list.sort((VdrRecording a, VdrRecording b) -> Integer.compare(b.getNumber(), a.getNumber()));
     }
 
     /**
