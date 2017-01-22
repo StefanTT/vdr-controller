@@ -3,25 +3,30 @@
  <div class="col-sm-11">
   <div class="timer-overview-options">
    <div>
-    <label for="showDisabled" translate="timer.overview.showDisabled"></label>
-    <input id="showDisabled" type="checkbox" ng-model="showDisabled" />
+    <label for="showAll" translate="timer.overview.showAll"></label>
+    <input id="showAll" type="checkbox" ng-model="showAll" />
    </div>
   </div>
-  <h2>Timers</h2>
-  <table class="table">
-   <tr ng-repeat-start="t in timers|orderBy:'startTime'" ng-if="isNewDay(t)">
-    <th colspan="3">Day {{day}}</th>
+  <h2 translate="timer.overview.caption"></h2>
+  <table id="timer-overview" class="table table-condensed table-hover">
+   <tr ng-repeat-start="t in timers|orderBy:'startTime'|timerFilterState:showAll"
+       ng-if="isNewDay(t)">
+    <th colspan="3">{{t.startTime|date:'fullDate'}}</th>
    <tr/>
-   <tr ng-repeat-end ng-if="!t.newDay && (t.enabled || showDisabled)"
-       ng-class="{'timer-enabled':t.enabled, 'timer-disabled':!t.enabled}">
+   <tr ng-repeat-end ng-if="t.state!='DISABLED' || showAll"
+       class="timer-{{t.state|lowercase}}">
     <td class="enabled-indicator">
-     <a ng-show="t.enabled" title="{{'timer.overview.timerEnabledTip'|translate}}"
+     <a ng-show="t.state=='ENABLED'" title="{{'timer.overview.timerEnabledTip'|translate}}"
         class="fa fa-check-square-o" href="" ng-click="disableTimer(t)"></a>
-     <a ng-hide="t.enabled" title="{{'timer.overview.timerDisabledTip'|translate}}"
+     <a ng-show="t.state=='RECORDING'" title="{{'timer.overview.timerRecordingTip'|translate}}"
+        class="fa fa-circle" href="" ng-click="disableTimer(t)"></a>
+     <a ng-show="t.state=='DISABLED'" title="{{'timer.overview.timerDisabledTip'|translate}}"
         class="fa fa-square-o" href="" ng-click="enableTimer(t)"></a>
     </td>
-    <td>{{t.startTime|date:'short'}}</td>
-    <td>{{t.path}} ~ {{t.title}} <span class="overviewInfo"
+    <td>{{t.startTime|date:'shortTime'}}</td>
+    <td uib-tooltip-html="tooltip" tooltip-class="timer-tooltip"
+        tooltip-placement="top-left" tooltip-popup-delay="500" tooltip-append-to-body="true"
+        ng-mouseover="mouseOver(t)">{{t.path}} ~ {{t.title}} <span class="overviewInfo"
         translate="duration.min" translate-values="{t:t.duration}"></span></td>
    </tr>
   </table>

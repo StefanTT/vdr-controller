@@ -57,6 +57,7 @@ body
  float: right;
  top: 45pt;
  right: 20pt;
+ z-index: 100;
 }
 
 .overviewInfo
@@ -93,10 +94,33 @@ body
  font-weight: normal;
 }
 
-tr.timer-enabled .enabled-indicator a,
-tr.timer-disabled .enabled-indicator a
+table#timer-overview th
 {
- padding: 6pt;
+ background-color: #ddd;
+}
+
+.timer-tooltip .tooltip-inner
+{
+ text-align: left;
+ min-width: 50em;
+}
+
+tr.timer-enabled .enabled-indicator a,
+tr.timer-disabled .enabled-indicator a,
+tr.timer-recording .enabled-indicator a
+{
+ padding: 4pt;
+}
+
+tr.timer-recording .enabled-indicator a
+{
+ color: #c44;
+}
+
+tr.timer-recording .enabled-indicator a:HOVER
+{
+ text-decoration: none;
+ color: #f77;
 }
 
 tr.timer-enabled .enabled-indicator a
@@ -118,7 +142,7 @@ tr.timer-disabled .enabled-indicator a
 tr.timer-disabled .enabled-indicator a:HOVER
 {
  text-decoration: none;
- color: #600;
+ color: #000;
 }
 
 tr.timer-disabled td
@@ -139,6 +163,11 @@ tr.timer-disabled td
  border-top: 1px solid #fff;
  display: block;
  padding: 8pt;
+}
+
+.vertical-toolbar .spacer
+{
+ background-color: #fff;
 }
 
 .vertical-toolbar .nav-link

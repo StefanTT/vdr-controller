@@ -16,5 +16,10 @@ function TimerService($resource, $http)
         return $http.post('/rest/vdr/timer/' + id + '/disable');
     }
 
+    resource.details = function(channelId, time)
+    {
+        return $http.get('/rest/vdr/epg/' + channelId + '/' + time);
+    }
+
     return resource;
 }

@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('app',
-    [ 'ngRoute', 'ngCookies', 'pascalprecht.translate', 'ui.bootstrap', 'app.common', 'app.dialog', 'app.home',
+    [ 'ngRoute', 'ngCookies', 'ngSanitize',
+      'pascalprecht.translate', 'ui.bootstrap', 'app.common', 'app.dialog', 'app.home',
       'app.layout', 'app.osd', 'app.recording', 'app.setup', 'app.timer', 'app.video' ])
     .config(appConfig)
     .run(appRun);

@@ -132,6 +132,13 @@ public class RouteBuilder
             return gson.toJson(vdrService.getCapabilities());
         });
 
+        get("/rest/vdr/epg/:channelId/:time", (request, response) ->
+        {
+            String channelId = request.params(":channelId");
+            long time = Long.parseLong(request.params(":time"));
+            return gson.toJson(vdrService.findEpgEntryByChannelTime(channelId, time));
+        });
+
         get("/rest/vdr/osd", (request, response) ->
         {
             return gson.toJson(vdrService.getOsdProxy().getItems());

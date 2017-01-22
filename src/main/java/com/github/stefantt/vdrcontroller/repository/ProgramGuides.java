@@ -14,12 +14,17 @@ import java.util.Map;
 import java.util.Objects;
 
 import org.apache.commons.io.IOUtils;
+import org.eclipse.jetty.http.HttpStatus;
+import org.hampelratte.svdrp.Response;
+import org.hampelratte.svdrp.commands.LSTE;
 import org.hampelratte.svdrp.parsers.EPGParser;
+import org.hampelratte.svdrp.responses.R215;
 import org.hampelratte.svdrp.responses.highlevel.EPGEntry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.github.stefantt.vdrcontroller.vdr.VdrConnection;
+import com.github.stefantt.vdrcontroller.vdr.VdrRuntimeException;
 
 /**
  * Repository for EPG entries. If the EPG data file is set then it is used, otherwise
@@ -51,12 +56,29 @@ public class ProgramGuides
     }
 
     /**
+     * Get a specific EPG entry.
+     *
+     * @param channelId The ID of the channel
+     * @param time The start time of the entry
+     * @return The EPG entry, null if not found
+     */
+    public EPGEntry findByChannelStart(String channelId, long time)
+    {
+        Response res = vdr.query(new LSTE(channelId, "at " + (time / 1000)));
+        if (!(res instanceof R215))
+            throw new VdrRuntimeException(HttpStatus.BAD_REQUEST_400, res.getMessage());
+
+        List<EPGEntry> entries = new EPGParser().parse(res.getMessage());
+        return entries.size() > 0 ? entries.get(0) : null;
+    }
+
+    /**
      * Get the EPG data of a channel.
      *
      * @param channelId The ID of the channel
      * @return The EPG data of the channel, null if the channel has no EPG data
      */
-    public List<EPGEntry> getEntries(String channelId)
+    public List<EPGEntry> findByChannel(String channelId)
     {
         ensureUpdated();
         return epgData.get(channelId);

@@ -130,5 +130,6 @@ public class Timers
             newTimers.put(timer.getID(), timer);
 
         timers = newTimers;
+        lastUpdated = System.currentTimeMillis();
     }
 }

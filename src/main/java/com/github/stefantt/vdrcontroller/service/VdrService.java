@@ -9,6 +9,7 @@ import org.eclipse.jetty.http.HttpStatus;
 import org.hampelratte.svdrp.Response;
 import org.hampelratte.svdrp.commands.PLUG;
 import org.hampelratte.svdrp.responses.R214;
+import org.hampelratte.svdrp.responses.highlevel.EPGEntry;
 import org.hampelratte.svdrp.responses.highlevel.Timer;
 
 import com.github.stefantt.vdrcontroller.entity.Configuration;
@@ -108,6 +109,18 @@ public class VdrService
     public void disableTimer(int id)
     {
         timers.disable(id);
+    }
+
+    /**
+     * Get a specific EPG entry.
+     *
+     * @param channelId The ID of the channel
+     * @param time The start time of the entry
+     * @return The EPG entry, null if not found
+     */
+    public EPGEntry findEpgEntryByChannelTime(String channelId, long time)
+    {
+        return programGuides.findByChannelStart(channelId, time);
     }
 
     /**

@@ -9,13 +9,20 @@ import org.hampelratte.svdrp.responses.highlevel.Timer;
  */
 public class BriefTimer
 {
+    enum State
+    {
+        ENABLED,
+        DISABLED,
+        RECORDING
+    }
+
     private final int id;
     private final int channel;
     private final String title;
     private final String path;
     private final long startTime;
     private final int duration;
-    private final boolean enabled;
+    private final State state;
 
     /**
      * Create a brief timer from a timer.
@@ -30,12 +37,17 @@ public class BriefTimer
         this.path = timer.getPath();
         this.startTime = timer.getStartTime().getTimeInMillis();
         this.duration = (int)((timer.getEndTime().getTimeInMillis() - this.startTime) / 60000);
-        this.enabled = timer.isActive();
+
+        if (timer.hasState(Timer.RECORDING))
+            this.state = State.RECORDING;
+        else if (timer.hasState(Timer.ACTIVE))
+            this.state = State.ENABLED;
+        else this.state = State.DISABLED;
     }
 
-    public boolean isEnabled()
+    public State getState()
     {
-        return enabled;
+        return state;
     }
 
     public int getId()
