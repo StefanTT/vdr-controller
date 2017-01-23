@@ -32,9 +32,9 @@ import com.github.stefantt.vdrcontroller.vdr.VdrRuntimeException;
  *
  * @author Stefan Taferner
  */
-public class ProgramGuides
+public class ProgramGuideRepository
 {
-    private static final Logger LOGGER = LoggerFactory.getLogger(ProgramGuides.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ProgramGuideRepository.class);
 
     private Map<String, List<EPGEntry>> epgData = new HashMap<>(200);
     private final VdrConnection vdr;
@@ -50,7 +50,7 @@ public class ProgramGuides
      *
      * @param vdr The VDR connection to use
      */
-    public ProgramGuides(VdrConnection vdr)
+    public ProgramGuideRepository(VdrConnection vdr)
     {
         this.vdr = vdr;
     }

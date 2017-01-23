@@ -3,7 +3,7 @@
 angular.module('app',
     [ 'ngRoute', 'ngCookies', 'ngSanitize',
       'pascalprecht.translate', 'ui.bootstrap', 'app.common', 'app.dialog', 'app.home',
-      'app.layout', 'app.osd', 'app.recording', 'app.setup', 'app.timer', 'app.video' ])
+      'app.layout', 'app.osd', 'app.recording', 'app.searchtimer', 'app.setup', 'app.timer', 'app.video' ])
     .config(appConfig)
     .run(appRun);
 
@@ -41,6 +41,10 @@ function appConfig($routeProvider, $locationProvider, $translateProvider, $httpP
     {
         templateUrl : '/app/recording/recording.overview.html',
         controller : 'RecordingOverviewCtrl'
+    }).when('/searchtimer',
+    {
+        templateUrl : '/app/searchtimer/searchtimer.overview.html',
+        controller : 'SearchtimerOverviewCtrl'
     }).when('/setup',
     {
         templateUrl : '/app/setup/setup.html',

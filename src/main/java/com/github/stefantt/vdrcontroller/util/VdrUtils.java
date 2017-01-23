@@ -13,9 +13,11 @@ import org.hampelratte.svdrp.responses.highlevel.Recording;
 import org.hampelratte.svdrp.responses.highlevel.Timer;
 
 import com.github.stefantt.vdrcontroller.dto.BriefRecording;
+import com.github.stefantt.vdrcontroller.dto.BriefSearchtimer;
 import com.github.stefantt.vdrcontroller.dto.BriefTimer;
 import com.github.stefantt.vdrcontroller.dto.RecordingsFolder;
 import com.github.stefantt.vdrcontroller.entity.Named;
+import com.github.stefantt.vdrcontroller.entity.Searchtimer;
 import com.github.stefantt.vdrcontroller.entity.VdrRecording;
 import com.github.stefantt.vdrcontroller.entity.VirtualFolder;
 
@@ -36,6 +38,10 @@ public final class VdrUtils
 
     private static final SimpleDateFormat RECTIME_FMT = new SimpleDateFormat("yyyy-MM-dd.HH.mm");
     private static final Pattern PATH_STRIP_PATTERN = Pattern.compile("\\.\\d+[-\\.]\\d+\\.rec$");
+
+    private VdrUtils()
+    {
+    }
 
     /**
      * Test if the recordings list entry and the recording path are similar.
@@ -188,7 +194,19 @@ public final class VdrUtils
         return result;
     }
 
-    private VdrUtils()
+    /**
+     * Convert the list of timers into a list of brief search timers.
+     *
+     * @param timers The list of search timers to convert
+     * @return The converted list of brief search timers
+     */
+    public static List<BriefSearchtimer> toBriefSearchtimers(Collection<Searchtimer> timers)
     {
+        List<BriefSearchtimer> result = new ArrayList<>(timers.size());
+
+        for (Searchtimer timer : timers)
+            result.add(new BriefSearchtimer(timer));
+
+        return result;
     }
 }

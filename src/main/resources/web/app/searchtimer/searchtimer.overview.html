@@ -1,0 +1,28 @@
+<div class="row">
+ <div class="col-sm-1"></div>
+ <div class="col-sm-11">
+  <div class="timer-overview-options">
+   <div>
+    <label for="showAll" translate="searchtimer.overview.showAll"></label>
+    <input id="showAll" type="checkbox" ng-model="showAll" />
+   </div>
+  </div>
+  <h2 translate="searchtimer.overview.caption"></h2>
+  <table id="searchtimer-overview" class="table table-condensed table-hover">
+   <tr ng-repeat="t in timers|orderBy:['folder','search']:false:orderComp"
+       ng-class="{'timer-enabled':t.enabled, 'timer-disabled':!t.enabled}">
+    <td class="enabled-indicator">
+     <a ng-show="t.enabled" title="{{'searchtimer.overview.timerEnabledTip'|translate}}"
+        class="fa fa-check-square-o" href="" ng-click="disableTimer(t)"></a>
+     <a ng-show="!t.enabled" title="{{'searchtimer.overview.timerDisabledTip'|translate}}"
+        class="fa fa-square-o" href="" ng-click="enableTimer(t)"></a>
+    </td>
+    <td>{{t.folder}}</td>
+    <td uib-tooltip-html="tooltip" tooltip-class="timer-tooltip"
+        tooltip-placement="top-left" tooltip-popup-delay="500" tooltip-append-to-body="true"
+        ng-mouseover="mouseOver(t)">{{t.search}}</td>
+   </tr>
+  </table>
+  <div ng-show="!timers">No search timer defined</div>
+ </div>
+</div>

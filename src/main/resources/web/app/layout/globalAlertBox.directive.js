@@ -19,6 +19,9 @@ function globalAlertBox()
             {
                 if ($scope.messages.indexOf(args.text) < 0)
                 {
+                    if ($scope.messages.length > 9)
+                        $scope.messages.splice(0, $scope.messages.length - 9);
+
                     $scope.messages.push(args.text);
                     $element.css('display', 'block');
                 }

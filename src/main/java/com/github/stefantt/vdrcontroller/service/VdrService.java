@@ -13,11 +13,13 @@ import org.hampelratte.svdrp.responses.highlevel.EPGEntry;
 import org.hampelratte.svdrp.responses.highlevel.Timer;
 
 import com.github.stefantt.vdrcontroller.entity.Configuration;
+import com.github.stefantt.vdrcontroller.entity.Searchtimer;
 import com.github.stefantt.vdrcontroller.entity.VdrRecording;
 import com.github.stefantt.vdrcontroller.entity.VirtualFolder;
-import com.github.stefantt.vdrcontroller.repository.ProgramGuides;
-import com.github.stefantt.vdrcontroller.repository.Recordings;
-import com.github.stefantt.vdrcontroller.repository.Timers;
+import com.github.stefantt.vdrcontroller.repository.ProgramGuideRepository;
+import com.github.stefantt.vdrcontroller.repository.RecordingRepository;
+import com.github.stefantt.vdrcontroller.repository.SearchtimerRepository;
+import com.github.stefantt.vdrcontroller.repository.TimerRepository;
 import com.github.stefantt.vdrcontroller.util.FolderUtils;
 import com.github.stefantt.vdrcontroller.vdr.VdrCapabilities;
 import com.github.stefantt.vdrcontroller.vdr.VdrConnection;
@@ -33,10 +35,12 @@ import com.github.stefantt.vdrcontroller.vdr.parser.PluginListParser;
 public class VdrService
 {
     private final VdrConnection vdr;
+
+    private final ProgramGuideRepository programGuideRepo;
+    private final RecordingRepository recordingRepo;
+    private final SearchtimerRepository searchtimerRepo;
+    private final TimerRepository timerRepo;
     private final VdrOsdProxy osdProxy;
-    private final Recordings recordings;
-    private final ProgramGuides programGuides;
-    private final Timers timers;
 
     private VdrCapabilities capabilities;
 
@@ -54,16 +58,17 @@ public class VdrService
     /**
      * Create a service for accessing VDR data and doing VDR related tasks.
      *
-     * @param connection The VDR connection to use
+     * @param vdr The VDR connection to use
      */
-    public VdrService(VdrConnection connection)
+    public VdrService(VdrConnection vdr)
     {
-        this.vdr = connection;
+        this.vdr = vdr;
 
         this.osdProxy = new VdrOsdProxy(vdr);
-        this.recordings = new Recordings(vdr);
-        this.programGuides = new ProgramGuides(vdr);
-        this.timers = new Timers(vdr);
+        this.programGuideRepo = new ProgramGuideRepository(vdr);
+        this.recordingRepo = new RecordingRepository(vdr);
+        this.searchtimerRepo = new SearchtimerRepository(vdr);
+        this.timerRepo = new TimerRepository(vdr);
     }
 
     /**
@@ -71,8 +76,10 @@ public class VdrService
      */
     public void clearCaches()
     {
-        recordings.clearCache();
-        programGuides.clearCache();
+        programGuideRepo.clearCache();
+        recordingRepo.clearCache();
+        searchtimerRepo.clearCache();
+        timerRepo.clearCache();
     }
 
     /**
@@ -84,11 +91,39 @@ public class VdrService
     }
 
     /**
+     * @return All search timers.
+     */
+    public Collection<Searchtimer> getSearchtimers()
+    {
+        return searchtimerRepo.getAll();
+    }
+
+    /**
+     * Enable a search timer.
+     *
+     * @param id The ID of the search timer
+     */
+    public void enableSearchtimer(int id)
+    {
+        searchtimerRepo.enable(id);
+    }
+
+    /**
+     * Disable a search timer.
+     *
+     * @param id The ID of the search timer
+     */
+    public void disableSearchtimer(int id)
+    {
+        searchtimerRepo.disable(id);
+    }
+
+    /**
      * @return All timers.
      */
     public Collection<Timer> getTimers()
     {
-        return timers.getAll();
+        return timerRepo.getAll();
     }
 
     /**
@@ -98,7 +133,7 @@ public class VdrService
      */
     public void enableTimer(int id)
     {
-        timers.enable(id);
+        timerRepo.enable(id);
     }
 
     /**
@@ -108,7 +143,7 @@ public class VdrService
      */
     public void disableTimer(int id)
     {
-        timers.disable(id);
+        timerRepo.disable(id);
     }
 
     /**
@@ -120,7 +155,7 @@ public class VdrService
      */
     public EPGEntry findEpgEntryByChannelTime(String channelId, long time)
     {
-        return programGuides.findByChannelStart(channelId, time);
+        return programGuideRepo.findByChannelStart(channelId, time);
     }
 
     /**
@@ -131,7 +166,7 @@ public class VdrService
      */
     public VdrRecording getRecording(UUID id)
     {
-        return recordings.get(id);
+        return recordingRepo.get(id);
     }
 
     /**
@@ -141,7 +176,7 @@ public class VdrService
      */
     public void deleteRecording(UUID id)
     {
-        recordings.delete(id);
+        recordingRepo.delete(id);
     }
 
     /**
@@ -151,11 +186,11 @@ public class VdrService
      */
     public void deleteRecordings(String path)
     {
-        VirtualFolder<VdrRecording> folder = FolderUtils.findFolder(recordings.getRootFolder(), path);
+        VirtualFolder<VdrRecording> folder = FolderUtils.findFolder(recordingRepo.getRootFolder(), path);
         if (folder == null)
             throw new VdrRuntimeException(HttpStatus.NOT_FOUND_404, "Folder not found: " + path);
 
-        recordings.delete(folder);
+        recordingRepo.delete(folder);
     }
 
     /**
@@ -167,9 +202,9 @@ public class VdrService
     public VirtualFolder<VdrRecording> getRecordingsFolder(String path)
     {
         if (StringUtils.isEmpty(path))
-            return recordings.getRootFolder();
+            return recordingRepo.getRootFolder();
 
-        return FolderUtils.findFolder(recordings.getRootFolder(), path);
+        return FolderUtils.findFolder(recordingRepo.getRootFolder(), path);
     }
 
     /**
@@ -207,7 +242,7 @@ public class VdrService
         setConnection(config.getVdrHost(), config.getVdrPort());
 
         String epgDataFile = config.getEpgDataFile();
-        programGuides.setEpgDataFile(StringUtils.isEmpty(epgDataFile) ? null : new File(epgDataFile));
+        programGuideRepo.setEpgDataFile(StringUtils.isEmpty(epgDataFile) ? null : new File(epgDataFile));
     }
 
     /**

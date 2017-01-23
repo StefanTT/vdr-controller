@@ -37,19 +37,13 @@ import com.github.stefantt.vdrcontroller.vdr.commands.LSTRpath;
  *
  * @author "Stefan Taferner <stefan.taferner@gmx.at>"
  */
-public class Recordings
+public class RecordingRepository extends AbstractCachingVdrRepository
 {
-    private static final Logger LOGGER = LoggerFactory.getLogger(Recordings.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(RecordingRepository.class);
     private static final String ROOT_FOLDER_NAME = "/";
-
-    // The maximum age of the list of recordings before they are re-read from VDR
-    private static final int RECORDINGS_MAX_AGE_MSEC = 60000;
-
-    private final VdrConnection vdr;
 
     private Map<UUID, VdrRecording> recordings = new HashMap<>();
     private VirtualFolder<VdrRecording> rootFolder = new VirtualFolder<>(ROOT_FOLDER_NAME, null);
-    private long lastUpdated = 0;
     private int reloadTries = 3;
 
     /**
@@ -57,17 +51,9 @@ public class Recordings
      *
      * @param vdr The VDR connection to use
      */
-    public Recordings(VdrConnection vdr)
+    public RecordingRepository(VdrConnection vdr)
     {
-        this.vdr = vdr;
-    }
-
-    /**
-     * Clear cached data.
-     */
-    public void clearCache()
-    {
-        lastUpdated = 0;
+        super(vdr);
     }
 
     /**
@@ -238,7 +224,8 @@ public class Recordings
      */
     public void setRecordings(List<VdrRecording> recs)
     {
-        lastUpdated = System.currentTimeMillis();
+        markUpdated();
+
         this.recordings.clear();
         recs.forEach((rec) -> {
             recordings.put(rec.getId(), rec);
@@ -270,7 +257,7 @@ public class Recordings
         return vdr.execute((con) -> {
             for (int tries = retries; tries >= 0; --tries)
             {
-                if (needUpdate())
+                if (isUpdateRequired())
                     update(con);
 
                 T ret = task.execute(con);
@@ -280,7 +267,7 @@ public class Recordings
                 if (tries > 0)
                 {
                     LOGGER.debug("List of recordings may have changed, reloading");
-                    lastUpdated = 0;
+                    clearCache();
                 }
             }
 
@@ -288,32 +275,8 @@ public class Recordings
         });
     }
 
-    /**
-     * @return The time of the last update of all recordings, in milliseconds.
-     */
-    public long getLastUpdated()
-    {
-        return lastUpdated;
-    }
-
-    /**
-     * @return True if the list of recordings needs an update, false if not.
-     */
-    private boolean needUpdate()
-    {
-        return System.currentTimeMillis() - RECORDINGS_MAX_AGE_MSEC > lastUpdated;
-    }
-
-    /**
-     * Ensure that the recordings are up to date.
-     */
-    protected synchronized void ensureUpdated()
-    {
-        if (needUpdate())
-            vdr.execute((con) -> update(con));
-    }
-
-    private Void update(Connection con) throws IOException
+    @Override
+    protected Void update(Connection con) throws IOException
     {
         LOGGER.debug("Updating recordings");
 
@@ -340,9 +303,7 @@ public class Recordings
             recordings = newRecordings;
         }
 
-        lastUpdated = System.currentTimeMillis();
         updateFolders();
-
         return null;
     }
 

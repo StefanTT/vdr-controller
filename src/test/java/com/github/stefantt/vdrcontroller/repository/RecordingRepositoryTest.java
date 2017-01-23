@@ -16,11 +16,11 @@ import com.github.stefantt.vdrcontroller.vdr.VdrConnection;
 import com.github.stefantt.vdrcontroller.vdr.VdrRuntimeException;
 
 /**
- * Tests for {@link Recordings}.
+ * Tests for {@link RecordingRepository}.
  *
  * @author Stefan Taferner
  */
-public class RecordingsTest
+public class RecordingRepositoryTest
 {
     private static SvdrpEmulator EMULATOR = new SvdrpEmulator(0, SvdrpEmulator.DEFAULT_REPLIES_DIR);
     private static Thread EMULATOR_THREAD;
@@ -41,7 +41,7 @@ public class RecordingsTest
     @Test
     public void getRootFolder()
     {
-        Recordings target = new Recordings(new VdrConnection("localhost", EMULATOR.getPort()));
+        RecordingRepository target = new RecordingRepository(new VdrConnection("localhost", EMULATOR.getPort()));
 
         VirtualFolder<VdrRecording> root = target.getRootFolder();
         assertNotNull(root);
@@ -51,7 +51,7 @@ public class RecordingsTest
     @Test
     public void get()
     {
-        Recordings target = new Recordings(new VdrConnection("localhost", EMULATOR.getPort()));
+        RecordingRepository target = new RecordingRepository(new VdrConnection("localhost", EMULATOR.getPort()));
         target.setReloadTimes(0);
 
         VdrRecording rec = target.get(target.getId(325));
@@ -61,7 +61,7 @@ public class RecordingsTest
     @Test(expected = VdrRuntimeException.class)
     public void get_notExists()
     {
-        Recordings target = new Recordings(new VdrConnection("localhost", EMULATOR.getPort()));
+        RecordingRepository target = new RecordingRepository(new VdrConnection("localhost", EMULATOR.getPort()));
         target.setReloadTimes(0);
         target.get(new UUID(0, 0));
     }
@@ -69,7 +69,7 @@ public class RecordingsTest
     @Test
     public void get_402()
     {
-        Recordings target = new Recordings(new VdrConnection("localhost", EMULATOR.getPort()));
+        RecordingRepository target = new RecordingRepository(new VdrConnection("localhost", EMULATOR.getPort()));
         target.setReloadTimes(0);
 
         VdrRecording rec = target.get(target.getId(402));
@@ -79,7 +79,7 @@ public class RecordingsTest
     @Test
     public void delete()
     {
-        Recordings target = new Recordings(new VdrConnection("localhost", EMULATOR.getPort()));
+        RecordingRepository target = new RecordingRepository(new VdrConnection("localhost", EMULATOR.getPort()));
         target.setReloadTimes(0);
         target.delete(target.getId(402));
     }
@@ -87,7 +87,7 @@ public class RecordingsTest
     @Test(expected = VdrRuntimeException.class)
     public void delete_notExists()
     {
-        Recordings target = new Recordings(new VdrConnection("localhost", EMULATOR.getPort()));
+        RecordingRepository target = new RecordingRepository(new VdrConnection("localhost", EMULATOR.getPort()));
         target.setReloadTimes(0);
         target.delete(target.getId(9999));
     }
@@ -95,7 +95,7 @@ public class RecordingsTest
     @Test
     public void deleteFolder()
     {
-        Recordings target = new Recordings(new VdrConnection("localhost", EMULATOR.getPort()));
+        RecordingRepository target = new RecordingRepository(new VdrConnection("localhost", EMULATOR.getPort()));
         target.setReloadTimes(0);
         VirtualFolder<VdrRecording> folder = FolderUtils.findFolder(target.getRootFolder(), "Barbie");
         assertNotNull(folder);

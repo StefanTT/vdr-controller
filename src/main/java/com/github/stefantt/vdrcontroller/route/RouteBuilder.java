@@ -205,6 +205,26 @@ public class RouteBuilder
             return gson.toJson(VdrUtils.toBriefTimers(vdrService.getTimers()));
         });
 
+        post("/rest/vdr/searchtimer/:id/enable", (request, response) ->
+        {
+            vdrService.enableSearchtimer(Integer.parseInt(request.params(":id")));
+            response.status(HttpStatus.ACCEPTED_202);
+            return "Ok";
+        });
+
+        post("/rest/vdr/searchtimer/:id/disable", (request, response) ->
+        {
+            vdrService.disableSearchtimer(Integer.parseInt(request.params(":id")));
+            response.status(HttpStatus.ACCEPTED_202);
+            return "Ok";
+        });
+
+        get("/rest/vdr/searchtimer", (request, response) ->
+        {
+            response.type(ContentType.JSON);
+            return gson.toJson(VdrUtils.toBriefSearchtimers(vdrService.getSearchtimers()));
+        });
+
         post("/rest/vdr/timer/:id/enable", (request, response) ->
         {
             vdrService.enableTimer(Integer.parseInt(request.params(":id")));

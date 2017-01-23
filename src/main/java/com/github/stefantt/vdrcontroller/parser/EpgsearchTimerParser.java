@@ -9,8 +9,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.github.stefantt.vdrcontroller.entity.AutoTimer;
-import com.github.stefantt.vdrcontroller.entity.AutoTimer.SearchMode;
+import com.github.stefantt.vdrcontroller.entity.Searchtimer;
+import com.github.stefantt.vdrcontroller.entity.Searchtimer.SearchMode;
 
 /**
  * A parser for auto timers in epgsearch format.
@@ -19,9 +19,9 @@ import com.github.stefantt.vdrcontroller.entity.AutoTimer.SearchMode;
  *
  * @author Stefan Taferner
  */
-public class EpgsearchAutoTimerParser
+public class EpgsearchTimerParser
 {
-    private static final Logger LOGGER = LoggerFactory.getLogger(EpgsearchAutoTimerParser.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(EpgsearchTimerParser.class);
     private static final Pattern PIPE_PATTERN = Pattern.compile("!^pipe^!");
 
 
@@ -31,9 +31,9 @@ public class EpgsearchAutoTimerParser
      * @param lines The lines to parse
      * @return The list of autotimers
      */
-    public List<AutoTimer> parse(String lines)
+    public List<Searchtimer> parse(String lines)
     {
-        List<AutoTimer> timers = new ArrayList<>(128);
+        List<Searchtimer> timers = new ArrayList<>(128);
 
         StringTokenizer tokenizer = new StringTokenizer(lines, "\n");
         while (tokenizer.hasMoreTokens())
@@ -41,7 +41,7 @@ public class EpgsearchAutoTimerParser
             String line = tokenizer.nextToken();
             if (line.startsWith("End")) break;
 
-            AutoTimer timer = parseLine(line);
+            Searchtimer timer = parseLine(line);
             if (timer != null)
                 timers.add(timer);
         }
@@ -55,7 +55,7 @@ public class EpgsearchAutoTimerParser
      * @param line The line to parse
      * @return The parsed auto timer
      */
-    public AutoTimer parseLine(String line)
+    public Searchtimer parseLine(String line)
     {
         if (line == null)
             return null;
@@ -63,7 +63,7 @@ public class EpgsearchAutoTimerParser
         String[] fields = line.split(":");
         if (fields.length < 10) return null;
 
-        AutoTimer timer = new AutoTimer();
+        Searchtimer timer = new Searchtimer();
         timer.setId(Integer.parseInt(fields[0]));
         timer.setSearch(unescape(fields[1]));
         timer.setSearchMode(searchMode(fields[8]));
@@ -73,7 +73,11 @@ public class EpgsearchAutoTimerParser
         timer.setSearchDescription("1".equals(fields[11]));
 
         String channelMode = fields[5];
-        if ("1".equals(channelMode))
+        if ("0".equals(channelMode))
+        {
+            // no channel selection
+        }
+        else if ("1".equals(channelMode))
         {
             String[] channels = StringUtils.split(fields[6], '|');
             timer.setFromChannel(channels[0]);
@@ -98,14 +102,16 @@ public class EpgsearchAutoTimerParser
             timer.setDurationRange(hhmmToMinutes(fields[13]), hhmmToMinutes(fields[14]));
         }
 
+        timer.setEnabled("1".equals(fields[15]));
+
         // TODO fields[17] -> day of week
 
         timer.setSeries("1".equals(fields[18]));
         timer.setFolder(fields[19]);
-        timer.setPriority(parseInt(fields[20], AutoTimer.DEFAULT_PRIORITY));
-        timer.setLifetime(parseInt(fields[21], AutoTimer.DEFAULT_LIFETIME));
-        timer.setTimeMarginStart(parseInt(fields[22], AutoTimer.DEFAULT_TIMEMARGIN_START));
-        timer.setTimeMarginStop(parseInt(fields[23], AutoTimer.DEFAULT_TIMEMARGIN_STOP));
+        timer.setPriority(parseInt(fields[20], Searchtimer.DEFAULT_PRIORITY));
+        timer.setLifetime(parseInt(fields[21], Searchtimer.DEFAULT_LIFETIME));
+        timer.setTimeMarginStart(parseInt(fields[22], Searchtimer.DEFAULT_TIMEMARGIN_START));
+        timer.setTimeMarginStop(parseInt(fields[23], Searchtimer.DEFAULT_TIMEMARGIN_STOP));
 
         timer.setAvoidRepeats("1".equals(fields[28]));
         timer.setRepeatsCompareTitle("1".equals(fields[30]));

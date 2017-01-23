@@ -7,7 +7,7 @@ import org.apache.commons.lang3.Range;
  *
  * @author Stefan Taferner
  */
-public class AutoTimer
+public class Searchtimer
 {
     /**
      * The search mode for auto timers.
@@ -57,6 +57,11 @@ public class AutoTimer
      */
     public static final int DEFAULT_TIMEMARGIN_STOP = 10;
 
+    /**
+     * The default percentage when comparing descriptions for repeats detection.
+     */
+    public static final int DEFAULT_REPEATS_MATCH_DESC_PERC = 90;
+
     private int id;
     private boolean enabled = true;
     private String search;
@@ -80,66 +85,18 @@ public class AutoTimer
     private boolean avoidRepeats;
     private boolean repeatsCompareTitle;
     private boolean repeatsCompareSubtitle;
-    private Integer repeatsMatchDescriptionPercent;
-
-    public boolean isEnabled()
-    {
-        return enabled;
-    }
-
-    public void setEnabled(boolean enabled)
-    {
-        this.enabled = enabled;
-    }
-
-    public int getRepeatsMatchDescriptionPercent()
-    {
-        return repeatsMatchDescriptionPercent;
-    }
-
-    public void setRepeatsMatchDescriptionPercent(int repeatsMatchDescriptionPercent)
-    {
-        this.repeatsMatchDescriptionPercent = repeatsMatchDescriptionPercent;
-    }
-
-    public boolean isRepeatsCompareDescription()
-    {
-        return repeatsMatchDescriptionPercent != 0;
-    }
-
-    public boolean isAvoidRepeats()
-    {
-        return avoidRepeats;
-    }
-
-    public void setAvoidRepeats(boolean avoidRepeats)
-    {
-        this.avoidRepeats = avoidRepeats;
-    }
-
-    public boolean isRepeatsCompareTitle()
-    {
-        return repeatsCompareTitle;
-    }
-
-    public boolean isRepeatsCompareSubtitle()
-    {
-        return repeatsCompareSubtitle;
-    }
-
-    public void setRepeatsCompareTitle(boolean repeatsCompareTitle)
-    {
-        this.repeatsCompareTitle = repeatsCompareTitle;
-    }
-
-    public void setRepeatsCompareSubtitle(boolean repeatsCompareSubtitle)
-    {
-        this.repeatsCompareSubtitle = repeatsCompareSubtitle;
-    }
+    private Integer repeatsMatchDescriptionPercent = null;
+    private int deleteAfterDays;
+    private int keepRecordings;
 
     public String getChannelGroup()
     {
         return channelGroup;
+    }
+
+    public int getDeleteAfterDays()
+    {
+        return deleteAfterDays;
     }
 
     public Range<Integer> getDurationRange()
@@ -162,6 +119,11 @@ public class AutoTimer
         return id;
     }
 
+    public int getKeepRecordings()
+    {
+        return keepRecordings;
+    }
+
     public int getLifetime()
     {
         return lifetime;
@@ -170,6 +132,13 @@ public class AutoTimer
     public int getPriority()
     {
         return priority;
+    }
+
+    public int getRepeatsMatchDescriptionPercent()
+    {
+        if (repeatsMatchDescriptionPercent == null)
+            return DEFAULT_REPEATS_MATCH_DESC_PERC;
+        return repeatsMatchDescriptionPercent;
     }
 
     public String getSearch()
@@ -207,9 +176,34 @@ public class AutoTimer
         return weekdays;
     }
 
+    public boolean isAvoidRepeats()
+    {
+        return avoidRepeats;
+    }
+
     public boolean isCaseSensitive()
     {
         return isCaseSensitive;
+    }
+
+    public boolean isEnabled()
+    {
+        return enabled;
+    }
+
+    public boolean isRepeatsCompareDescription()
+    {
+        return repeatsMatchDescriptionPercent != null;
+    }
+
+    public boolean isRepeatsCompareSubtitle()
+    {
+        return repeatsCompareSubtitle;
+    }
+
+    public boolean isRepeatsCompareTitle()
+    {
+        return repeatsCompareTitle;
     }
 
     public boolean isSearchDescription()
@@ -232,6 +226,11 @@ public class AutoTimer
         return isSeries;
     }
 
+    public void setAvoidRepeats(boolean avoidRepeats)
+    {
+        this.avoidRepeats = avoidRepeats;
+    }
+
     public void setCaseSensitive(boolean isCaseSensitive)
     {
         this.isCaseSensitive = isCaseSensitive;
@@ -242,6 +241,11 @@ public class AutoTimer
         this.channelGroup = channelGroup;
     }
 
+    public void setDeleteAfterDays(int deleteAfterDays)
+    {
+        this.deleteAfterDays = deleteAfterDays;
+    }
+
     public void setDurationRange(Integer min, Integer max)
     {
         this.durationRange = Range.between(min, max);
@@ -250,6 +254,11 @@ public class AutoTimer
     public void setDurationRange(Range<Integer> durationRange)
     {
         this.durationRange = durationRange;
+    }
+
+    public void setEnabled(boolean enabled)
+    {
+        this.enabled = enabled;
     }
 
     public void setFolder(String folder)
@@ -267,6 +276,11 @@ public class AutoTimer
         this.id = id;
     }
 
+    public void setKeepRecordings(int num)
+    {
+        this.keepRecordings = num;
+    }
+
     public void setLifetime(int lifetime)
     {
         this.lifetime = lifetime;
@@ -275,6 +289,21 @@ public class AutoTimer
     public void setPriority(int priority)
     {
         this.priority = priority;
+    }
+
+    public void setRepeatsCompareSubtitle(boolean repeatsCompareSubtitle)
+    {
+        this.repeatsCompareSubtitle = repeatsCompareSubtitle;
+    }
+
+    public void setRepeatsCompareTitle(boolean repeatsCompareTitle)
+    {
+        this.repeatsCompareTitle = repeatsCompareTitle;
+    }
+
+    public void setRepeatsMatchDescriptionPercent(int repeatsMatchDescriptionPercent)
+    {
+        this.repeatsMatchDescriptionPercent = repeatsMatchDescriptionPercent;
     }
 
     public void setSearch(String search)

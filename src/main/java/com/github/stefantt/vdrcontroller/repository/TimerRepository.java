@@ -22,24 +22,19 @@ import com.github.stefantt.vdrcontroller.vdr.VdrRuntimeException;
  *
  * @author Stefan Taferner <stefan.taferner@gmx.at>
  */
-public class Timers
+public class TimerRepository extends AbstractCachingRepository
 {
-    private static final Logger LOGGER = LoggerFactory.getLogger(Timers.class);
-
-    // The maximum age of the list of timers before they are re-read from VDR
-    private static final int DATA_MAX_AGE_MSEC = 60000;
+    private static final Logger LOGGER = LoggerFactory.getLogger(TimerRepository.class);
 
     private final VdrConnection vdr;
-
     private Map<Integer, Timer> timers;
-    private long lastUpdated = 0;
 
     /**
      * Create a repository that holds the VDR timers.
      *
      * @param vdr The VDR connection to use
      */
-    public Timers(VdrConnection vdr)
+    public TimerRepository(VdrConnection vdr)
     {
         this.vdr = vdr;
     }
@@ -99,26 +94,10 @@ public class Timers
     }
 
     /**
-     * Clear cached data.
-     */
-    public void clearCache()
-    {
-        lastUpdated = 0;
-    }
-
-    /**
-     * Ensure that the EPG data is up to date.
-     */
-    private void ensureUpdated()
-    {
-        if (System.currentTimeMillis() - DATA_MAX_AGE_MSEC > lastUpdated)
-            update();
-    }
-
-    /**
      * Update the EPG data.
      */
-    private synchronized void update()
+    @Override
+    protected synchronized void update()
     {
         Map<Integer, Timer> newTimers = new HashMap<>(256);
         Response res = vdr.query(new LSTT());
@@ -130,6 +109,5 @@ public class Timers
             newTimers.put(timer.getID(), timer);
 
         timers = newTimers;
-        lastUpdated = System.currentTimeMillis();
     }
 }
