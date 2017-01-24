@@ -138,7 +138,8 @@
         <filtering>false</filtering>
         <directory>${basedir}/src/main/resources</directory>
         <excludes>
-          <exclude>**/*.js</exclude>
+          <exclude>web/**/*.js</exclude>
+          <exclude>web/*.js</exclude>
           <exclude>web/index.html</exclude>
         </excludes>
       </resource>

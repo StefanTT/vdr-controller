@@ -3,7 +3,7 @@
 angular.module('app.searchtimer')
        .controller('SearchtimerOverviewCtrl', SearchtimerOverviewCtrl);
 
-function SearchtimerOverviewCtrl($scope, $routeParams, $filter, $window, $sanitize, SearchtimerService)
+function SearchtimerOverviewCtrl($scope, $routeParams, $filter, $location, SearchtimerService)
 {
     $scope.timers = SearchtimerService.query();
 
@@ -26,5 +26,10 @@ function SearchtimerOverviewCtrl($scope, $routeParams, $filter, $window, $saniti
     {
         SearchtimerService.enable(timer.id)
             .then(() => { timer.enabled = true; });
+    }
+
+    $scope.showDetails = function(timer)
+    {
+        $location.path('/searchtimer/' + timer.id);
     }
 }

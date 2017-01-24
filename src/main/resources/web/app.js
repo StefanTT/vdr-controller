@@ -8,7 +8,7 @@ angular.module('app',
     .run(appRun);
 
 appConfig.$inject = [ '$routeProvider', '$locationProvider', '$translateProvider', '$httpProvider' ];
-function appConfig($routeProvider, $locationProvider, $translateProvider, $httpProvider)
+function appConfig($routeProvider, $locationProvider, $translateProvider, $httpProvider, $window)
 {
     $locationProvider.hashPrefix('');
 
@@ -45,6 +45,10 @@ function appConfig($routeProvider, $locationProvider, $translateProvider, $httpP
     {
         templateUrl : '/app/searchtimer/searchtimer.overview.html',
         controller : 'SearchtimerOverviewCtrl'
+    }).when('/searchtimer/:id',
+    {
+        templateUrl : '/app/searchtimer/searchtimer.details.html',
+        controller : 'SearchtimerDetailsCtrl'
     }).when('/setup',
     {
         templateUrl : '/app/setup/setup.html',

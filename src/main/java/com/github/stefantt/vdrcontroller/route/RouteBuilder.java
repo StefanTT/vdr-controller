@@ -225,6 +225,12 @@ public class RouteBuilder
             return gson.toJson(VdrUtils.toBriefSearchtimers(vdrService.getSearchtimers()));
         });
 
+        get("/rest/vdr/searchtimer/:id", (request, response) ->
+        {
+            response.type(ContentType.JSON);
+            return gson.toJson(vdrService.getSearchtimer(Integer.parseInt(request.params(":id"))));
+        });
+
         post("/rest/vdr/timer/:id/enable", (request, response) ->
         {
             vdrService.enableTimer(Integer.parseInt(request.params(":id")));

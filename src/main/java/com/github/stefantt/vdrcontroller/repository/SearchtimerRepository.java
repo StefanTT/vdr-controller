@@ -6,8 +6,6 @@ import java.util.Map;
 
 import org.eclipse.jetty.http.HttpStatus;
 import org.hampelratte.svdrp.Response;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.github.stefantt.vdrcontroller.entity.Searchtimer;
 import com.github.stefantt.vdrcontroller.parser.EpgsearchTimerParser;
@@ -23,8 +21,6 @@ import com.github.stefantt.vdrcontroller.vdr.commands.EpgsearchLSTS;
  */
 public class SearchtimerRepository extends AbstractCachingRepository
 {
-    private static final Logger LOGGER = LoggerFactory.getLogger(SearchtimerRepository.class);
-
     private final VdrConnection vdr;
     private Map<Integer, Searchtimer> timers = new HashMap<>();
 
@@ -39,40 +35,24 @@ public class SearchtimerRepository extends AbstractCachingRepository
     }
 
     /**
+     * Get a specific search timer.
+     *
+     * @param id The ID of the search timer
+     * @return The search timer, null if not found
+     */
+    public Searchtimer get(int id)
+    {
+        ensureUpdated();
+        return timers.get(id);
+    }
+
+    /**
      * @return The search timers.
      */
     public Collection<Searchtimer> getAll()
     {
         ensureUpdated();
         return timers.values();
-    }
-
-    /**
-     * Enable a search timer.
-     *
-     * @param id The ID of the search timer
-     */
-    public void enable(int id)
-    {
-        LOGGER.info("Enabling searchtimer #{}", id);
-        ensureUpdated();
-        Searchtimer timer = timers.get(id);
-        timer.setEnabled(true);
-        modify(timer);
-    }
-
-    /**
-     * Disable a search timer.
-     *
-     * @param id The ID of the search timer
-     */
-    public void disable(int id)
-    {
-        LOGGER.info("Disabling searchtimer #{}", id);
-        ensureUpdated();
-        Searchtimer timer = timers.get(id);
-        timer.setEnabled(false);
-        modify(timer);
     }
 
     /**

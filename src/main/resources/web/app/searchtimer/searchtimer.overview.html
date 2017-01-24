@@ -1,9 +1,17 @@
 <div class="row">
- <div class="col-sm-1"></div>
+ <div class="col-sm-1">
+  <nav id="actionButtons" class="vertical-toolbar fixed">
+   <ul class="nav">
+    <li class="nav-item" title="{{'searchtimer.overview.create.toolTip'|translate}}">
+     <a class="nav-link disabled" href="#/searchtimer/-1"><span class="fa fa-plus-circle fa-2x" /></a>
+    </li>
+   </ul>
+  </nav>
+ </div>
  <div class="col-sm-11">
   <div class="timer-overview-options">
    <div>
-    <label for="showAll" translate="searchtimer.overview.showAll"></label>
+    <label class="font-normal" for="showAll" translate="searchtimer.overview.showAll"></label>
     <input id="showAll" type="checkbox" ng-model="showAll" />
    </div>
   </div>
@@ -17,8 +25,8 @@
      <a ng-show="!t.enabled" title="{{'searchtimer.overview.timerDisabledTip'|translate}}"
         class="fa fa-square-o" href="" ng-click="enableTimer(t)"></a>
     </td>
-    <td>{{t.folder}}</td>
-    <td uib-tooltip-html="tooltip" tooltip-class="timer-tooltip"
+    <td class="clickable" ng-click="showDetails(t)">{{t.folder}}</td>
+    <td uib-tooltip-html="tooltip" tooltip-class="timer-tooltip" class="clickable" ng-click="showDetails(t)"
         tooltip-placement="top-left" tooltip-popup-delay="500" tooltip-append-to-body="true"
         ng-mouseover="mouseOver(t)">{{t.search}}</td>
    </tr>

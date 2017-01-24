@@ -11,6 +11,8 @@ import org.hampelratte.svdrp.commands.PLUG;
 import org.hampelratte.svdrp.responses.R214;
 import org.hampelratte.svdrp.responses.highlevel.EPGEntry;
 import org.hampelratte.svdrp.responses.highlevel.Timer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.github.stefantt.vdrcontroller.entity.Configuration;
 import com.github.stefantt.vdrcontroller.entity.Searchtimer;
@@ -34,6 +36,8 @@ import com.github.stefantt.vdrcontroller.vdr.parser.PluginListParser;
  */
 public class VdrService
 {
+    private static final Logger LOGGER = LoggerFactory.getLogger(VdrService.class);
+
     private final VdrConnection vdr;
 
     private final ProgramGuideRepository programGuideRepo;
@@ -99,13 +103,38 @@ public class VdrService
     }
 
     /**
+     * Get a search timer. Returns a new search timer if the supplied ID is -1.
+     *
+     * @param id The ID of the search timer
+     *
+     * @return The search timer
+     */
+    public Searchtimer getSearchtimer(int id)
+    {
+        if (id == -1)
+            return new Searchtimer();
+
+        Searchtimer timer = searchtimerRepo.get(id);
+        if (timer == null)
+            throw new VdrRuntimeException(HttpStatus.NOT_FOUND_404, "search timer not found");
+        return timer;
+    }
+
+    /**
      * Enable a search timer.
      *
      * @param id The ID of the search timer
      */
     public void enableSearchtimer(int id)
     {
-        searchtimerRepo.enable(id);
+        LOGGER.info("Enabling searchtimer #{}", id);
+
+        Searchtimer timer = searchtimerRepo.get(id);
+        if (timer == null)
+            throw new VdrRuntimeException(HttpStatus.NOT_FOUND_404, "search timer not found");
+
+        timer.setEnabled(true);
+        searchtimerRepo.modify(timer);
     }
 
     /**
@@ -115,7 +144,14 @@ public class VdrService
      */
     public void disableSearchtimer(int id)
     {
-        searchtimerRepo.disable(id);
+        LOGGER.info("Disabling searchtimer #{}", id);
+
+        Searchtimer timer = searchtimerRepo.get(id);
+        if (timer == null)
+            throw new VdrRuntimeException(HttpStatus.NOT_FOUND_404, "search timer not found");
+
+        timer.setEnabled(false);
+        searchtimerRepo.modify(timer);
     }
 
     /**
