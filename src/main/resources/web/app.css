@@ -343,3 +343,30 @@ table.keyvalue-table td
 {
  cursor: pointer;
 }
+
+.inline-input-group
+{
+ display: inline-block;
+ vertical-align: middle;
+}
+
+.clockpicker input[type=text]
+{
+ width: 5em;
+}
+
+.hmargin-8
+{
+ margin-left: 8pt;
+ margin-right: 8pt;
+}
+
+.lmargin-8
+{
+ margin-left: 8pt;
+}
+
+.rmargin-8
+{
+ margin-right: 8pt;
+}

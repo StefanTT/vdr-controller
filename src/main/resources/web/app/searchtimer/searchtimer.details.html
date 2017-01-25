@@ -1,66 +1,159 @@
 <div class="row">
- <div class="col-sm-1"></div>
- <div class="col-sm-11">
+ <div class="col-sm-10 col-sm-offset-1">
   <h2 ng-show="id>=0" translate="searchtimer.details.caption"></h2>
   <h2 ng-show="id<0" translate="searchtimer.details.captionCreate"></h2>
-  <form class="form-horizontal">
-   <div class="form-group">
-    <label class="col-sm-2 control-label" for="search" translate="searchtimer.details.search"></label>
-    <div class="col-sm-10">
-     <input type="text" id="search" ng-model="timer.search" class="form-control" />
-    </div>
+ </div>
+</div>
+<div class="row">
+ <div class="col-sm-10 col-sm-offset-1">
+ <form class="form-horizontal well">
+  <div class="form-group">
+   <label class="col-sm-3 control-label" for="search" translate="searchtimer.details.search"/>
+   <div class="col-sm-9">
+    <input type="text" id="search" ng-model="timer.search" class="form-control" required="true" autofocus="autofocus" />
    </div>
-   <div class="form-group">
-    <label class="col-sm-2 control-label" translate="searchtimer.details.searchMode"><</label>
-    <div class="col-sm-10">
-     <input id="searchModeAll" type="radio" ng-model="timer.searchMode" value="ALL_WORDS" />
-     <label class="font-normal" for="searchModeAll" translate="searchtimer.details.matchAllWords"></label>
-     &nbsp;
-     <input id="searchModeAny" type="radio" ng-model="timer.searchMode" value="ANY_WORD" />
-     <label class="font-normal" for="searchModeAny" translate="searchtimer.details.matchAnyWord"></label>
-     &nbsp;
-     <input id="searchModeExact" type="radio" ng-model="timer.searchMode" value="EXACT" />
-     <label class="font-normal" for="searchModeExact" translate="searchtimer.details.matchExact"></label>
-     &nbsp;
-     <input id="searchModeSubstr" type="radio" ng-model="timer.searchMode" value="SUBSTRING" />
-     <label class="font-normal" for="searchModeSubstr" translate="searchtimer.details.matchSubstring"></label>
-    </div>
+  </div>
+  <div class="form-group">
+   <label class="col-sm-3 control-label" translate="searchtimer.details.searchMode"><</label>
+   <div class="col-sm-9">
+    <input id="searchModeAll" type="radio" ng-model="timer.searchMode" value="ALL_WORDS" />
+    <label class="font-normal rmargin-8" for="searchModeAll" translate="searchtimer.details.matchAllWords"/>
+    <input id="searchModeAny" type="radio" ng-model="timer.searchMode" value="ANY_WORD" />
+    <label class="font-normal rmargin-8" for="searchModeAny" translate="searchtimer.details.matchAnyWord"/>
+    <input id="searchModeExact" type="radio" ng-model="timer.searchMode" value="EXACT" />
+    <label class="font-normal rmargin-8" for="searchModeExact" translate="searchtimer.details.matchExact"/>
+    <input id="searchModeSubstr" type="radio" ng-model="timer.searchMode" value="SUBSTRING" />
+    <label class="font-normal" for="searchModeSubstr" translate="searchtimer.details.matchSubstring"/>
    </div>
-   <div class="form-group">
-    <label class="col-sm-2 control-label" for="searchCase" translate="searchtimer.details.caseSensitive"></label>
-    <div class="col-sm-1">
-     <input type="checkbox" id="searchCase" ng-model="timer.isCaseSensitive" />
-    </div>
+  </div>
+  <div class="form-group">
+   <label class="col-sm-3 control-label" for="searchCase" translate="searchtimer.details.caseSensitive"/>
+   <div class="col-sm-9">
+    <input type="checkbox" id="searchCase" ng-model="timer.isCaseSensitive" />
+    <label for="searchCase" class="font-normal" translate="searchtimer.details.caseSensitivePost" />
    </div>
-   <div class="form-group">
-    <label class="col-sm-2 control-label" translate="searchtimer.details.searchIn"></label>
-    <div class="col-sm-10">
-     <input id="searchInTitle" type="checkbox" ng-model="timer.searchTitle" />
-     <label for="searchInTitle" class="font-normal" translate="searchtimer.details.searchInTitle"></label>
-     &nbsp;
-     <input id="searchInSubtitle" type="checkbox" ng-model="timer.searchSubtitle" />
-     <label for="searchInSubtitle" class="font-normal" translate="searchtimer.details.searchInSubtitle"></label>
-     &nbsp;
-     <input id="searchInDescription" type="checkbox" ng-model="timer.searchDescription" />
-     <label for="searchInDescription" class="font-normal" translate="searchtimer.details.searchInDescription"></label>
-    </div>
+  </div>
+  <div class="form-group">
+   <label class="col-sm-3 control-label" translate="searchtimer.details.searchIn"/>
+   <div class="col-sm-9">
+    <input id="searchInTitle" type="checkbox" ng-model="timer.searchTitle" />
+    <label for="searchInTitle" class="font-normal rmargin-8" translate="searchtimer.details.searchInTitle"/>
+    <input id="searchInSubtitle" type="checkbox" ng-model="timer.searchSubtitle" />
+    <label for="searchInSubtitle" class="font-normal rmargin-8" translate="searchtimer.details.searchInSubtitle"/>
+    <input id="searchInDescription" type="checkbox" ng-model="timer.searchDescription" />
+    <label for="searchInDescription" class="font-normal" translate="searchtimer.details.searchInDescription"/>
    </div>
-   <div class="form-group">
-    <label class="col-sm-2 control-label" translate="searchtimer.details.startTimeRange"></label>
-    <div class="col-sm-2 input-group clockpicker">
-     <input type="text" class="form-control" ng-model="startTimeMin">
-     <span class="input-group-addon">
-      <span class="fa fa-clock-o"></span>
-     </span>
+  </div>
+  <div class="form-group">
+   <label class="col-sm-3 control-label" translate="searchtimer.details.startTime"/>
+   <div class="col-sm-9">
+    <label for="startTimeMin" class="font-normal rmargin-8" translate="searchtimer.details.startTimeMin" />
+    <div class="inline-input-group">
+     <div id="startTimeMin" class="input-group clockpicker">
+      <input type="text" class="form-control" ng-model="startTimeMin" style="width:5em">
+      <span class="input-group-addon"><span class="fa fa-clock-o" /></span>
+     </div>
     </div>
-    <div class="col-sm-1" translate="searchtimer.details.startTimeRangeAnd" />
-    <div class="col-sm-2 input-group clockpicker">
-     <input type="text" class="form-control" ng-model="startTimeMax">
-     <span class="input-group-addon">
-      <span class="fa fa-clock-o"></span>
-     </span>
+    <label for="startTimeMax" class="font-normal hmargin-8" translate="searchtimer.details.startTimeMax" />
+    <div class="inline-input-group">
+     <div id="startTimeMax" class="input-group clockpicker">
+      <input type="text" class="form-control" ng-model="startTimeMax" style="width:5em">
+      <span class="input-group-addon"><span class="fa fa-clock-o" /></span>
+     </div>
     </div>
    </div>
   </div>
  </form>
+ </div>
+ <!--  -->
+ <div class="col-sm-10 col-sm-offset-1">
+  <label translate="searchtimer.details.recOptions" />
+  <form class="form-horizontal well">
+   <div class="form-group">
+    <label class="col-sm-3 control-label" translate="searchtimer.details.timeMargins"/>
+    <div class="col-sm-9">
+     <label for="timeMarginStart" class="font-normal" translate="searchtimer.details.timeMarginStart" />
+     <input id="timeMarginStart" type="number" min="0" max="999" maxlength="3" style="width:5em" ng-model="timer.timeMarginStart"
+            title="{{'searchtimer.details.timeMarginStart.tip'|translate}}" />
+     <label class="font-normal rmargin-8" translate="searchtimer.details.timeMarginUnits" />
+     <label for="timeMarginStop" class="font-normal lmargin-8" translate="searchtimer.details.timeMarginStop" />
+     <input id="timeMarginStop" type="number" min="0" max="999" maxlength="3" style="width:5em" ng-model="timer.timeMarginStop"
+            title="{{'searchtimer.details.timeMarginStop.tip'|translate}}" />
+     <label class="font-normal" translate="searchtimer.details.timeMarginUnits" />
+    </div>
+   </div>
+   <div class="form-group">
+    <label class="col-sm-3 control-label" for="priority" translate="searchtimer.details.priority"/>
+    <div class="col-sm-9">
+     <input id="priority" type="number" min="1" max="99" maxlength="2" style="width:5em" ng-model="timer.priority" class="form-control" />
+    </div>
+   </div>
+   <div class="form-group">
+    <label class="col-sm-3 control-label" for="lifetime" translate="searchtimer.details.lifetime"/>
+    <div class="col-sm-9">
+     <input id="lifetime" type="number" min="1" max="99" maxlength="2" style="width:5em" ng-model="timer.lifetime" class="form-control" />
+    </div>
+   </div>
+   <div class="form-group">
+    <label class="col-sm-3 control-label" for="folder" translate="searchtimer.details.folder"/>
+    <div class="col-sm-9">
+     <input id="folder" type="text" ng-model="timer.folder" class="form-control" />
+    </div>
+   </div>
+   <div class="form-group">
+    <label class="col-sm-3 control-label" for="isSeries" translate="searchtimer.details.isSeries"/>
+    <div class="col-sm-9">
+     <input id="isSeries" type="checkbox" ng-model="timer.isSeries" />
+    </div>
+   </div>
+  </form>
+ </div>
+ <!--  -->
+ <div class="col-sm-10 col-sm-offset-1">
+  <label translate="searchtimer.details.cleanupOptions" />
+  <form class="form-horizontal well">
+   <div class="form-group">
+    <label class="col-sm-3 control-label" translate="searchtimer.details.deleteRecordings" />
+    <div class="col-sm-9">
+     <input id="deleteNever" type="radio" ng-model="enableDelete" ng-value="false" />
+     <label for="deleteNever" class="font-normal rmargin-8" translate="searchtimer.details.deleteNever" />
+     <input id="deleteAfter" type="radio" ng-model="enableDelete" ng-value="true" />
+     <label for="deleteAfter" class="font-normal rmargin-8" translate="searchtimer.details.deleteAfter" />
+     <input type="number" min="1" max="9999" maxlength="4" style="width:5em" ng-model="timer.deleteAfterDays"
+            ng-disabled="!enableDelete" />
+     <label class="font-normal" translate="searchtimer.details.deleteAfterDays" />
+    </div>
+   </div>
+   <div class="form-group">
+    <label for="keepRecordings" class="col-sm-3 control-label" translate="searchtimer.details.keepRecordings" />
+    <div class="col-sm-9">
+     <input id="keepAll" type="radio" ng-model="enableKeep" ng-value="false" />
+     <label for="keepAll" class="font-normal rmargin-8" translate="searchtimer.details.keepAll" />
+     <input id="keepNum" type="radio" ng-model="enableKeep" ng-value="true" />
+     <label for="keepNum" class="font-normal rmargin-8" translate="searchtimer.details.keepNum" />
+     <input type="number" min="1" max="9999" maxlength="4" style="width:5em" ng-model="timer.keepRecordings"
+            ng-disabled="!enableKeep" />
+     <label class="font-normal" translate="searchtimer.details.keepNumSuffix" />
+    </div>
+   </div>
+  </form>
+ </div>
+ <!--  -->
+ <div class="col-sm-10 col-sm-offset-1">
+  <input id="avoidRepeats" type="checkbox" ng-model="timer.avoidRepeats" />
+  <label for="avoidRepeats" translate="searchtimer.details.avoidRepeats" />
+  <form id="avoidRepeats" class="form-horizontal well">
+   <div class="form-group">
+    <label class="col-sm-3 control-label" translate="searchtimer.details.repeatsCompare"/>
+    <div class="col-sm-9">
+     <input id="compareTitle" type="checkbox" ng-model="timer.searchTitle" />
+     <label for="compareTitle" class="font-normal rmargin-8" translate="searchtimer.details.compareTitle"/>
+     <input id="compareSubtitle" type="checkbox" ng-model="timer.searchSubtitle" />
+     <label for="compareSubtitle" class="font-normal rmargin-8" translate="searchtimer.details.compareSubtitle"/>
+     <input id="compareDescription" type="checkbox" ng-model="compareDescription" />
+     <label for="compareDescription" class="font-normal" translate="searchtimer.details.compareDescription"/>
+    </div>
+   </div>
+  </form>
+ </div>
 </div>

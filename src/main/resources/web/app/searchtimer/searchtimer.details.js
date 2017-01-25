@@ -26,5 +26,18 @@ function SearchtimerDetailsCtrl($scope, $routeParams, $filter, $window, $sanitiz
             $scope.startTimeMin = minutesToTimeStr($scope.timer.startTimeRange.minimum);
             $scope.startTimeMax = minutesToTimeStr($scope.timer.startTimeRange.maximum);
         }
+
+        $scope.compareDescription = $scope.timer.repeatsMatchDescriptionPercent != undefined;
+
+        $scope.enableDelete = $scope.timer.deleteAfterDays > 0;
+        $scope.timer.deleteAfterDays = Math.max(1, $scope.timer.deleteAfterDays);
+
+        $scope.enableKeep = $scope.timer.keepRecordings > 0;
+        $scope.timer.keepRecordings = Math.max(1, $scope.timer.keepRecordings);
+    });
+
+    $scope.$watch('timer.avoidRepeats', () =>
+    {
+        $('#avoidRepeats input').attr('disabled', !$scope.timer.avoidRepeats);
     });
 }
