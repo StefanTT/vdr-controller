@@ -370,3 +370,39 @@ table.keyvalue-table td
 {
  margin-right: 8pt;
 }
+
+.tmargin-8
+{
+ margin-top: 8pt;
+}
+
+.bmargin-8
+{
+ margin-bottom: 8pt;
+}
+
+.vmargin-8
+{
+ margin-bottom: 8pt;
+ margin-top: 8pt;
+}
+
+.tmargin-20
+{
+ margin-top: 20pt;
+}
+
+.bmargin-20
+{
+ margin-bottom: 20pt;
+}
+
+.form-group-compact
+{
+ margin-bottom: 5pt;
+}
+
+div.disabled label
+{
+ color: #888;
+}

@@ -64,7 +64,7 @@ function RecordingOverviewCtrl($scope, $route, $routeParams, $filter, $location,
       'data' : loadMore,
       'check_callback' : checkModifyTree
     },
-    'plugins' : [ 'checkbox', 'dnd', 'sort' ],
+    'plugins' : [ 'checkbox', 'dnd', 'sort', 'state' ],
     'themes' :
     {
       'icons' : false
@@ -78,12 +78,24 @@ function RecordingOverviewCtrl($scope, $route, $routeParams, $filter, $location,
     {
       'copy' : false,
       'check_callback' : true
+    },
+    'state' :
+    {
+      'ttl' : 600000,
+      'key' : 'recording.overview',
+      'filter' : function(state)
+      {
+          console.log(angular.toJson(state));
+          return state;
+      }
     }
   });
 
 
   tree.on('select_node.jstree', function(e, args)
   {
+    $('#recordingsTree').jstree('deselect_all', true);
+
     var node = args.node;
     if (node.data && node.data.type == 'recording')
       $timeout(function()

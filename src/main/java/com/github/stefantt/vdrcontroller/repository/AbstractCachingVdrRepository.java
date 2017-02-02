@@ -1,9 +1,5 @@
 package com.github.stefantt.vdrcontroller.repository;
 
-import java.io.IOException;
-
-import org.hampelratte.svdrp.Connection;
-
 import com.github.stefantt.vdrcontroller.vdr.VdrConnection;
 
 /**
@@ -24,20 +20,4 @@ public abstract class AbstractCachingVdrRepository extends AbstractCachingReposi
     {
         this.vdr = vdr;
     }
-
-
-    @Override
-    protected final synchronized void update()
-    {
-        vdr.execute((con) -> update(con));
-    }
-
-    /**
-     * Update the cached data using the supplied VDR connection.
-     *
-     * @param con The VDR connection to use for updating
-     * @return null
-     * @throws IOException in case of communication problems
-     */
-    protected abstract Void update(Connection con) throws IOException;
 }

@@ -37,7 +37,7 @@ import com.github.stefantt.vdrcontroller.vdr.commands.LSTRpath;
  *
  * @author "Stefan Taferner <stefan.taferner@gmx.at>"
  */
-public class RecordingRepository extends AbstractCachingVdrRepository
+public class RecordingRepository extends AbstractCachingComplexVdrRepository
 {
     private static final Logger LOGGER = LoggerFactory.getLogger(RecordingRepository.class);
     private static final String ROOT_FOLDER_NAME = "/";

@@ -140,7 +140,7 @@ public class SvdrpEmulator implements Runnable
             if (StringUtils.isEmpty(line))
                 continue;
 
-            String replyFile = repliesDir + line.trim().replaceAll("[.\\s]+", "_") + ".txt";
+            String replyFile = repliesDir + line.trim().replaceAll("[.:\\s]+", "_") + ".txt";
             InputStream replyStream = getClass().getClassLoader().getResourceAsStream(replyFile);
             if (replyStream == null)
             {

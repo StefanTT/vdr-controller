@@ -13,7 +13,7 @@ public abstract class AbstractCachingRepository
     /**
      * Clear all cached data.
      */
-    public final void clearCache()
+    public void clearCache()
     {
         lastUpdated = 0;
     }
@@ -21,7 +21,7 @@ public abstract class AbstractCachingRepository
     /**
      * Ensure that the cached data is up to date.
      */
-    protected final void ensureUpdated()
+    protected synchronized void ensureUpdated()
     {
         if (System.currentTimeMillis() - DATA_MAX_AGE_MSEC > lastUpdated)
         {
@@ -48,6 +48,7 @@ public abstract class AbstractCachingRepository
 
     /**
      * Update the cached data.
+     * Do not call this method directly, call {@link #ensureUpdated()}.
      */
     protected abstract void update();
 }

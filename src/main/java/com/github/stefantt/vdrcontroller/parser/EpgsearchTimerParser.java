@@ -104,7 +104,13 @@ public class EpgsearchTimerParser
 
         timer.setEnabled("1".equals(fields[15]));
 
-        // TODO fields[17] -> day of week
+        if ("1".equals(fields[16]))
+        {
+            int days = Integer.parseInt(fields[17]);
+            if (days >= 0)
+                timer.setWeekdays(1 << days);
+            else timer.setWeekdays(-days);
+        }
 
         timer.setSeries("1".equals(fields[18]));
         timer.setFolder(fields[19]);

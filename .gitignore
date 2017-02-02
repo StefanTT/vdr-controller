@@ -2,3 +2,5 @@
 .project
 .settings
 target
+/provided/
+/doc/

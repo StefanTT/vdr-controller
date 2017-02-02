@@ -1,6 +1,5 @@
 package com.github.stefantt.vdrcontroller.util;
 
-import org.apache.commons.lang3.Range;
 import org.apache.commons.lang3.StringUtils;
 
 import com.github.stefantt.vdrcontroller.entity.Searchtimer;
@@ -25,16 +24,16 @@ public final class VdrEpgsearchUtils
         fields[0] = Integer.toString(timer.getId());
         fields[1] = escape(timer.getSearch());
 
-        Range<Integer> startTimeRange = timer.getStartTimeRange();
-        if (startTimeRange == null)
+        int startTimeMax = timer.getStartTimeMax();
+        if (startTimeMax == 0)
         {
             fields[2] = "0";
         }
         else
         {
             fields[2] = "1";
-            fields[3] = toHHMM(startTimeRange.getMinimum());
-            fields[4] = toHHMM(startTimeRange.getMaximum());
+            fields[3] = toHHMM(timer.getStartTimeMin());
+            fields[4] = toHHMM(startTimeMax);
         }
 
         String fromChannel = timer.getFromChannel();
@@ -63,16 +62,16 @@ public final class VdrEpgsearchUtils
         fields[10] = timer.isSearchSubtitle() ? "1" : "0";
         fields[11] = timer.isSearchDescription() ? "1" : "0";
 
-        Range<Integer> durationRange = timer.getDurationRange();
-        if (durationRange == null)
+        int durationMax = timer.getDurationMax();
+        if (durationMax == 0)
         {
             fields[12] = "0";
         }
         else
         {
             fields[12] = "1";
-            fields[13] = Integer.toString(durationRange.getMinimum());
-            fields[14] = Integer.toString(durationRange.getMaximum());
+            fields[13] = Integer.toString(timer.getDurationMin());
+            fields[14] = Integer.toString(durationMax);
         }
 
         fields[15] = timer.isEnabled() ? "1" : "0";

@@ -6,17 +6,30 @@ angular.module('app.searchtimer')
 
 function SearchtimerService($resource, $http)
 {
-    var resource = $resource('/rest/vdr/searchtimer/:id');
-
-    resource.enable = function(id)
+    return $resource('/rest/vdr/searchtimer/:id', { id:'@id' },
     {
-        return $http.post('/rest/vdr/searchtimer/' + id + '/enable');
-    }
+        enable:
+        {
+            url: '/rest/vdr/searchtimer/:id/enable',
+            method: 'POST'
+        },
 
-    resource.disable = function(id)
-    {
-        return $http.post('/rest/vdr/searchtimer/' + id + '/disable');
-    }
+        disable:
+        {
+            url: '/rest/vdr/searchtimer/:id/disable',
+            method: 'POST'
+        },
 
-    return resource;
+        search:
+        {
+            url: '/rest/vdr/searchtimer/:id/search',
+            method: 'POST',
+            isArray: true
+        },
+
+        eventDetails:
+        {
+            url: '/rest/vdr/epg/:channel/:time'
+        }
+    });
 }

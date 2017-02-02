@@ -1,7 +1,5 @@
 package com.github.stefantt.vdrcontroller.entity;
 
-import org.apache.commons.lang3.Range;
-
 /**
  * An auto timer entry.
  *
@@ -62,14 +60,16 @@ public class Searchtimer
      */
     public static final int DEFAULT_REPEATS_MATCH_DESC_PERC = 90;
 
-    private int id;
+    private int id = -1;
     private boolean enabled = true;
     private String search;
     private SearchMode searchMode = SearchMode.ALL_WORDS;
     private boolean isCaseSensitive;
-    private Range<Integer> startTimeRange; // in minutes since midnight
-    private Range<Integer> durationRange; // in minutes
-    private int weekdays; // bitfield: bit 0=sunday, 1=monday, ...
+    private int startTimeMin; // in minutes since midnight
+    private int startTimeMax; // in minutes since midnight, min=max=0 to disable check
+    private int durationMin;  // in minutes
+    private int durationMax;  // in minutes, 0 to disable check
+    private int weekdays;     // bitfield: bit 0=sunday, 1=monday, ...
     private boolean searchTitle;
     private boolean searchSubtitle;
     private boolean searchDescription;
@@ -99,9 +99,14 @@ public class Searchtimer
         return deleteAfterDays;
     }
 
-    public Range<Integer> getDurationRange()
+    public int getDurationMin()
     {
-        return durationRange;
+        return durationMin;
+    }
+
+    public int getDurationMax()
+    {
+        return durationMax;
     }
 
     public String getFolder()
@@ -151,9 +156,22 @@ public class Searchtimer
         return searchMode;
     }
 
-    public Range<Integer> getStartTimeRange()
+    /**
+     * @return True if the start time checking shall be used, false if not
+     */
+    public boolean useStartTime()
     {
-        return startTimeRange;
+        return startTimeMin != 0 || startTimeMax != 0;
+    }
+
+    public int getStartTimeMin()
+    {
+        return startTimeMin;
+    }
+
+    public int getStartTimeMax()
+    {
+        return startTimeMax;
     }
 
     public int getTimeMarginStart()
@@ -171,6 +189,12 @@ public class Searchtimer
         return toChannel;
     }
 
+    /**
+     * The weekdays on which the timer shall be active. Each bit represents a weekday, with bit #0
+     * being Sunday and bit #6 being Saturday.
+     *
+     * @return The bitfield of weekdays.
+     */
     public int getWeekdays()
     {
         return weekdays;
@@ -246,14 +270,10 @@ public class Searchtimer
         this.deleteAfterDays = deleteAfterDays;
     }
 
-    public void setDurationRange(Integer min, Integer max)
+    public void setDurationRange(int min, int max)
     {
-        this.durationRange = Range.between(min, max);
-    }
-
-    public void setDurationRange(Range<Integer> durationRange)
-    {
-        this.durationRange = durationRange;
+        this.durationMin = min;
+        this.durationMax = max;
     }
 
     public void setEnabled(boolean enabled)
@@ -336,14 +356,10 @@ public class Searchtimer
         this.isSeries = isSeries;
     }
 
-    public void setStartTimeRange(Integer min, Integer max)
+    public void setStartTimeRange(int min, int max)
     {
-        this.startTimeRange = Range.between(min, max);
-    }
-
-    public void setStartTimeRange(Range<Integer> startTimeRange)
-    {
-        this.startTimeRange = startTimeRange;
+        this.startTimeMin = min;
+        this.startTimeMax = max;
     }
 
     public void setTimeMarginStart(int timeMarginStart)
@@ -361,6 +377,12 @@ public class Searchtimer
         this.toChannel = toChannel;
     }
 
+    /**
+     * The weekdays on which the timer shall be active. Each bit represents a weekday, with bit #0
+     * being Sunday and bit #6 being Saturday.
+     *
+     * @param weekdays The bitfield of weekdays.
+     */
     public void setWeekdays(int weekdays)
     {
         this.weekdays = weekdays;

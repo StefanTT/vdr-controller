@@ -7,6 +7,7 @@ import com.github.stefantt.vdrcontroller.util.VdrEpgsearchUtils;
 
 /**
  * An epgsearch plugin EDIS command.
+ * This command is used to update (edit) an existing search timer.
  *
  * @author Stefan Taferner
  */
@@ -17,6 +18,7 @@ public class EpgsearchEDIS extends Command
 
     /**
      * Create an epgsearch plugin EDIS command.
+     * This command is used to update (edit) an existing search timer.
      *
      * @param timer The searchtimer
      */

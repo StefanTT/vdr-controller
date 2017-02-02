@@ -5,17 +5,24 @@ import com.github.stefantt.vdrcontroller.entity.Searchtimer;
 /**
  * A brief representation of the {@link Searchtimer}, for list views.
  *
- * @author "Stefan Taferner <stefan.taferner@gmx.at>"
+ * @author Stefan Taferner <stefan.taferner@gmx.at>
  */
 public class BriefSearchtimer
 {
-    private final int id;
-    private final boolean enabled;
-    private final String search;
-    private final String folder;
+    private int id;
+    private boolean enabled;
+    private String search;
+    private String folder;
 
     /**
-     * Create a brief search timer from a search timer.
+     * Create an empty brief search timer.
+     */
+    public BriefSearchtimer()
+    {
+    }
+
+    /**
+     * Create a brief representation of a search timer.
      *
      * @param timer The search timer to use
      */

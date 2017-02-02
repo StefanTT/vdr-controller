@@ -1,17 +1,21 @@
 package com.github.stefantt.vdrcontroller.repository;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.eclipse.jetty.http.HttpStatus;
 import org.hampelratte.svdrp.Response;
 
+import com.github.stefantt.vdrcontroller.entity.EpgsearchEvent;
 import com.github.stefantt.vdrcontroller.entity.Searchtimer;
+import com.github.stefantt.vdrcontroller.parser.EpgsearchEventParser;
 import com.github.stefantt.vdrcontroller.parser.EpgsearchTimerParser;
 import com.github.stefantt.vdrcontroller.vdr.VdrConnection;
 import com.github.stefantt.vdrcontroller.vdr.VdrRuntimeException;
 import com.github.stefantt.vdrcontroller.vdr.commands.EpgsearchEDIS;
+import com.github.stefantt.vdrcontroller.vdr.commands.EpgsearchFIND;
 import com.github.stefantt.vdrcontroller.vdr.commands.EpgsearchLSTS;
 
 /**
@@ -56,15 +60,29 @@ public class SearchtimerRepository extends AbstractCachingRepository
     }
 
     /**
-     * Store a modified search timer.
+     * Update an existing search timer.
      *
      * @param timer The search timer to store
      */
-    public void modify(Searchtimer timer)
+    public void update(Searchtimer timer)
     {
         Response res = vdr.query(new EpgsearchEDIS(timer));
         if (res.getCode() != 900)
             throw new VdrRuntimeException(HttpStatus.BAD_REQUEST_400, res.getMessage());
+    }
+
+    public Collection<EpgsearchEvent> search(Searchtimer timer)
+    {
+        Response res = vdr.query(new EpgsearchFIND(timer));
+        int code = res.getCode();
+
+        if (code == 901)
+            return Collections.emptyList();
+
+        if (code != 900)
+            throw new VdrRuntimeException(HttpStatus.BAD_REQUEST_400, res.getMessage());
+
+        return new EpgsearchEventParser().parse(res.getMessage());
     }
 
     @Override

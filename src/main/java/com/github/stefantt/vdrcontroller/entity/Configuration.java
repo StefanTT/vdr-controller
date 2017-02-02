@@ -7,6 +7,7 @@ package com.github.stefantt.vdrcontroller.entity;
  */
 public class Configuration
 {
+    private String channelsFile;
     private String epgDataFile;
     private String vdrHost;
     private int vdrPort;
@@ -24,9 +25,15 @@ public class Configuration
      */
     public void clear()
     {
+        channelsFile = "/var/lib/vdr/channels.conf";
         epgDataFile = "/var/cache/vdr/epg.data";
         vdrHost = "localhost";
         vdrPort = 6419;
+    }
+
+    public String getChannelsFile()
+    {
+        return channelsFile;
     }
 
     public String getEpgDataFile()
@@ -42,6 +49,11 @@ public class Configuration
     public int getVdrPort()
     {
         return vdrPort;
+    }
+
+    public void setChannelsFile(String channelsFile)
+    {
+        this.channelsFile = channelsFile;
     }
 
     public void setEpgDataFile(String epgDataFile)

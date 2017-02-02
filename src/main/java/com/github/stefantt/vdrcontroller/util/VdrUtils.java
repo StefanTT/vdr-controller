@@ -9,9 +9,11 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.lang3.Validate;
 import org.apache.commons.lang3.text.translate.CharSequenceTranslator;
+import org.hampelratte.svdrp.responses.highlevel.Channel;
 import org.hampelratte.svdrp.responses.highlevel.Recording;
 import org.hampelratte.svdrp.responses.highlevel.Timer;
 
+import com.github.stefantt.vdrcontroller.dto.BriefChannel;
 import com.github.stefantt.vdrcontroller.dto.BriefRecording;
 import com.github.stefantt.vdrcontroller.dto.BriefSearchtimer;
 import com.github.stefantt.vdrcontroller.dto.BriefTimer;
@@ -154,6 +156,22 @@ public final class VdrUtils
 
         for (Timer timer : timers)
             result.add(new BriefTimer(timer));
+
+        return result;
+    }
+
+    /**
+     * Convert the list of channels into a list of brief channels.
+     *
+     * @param channels The list of channels to convert
+     * @return The converted list of brief channels
+     */
+    public static List<BriefChannel> toBriefChannels(Collection<Channel> channels)
+    {
+        List<BriefChannel> result = new ArrayList<>(channels.size());
+
+        for (Channel channel: channels)
+            result.add(new BriefChannel(channel));
 
         return result;
     }

@@ -18,6 +18,7 @@ import org.slf4j.LoggerFactory;
 
 import com.github.stefantt.vdrcontroller.dto.DetailedRecoding;
 import com.github.stefantt.vdrcontroller.entity.Configuration;
+import com.github.stefantt.vdrcontroller.entity.Searchtimer;
 import com.github.stefantt.vdrcontroller.entity.VdrRecording;
 import com.github.stefantt.vdrcontroller.entity.VirtualFolder;
 import com.github.stefantt.vdrcontroller.service.ConfigurationService;
@@ -132,6 +133,12 @@ public class RouteBuilder
             return gson.toJson(vdrService.getCapabilities());
         });
 
+        get("/rest/vdr/channel", (request, response) ->
+        {
+            response.type(ContentType.JSON);
+            return gson.toJson(VdrUtils.toBriefChannels(vdrService.getChannels()));
+        });
+
         get("/rest/vdr/epg/:channelId/:time", (request, response) ->
         {
             String channelId = request.params(":channelId");
@@ -152,6 +159,8 @@ public class RouteBuilder
             response.status(HttpStatus.ACCEPTED_202);
             return "Ok";
         });
+
+        // --- Recording(s) ---
 
         get("/rest/vdr/recordings", (request, response) ->
         {
@@ -199,10 +208,27 @@ public class RouteBuilder
             return "";
         });
 
-        get("/rest/vdr/timer", (request, response) ->
+        // --- Search timer ---
+
+        get("/rest/vdr/searchtimer", (request, response) ->
         {
             response.type(ContentType.JSON);
-            return gson.toJson(VdrUtils.toBriefTimers(vdrService.getTimers()));
+            return gson.toJson(VdrUtils.toBriefSearchtimers(vdrService.getSearchtimers()));
+        });
+
+        post("/rest/vdr/searchtimer", (request, response) ->
+        {
+            LOGGER.info("Save searchtimer {}", request.body());
+
+            vdrService.save(gson.fromJson(request.body(), Searchtimer.class));
+            response.status(HttpStatus.ACCEPTED_202);
+            return "Ok";
+        });
+
+        get("/rest/vdr/searchtimer/:id", (request, response) ->
+        {
+            response.type(ContentType.JSON);
+            return gson.toJson(vdrService.getSearchtimer(Integer.parseInt(request.params(":id"))));
         });
 
         post("/rest/vdr/searchtimer/:id/enable", (request, response) ->
@@ -219,16 +245,17 @@ public class RouteBuilder
             return "Ok";
         });
 
-        get("/rest/vdr/searchtimer", (request, response) ->
+        post("/rest/vdr/searchtimer/:id/search", (request, response) ->
         {
-            response.type(ContentType.JSON);
-            return gson.toJson(VdrUtils.toBriefSearchtimers(vdrService.getSearchtimers()));
+            return gson.toJson(vdrService.search(gson.fromJson(request.body(), Searchtimer.class)));
         });
 
-        get("/rest/vdr/searchtimer/:id", (request, response) ->
+        // --- Timer ---
+
+        get("/rest/vdr/timer", (request, response) ->
         {
             response.type(ContentType.JSON);
-            return gson.toJson(vdrService.getSearchtimer(Integer.parseInt(request.params(":id"))));
+            return gson.toJson(VdrUtils.toBriefTimers(vdrService.getTimers()));
         });
 
         post("/rest/vdr/timer/:id/enable", (request, response) ->

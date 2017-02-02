@@ -2,8 +2,9 @@
 
 angular.module('app',
     [ 'ngRoute', 'ngCookies', 'ngSanitize',
-      'pascalprecht.translate', 'ui.bootstrap', 'app.common', 'app.dialog', 'app.home',
-      'app.layout', 'app.osd', 'app.recording', 'app.searchtimer', 'app.setup', 'app.timer', 'app.video' ])
+      'pascalprecht.translate', 'ui.bootstrap', 'app.channel', 'app.common', 'app.dialog', 'app.home',
+      'app.layout', 'app.osd', 'app.recording', 'app.searchtimer', 'app.setup', 'app.timer',
+      'app.video' ])
     .config(appConfig)
     .run(appRun);
 
@@ -29,6 +30,10 @@ function appConfig($routeProvider, $locationProvider, $translateProvider, $httpP
     {
         templateUrl : '/app/home/home.html',
         controller : 'HomeCtrl'
+    }).when('/channel',
+    {
+        templateUrl : '/app/channel/channel.overview.html',
+        controller : 'ChannelOverviewCtrl'
     }).when('/osd',
     {
         templateUrl : '/app/osd/osd.html',

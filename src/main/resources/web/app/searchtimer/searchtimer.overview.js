@@ -18,14 +18,14 @@ function SearchtimerOverviewCtrl($scope, $routeParams, $filter, $location, Searc
 
     $scope.disableTimer = function(timer)
     {
-        SearchtimerService.disable(timer.id)
-            .then(() => { timer.enabled = false; });
+        SearchtimerService.disable({id: timer.id})
+            .$promise.then(() => { timer.enabled = false; });
     }
 
     $scope.enableTimer = function(timer)
     {
-        SearchtimerService.enable(timer.id)
-            .then(() => { timer.enabled = true; });
+        SearchtimerService.enable({id: timer.id})
+            .$promise.then(() => { timer.enabled = true; });
     }
 
     $scope.showDetails = function(timer)

@@ -9,15 +9,18 @@ import org.eclipse.jetty.http.HttpStatus;
 import org.hampelratte.svdrp.Response;
 import org.hampelratte.svdrp.commands.PLUG;
 import org.hampelratte.svdrp.responses.R214;
+import org.hampelratte.svdrp.responses.highlevel.Channel;
 import org.hampelratte.svdrp.responses.highlevel.EPGEntry;
 import org.hampelratte.svdrp.responses.highlevel.Timer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.github.stefantt.vdrcontroller.entity.Configuration;
+import com.github.stefantt.vdrcontroller.entity.EpgsearchEvent;
 import com.github.stefantt.vdrcontroller.entity.Searchtimer;
 import com.github.stefantt.vdrcontroller.entity.VdrRecording;
 import com.github.stefantt.vdrcontroller.entity.VirtualFolder;
+import com.github.stefantt.vdrcontroller.repository.ChannelRepository;
 import com.github.stefantt.vdrcontroller.repository.ProgramGuideRepository;
 import com.github.stefantt.vdrcontroller.repository.RecordingRepository;
 import com.github.stefantt.vdrcontroller.repository.SearchtimerRepository;
@@ -40,11 +43,12 @@ public class VdrService
 
     private final VdrConnection vdr;
 
+    private final ChannelRepository channelRepo;
+    private final VdrOsdProxy osdProxy;
     private final ProgramGuideRepository programGuideRepo;
     private final RecordingRepository recordingRepo;
     private final SearchtimerRepository searchtimerRepo;
     private final TimerRepository timerRepo;
-    private final VdrOsdProxy osdProxy;
 
     private VdrCapabilities capabilities;
 
@@ -68,6 +72,7 @@ public class VdrService
     {
         this.vdr = vdr;
 
+        this.channelRepo = new ChannelRepository(vdr);
         this.osdProxy = new VdrOsdProxy(vdr);
         this.programGuideRepo = new ProgramGuideRepository(vdr);
         this.recordingRepo = new RecordingRepository(vdr);
@@ -80,6 +85,7 @@ public class VdrService
      */
     public void clearCaches()
     {
+        channelRepo.clearCache();
         programGuideRepo.clearCache();
         recordingRepo.clearCache();
         searchtimerRepo.clearCache();
@@ -121,6 +127,29 @@ public class VdrService
     }
 
     /**
+     * Search events using the given search timer.
+     *
+     * @param timer The search timer to use
+     * @return The found events
+     */
+    public Collection<EpgsearchEvent> search(Searchtimer timer)
+    {
+        return searchtimerRepo.search(timer);
+    }
+
+    /**
+     * Save a search timer.
+     *
+     * @param timer The timer to save
+     */
+    public void save(Searchtimer timer)
+    {
+        LOGGER.debug("TODO Saving search timer #{}", timer.getId());
+
+        // TODO
+    }
+
+    /**
      * Enable a search timer.
      *
      * @param id The ID of the search timer
@@ -134,7 +163,7 @@ public class VdrService
             throw new VdrRuntimeException(HttpStatus.NOT_FOUND_404, "search timer not found");
 
         timer.setEnabled(true);
-        searchtimerRepo.modify(timer);
+        searchtimerRepo.update(timer);
     }
 
     /**
@@ -151,7 +180,7 @@ public class VdrService
             throw new VdrRuntimeException(HttpStatus.NOT_FOUND_404, "search timer not found");
 
         timer.setEnabled(false);
-        searchtimerRepo.modify(timer);
+        searchtimerRepo.update(timer);
     }
 
     /**
@@ -160,6 +189,14 @@ public class VdrService
     public Collection<Timer> getTimers()
     {
         return timerRepo.getAll();
+    }
+
+    /**
+     * @return All channels
+     */
+    public Collection<Channel> getChannels()
+    {
+        return channelRepo.getAll();
     }
 
     /**
@@ -279,6 +316,9 @@ public class VdrService
 
         String epgDataFile = config.getEpgDataFile();
         programGuideRepo.setEpgDataFile(StringUtils.isEmpty(epgDataFile) ? null : new File(epgDataFile));
+
+        String channelsFile = config.getChannelsFile();
+        channelRepo.setChannelsFile(StringUtils.isEmpty(channelsFile) ? null : new File(channelsFile));
     }
 
     /**
