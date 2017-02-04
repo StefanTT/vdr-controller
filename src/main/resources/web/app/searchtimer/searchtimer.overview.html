@@ -17,7 +17,7 @@
   </div>
   <h2 translate="searchtimer.overview.caption"></h2>
   <table id="searchtimer-overview" class="table table-condensed table-hover">
-   <tr ng-repeat="t in timers|orderBy:['folder','search']:false:orderComp"
+   <tr ng-repeat="t in timers|searchtimerFilterEnabled:showAll|orderBy:['folder','search']:false:orderComp"
        ng-class="{'timer-enabled':t.enabled, 'timer-disabled':!t.enabled}">
     <td class="enabled-indicator">
      <a ng-show="t.enabled" title="{{'searchtimer.overview.timerEnabledTip'|translate}}"

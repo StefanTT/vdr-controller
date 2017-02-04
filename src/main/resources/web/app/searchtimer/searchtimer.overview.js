@@ -6,6 +6,7 @@ angular.module('app.searchtimer')
 function SearchtimerOverviewCtrl($scope, $routeParams, $filter, $location, SearchtimerService)
 {
     $scope.timers = SearchtimerService.query();
+    $scope.showAll = true;
 
     $scope.orderComp = function(a, b)
     {
